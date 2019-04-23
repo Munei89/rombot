@@ -15,7 +15,7 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
-        template: "<h1>Hello {{name}}</h1>",
+        template: "<input(keyup)="searchTerm$.next($event.target.value)"><ul *ngIf="results"><li *ngFor="let result of results | slice:0:9"><a href="{{ result.latest }}" target="_blank">{{ result.name }}</a></li></ul>",
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;
