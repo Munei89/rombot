@@ -1,0 +1,157 @@
+.alert,
+.row-background {
+    border: 0;
+    border-radius: 0;
+
+    padding: 20px 15px;
+    line-height: 20px;
+
+    //@include shadow-z-2();
+
+    b {
+        font-weight: $font-weight-bold;
+        text-transform: uppercase;
+        font-size: $font-size-small;
+    }
+
+    // SASS conversion note: please mirror any content change in _mixins-shared.scss alert-variations-content
+    @include alert-variations(unquote(".alert"), unquote(""), $mdb-text-color-light);
+
+    &-info,
+    &-danger,
+    &-warning,
+    &-success {
+        color: $mdb-text-color-light;
+    }
+
+    &-default {
+
+        a,
+        .alert-link {
+            color: $mdb-text-color-primary;
+        }
+    }
+
+    .alert-icon {
+        // display: block;
+        // float: left;
+        // margin-right: $margin-base;
+        padding-top: 10px;
+
+        i {
+            // margin-top: -7px;
+            // top: 5px;
+            // position: relative;
+            // vertical-align: -webkit-baseline-middle;
+        }
+
+        .times-btn {
+            padding: 10px 10px 7px 10px;
+            border: 1px solid #c1c1c1;
+            border-radius: 5px;
+            text-align: center;
+            display: block;
+            margin-top: -10px;
+        }
+    }
+}
+
+.alert {
+    width: 425px;
+    height: auto;
+    border-radius: 5px;
+    padding: 15px 15px;
+    @include button-shadow-color(#333);
+
+    p {
+        padding-top: 10px;
+    }
+
+    &--standard {
+        background: #fff;
+
+        p {
+            color: #333;
+        }
+    }
+
+    &--error {
+        background: #ed1c24;
+
+        p {
+            color: #fff;
+        }
+
+        i {
+            filter: brightness(0) invert(1);
+        }
+
+        .times-btn {
+            border: 1px solid #fff !important;
+        }
+    }
+
+    &--success {
+        background: #39b54a;
+
+        i {
+            &:before {
+                background: #1d5b25;
+                position: absolute;
+                content: " ";
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: none;
+                z-index: 0;
+            }
+        }
+
+        p {
+            color: #fff;
+        }
+
+        i {
+            filter: brightness(0) invert(1);
+        }
+
+        .times-btn {
+            border: 1px solid #fff !important;
+        }
+    }
+
+    &--warning {
+        background: #e2c50a;
+
+        p {
+            color: #fff;
+        }
+
+        i {
+            filter: brightness(0) invert(1);
+        }
+
+        .times-btn {
+            border: 1px solid #fff !important;
+        }
+    }
+}
+
+.notification-alerts {
+    &.good {
+        color: #354a18;
+    }
+
+    &.risk {
+        color: #ed1c24
+    }
+
+    &.caution {
+        color: #e2c50a;
+    }
+
+    small {
+        vertical-align: super;
+    }
+}

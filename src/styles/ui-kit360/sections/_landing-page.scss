@@ -1,0 +1,103 @@
+.landing-page {
+  .title {
+    color: #FFFFFF;
+    font-size: 82px;
+    font-size: 11vh;
+    font-family: $font-family-rubikbold;
+
+    @media (max-width: $screen-sm-min){
+        font-size: 11vw;
+    }
+  @media only screen
+    and (min-device-width: 320px)
+    and (max-device-width: 740px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: landscape) {
+      font-size: 4vw;
+    }
+
+  }
+  .buttons-bottom {
+      z-index: 999;
+      position: relative;
+      margin-left: -10%;
+      @media (max-width: 480px){
+        margin-left: -20%;
+        position: relative;
+        left: 0;
+        text-align: left;
+      }
+      /* Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 740px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+      text-align: left;
+    a {
+      width: 25vw;
+      font-size: 10px;
+    }
+      .col-xs-12 {
+        width: 33%;
+      }
+}
+  }
+  /* The only rule that matters */
+  #video-background {
+  /*  making the video fullscreen  */
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  margin-top: 0%;
+  margin-left: 0%;
+  @media only screen and (max-width: 679px) and (min-width: 320px)  {
+    right: -100%;
+  }
+  @media only screen and (max-width: 900px) and (min-width: 680px)  {
+    right: -43%;
+  }
+}
+
+}
+// IPAD
+/* Landscape */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .page-header .carousel .carousel-indicators {
+      width: 320px;
+    }
+    .landing-btns {
+      margin-left: -24vw;
+    }
+}
+.socials-mobi {
+    @media (max-width: $screen-sm-min){
+      position: absolute;
+      width: 10px;
+      right: 0;
+      top: -30vh;
+
+      i {
+        margin-bottom: 4vh;
+      }
+    }
+}
+.menu-icon-landing {
+  img {
+    width: 35px;
+  }
+  margin-right: -8%;
+  @media (max-width: $screen-sm-min){
+    margin-right: 0%;
+  }
+}

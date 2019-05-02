@@ -1,0 +1,1178 @@
+<!doctype html>
+<html lang="en" class="background-light-grey">
+
+<head>
+  <!-- App Icons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="dist/assets/img/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="dist/assets/img/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="dist/assets/img/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="dist/assets/img/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="dist/assets/img/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="dist/assets/img/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="dist/assets/img/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="dist/assets/img/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="dist/assets/img/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="dist/assets/img/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="dist/assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="dist/assets/img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="dist/assets/img/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" href="favicon.ico">
+  <meta name="msapplication-TileColor" content="#f2f2f2">
+  <meta name="msapplication-TileImage" content="dist/assets/img/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#d4145a">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+  <title>dot360 - My Canditates</title>
+
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+
+  <!--     Fonts and icons     -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" /> -->
+
+  <!-- CSS Files -->
+  <link href="dist/assets/css/dot360.css" rel="stylesheet" />
+</head>
+
+<body class="background-light-grey">
+  <div id="loader-wrapper">
+    <!-- <div id="loader"></div> -->
+    <div class="loading-wrapper text-center">
+      <img src="dist/assets/img/loading-logo.svg" width="300px" height="46px" alt="">
+      <div class="dots-loading-logo">
+        <div id="percentage">
+          <span class="total"></span>
+        </div>
+      </div>
+      <div class="loading-slogan">
+        <p>Streamlined Offering, Improved Operations</p>
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-transparent border-bottom-solid logged--in-user navbar-fixed-top">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse">
+        <a href="#" class="menu float-r">
+          <span class="sr-only">Toggle navigation</span>
+          <span style="width: 60%;margin-top: 10px;"></span>
+          <span style="width:40%"></span>
+        </a>
+
+      </button>
+      <span class="btn text-left btn-primary btn-round btn-white btn-raised perform-check visible-xs col-xs-3" id="" style="margin: 10px 10px 0px 19px;float: right;">
+        Perform Check 
+     </span>
+      <a class="navbar-brand" href="home.html">
+        <img src="dist/assets/img/d.png" height="50px" width="50px" alt="">
+      </a>
+    </div>
+
+    <div class="navbar-header navbar-right hidden-sm hidden-xs">
+      <button type="button" class="navbar-toggle" data-toggle="collapse">
+        <a href="#" class="menu float-r">
+          <span class="sr-only">Toggle navigation</span>
+          <span style="width: 60%;margin-top: 10px;"></span>
+          <span style="width:40%"></span>
+        </a>
+      </button>
+      <a class="navbar-brand" href="#">
+        <i class="fa fa-user-circle" width="35px" height="35px"></i>
+      </a>
+    </div>
+
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active">
+            <a href="#" class="active">Background Screening</a>
+          </li>
+          <li class="">
+            <a href="#" class="">Yimi</a>
+          </li>
+          <li class="">
+            <a href="#" class="">Trace</a>
+          </li>
+          <li class="visible-xs visible-sm">
+            <div class="text-right pos--rel z-index99">
+              <span class="btn btn-lg btn-rose btn-round perform-check">
+                <i class="fa fa-plus"></i> Perform Check
+              </span>
+            </div>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="visible-xlgvisible-md">
+            <div class="text-right pos--rel z-index99">
+              <span class="btn btn-primary btn-round btn-white btn-raised perform-check">
+                <i class="fa fa-plus"></i> Bulk Upload Sheet
+              </span>
+            </div>
+          </li>
+          <li class="visible-xlgvisible-md">
+            <div class="text-right pos--rel z-index99">
+              <span class="btn btn-primary btn-round btn-magenta perform-check">
+                <i class="fa fa-plus"></i> Perform Check
+              </span>
+            </div>
+          </li>
+          <li class="user-header-controls">
+            <i class="icon-Dots_Notification"></i>
+          </li>
+          <!-- <li class="user-header-controls">
+          <i class="fa fa-user-circle"></i>
+        </li> -->
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <div class="xs-spacer"></div>
+  <div class="container dashboard-spacer analytics-dashboard--nav">
+    <div class="row">
+      <div class="col-md-7 col-md-push-1 col-xs-push-0">
+
+        <span class="user-nav-links">
+          Dashboard
+        </span>
+        <span class="user-nav-links">
+          All Checks
+        </span>
+        <span class="user-nav-links">
+          All Candidates
+        </span>
+        <span class="user-nav-links active hidden-xs">
+          360 Analytics
+        </span>
+      </div>
+      <!-- <div class="col-md-4 hidden-xs hidden-sm text-align-right">
+        <span class="download"><i class="fa fa-download" aria-hidden="true"></i></span>
+        <span class="forward"><i class="fa fa-reply" aria-hidden="true"></i></span>
+      </div> -->
+    </div>
+  </div>
+  <br />
+
+  <div class="container">
+    <div class="row analytics-dashboard--summary">
+
+      <div class="col-md-6">
+        <div class="card raised card-budget-adjustment">
+
+          <div class="row budget budget-header">
+            <div class="col-md-5 col-xs-7 col-sm-7">
+              <div class="">
+                <h6 class="text-black flush-m text-left" >Budget</h6>
+                <p class="stext-primary paragraph-small text-weight-reg text-left">
+                  Your Dots Budget
+                </p>
+              </div>
+            </div>
+            <div class="col-md-3 col-xs-5 col-sm-5">
+              <div class="dropdown table-dropdown">
+                <button href="#pablo" class="dropdown-toggle btn btn-block btn-filter" style="width:110px !important;"
+                  data-toggle="dropdown">Monthly
+
+                  <b class="caret"></b>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <li>
+                    <a href="#">Today</a>
+                  </li>
+                  <li>
+                    <a href="#">Week</a>
+                  </li>
+                  <li>
+                    <a href="#">Month</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3 hidden-sm hidden-xs">
+              <div class="dropdown table-dropdown">
+                <button href="#pablo" class="dropdown-toggle btn btn-block btn-filter" style="width:110px !important;"
+                  data-toggle="dropdown">More
+
+                  <b class="caret"></b>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <li>
+                    <a href="#">Today</a>
+                  </li>
+                  <li>
+                    <a href="#">Week</a>
+                  </li>
+                  <li>
+                    <a href="#">Month</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <hr class="budget-management-line">
+
+          <div class="row">
+            <small class="text-black budget-text-pad">How much is your budget?</small>
+            <div class="budget-form-group rangeSlider">
+              R <input type="number" placeholder="" id="adjust-budget" maxlength="6" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"></input>
+            </div>
+            <div class="form-group range-slider--holder">
+              <p class="text-secondary text-weight-reg budget-text-pad">Assign Checks to Budget</p>
+
+              <span id="stepback"><i class="icon-Dots_Remove"></i></span>
+              <div id="sliderRegular" class="slider"></div>
+              <span id="stepforward"><i class="icon-Dots_Add"></i></span>
+            </div>
+
+          </div>
+          <hr class="budget-management-line" >
+          <div class="row" style="margin-bottom: -20px;">
+            <div class="col-md-4 col-xs-6 col-sm-6">
+              <div class="budget--summary">
+                <div class="row">
+                  <div class="col-md-1 col-xs-1 col-sm-1">
+                    <i class="icon-Dots_Alert text-weight-light"></i>
+                  </div>
+                  <div class="col-md-9 col-xs-9 col-sm-9">
+                    <small class="text-weight-light">R 1 500 000 <small class="text-gray flush-m">Monthly
+                        Budget</small></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 hidden-sm hidden-xs">
+              <div>
+                <span class="text-rubik-regular btn-checks--info btn-add--user text-center"
+                  style="width:150px;margin-top: 10px;">
+                  Request Budget
+                  <div class="ripple-container"></div>
+                </span>
+              </div>
+            </div>
+            <div class="col-md-4 col-xs-6 col-sm-6">
+              <div class=>
+                <span class="btn btn-squared btn-magenta btn--budget">
+                  Confirm Your Budget
+                  <div class="ripple-container"></div></span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card raised card-track-budget ">
+
+          <div class="row budget budget-header">
+            <div class="col-md-6 col-xs-8 col-sm-8">
+              <div class="text-left">
+                <h6 class="text-black flush-m text-left tack-budget-text">Track Your Budget</h6>
+                <p class="stext-primary paragraph-small text-weight-reg text-left">
+                  Know what you spend
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-xs-4 col-sm-4">
+              <div class="col-md-9 col-xs-5 col-sm-5">
+                <div class="dropdown table-dropdown">
+                  <button href="#pablo" class="dropdown-toggle btn btn-block btn-filter"
+                    data-toggle="dropdown"><span class="hidden-xs hidden-sm">Weekly</span>
+
+                    <b class="caret"></b>
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-right">
+                    <li>
+                      <a href="#">Today</a>
+                    </li>
+                    <li>
+                      <a href="#">Week</a>
+                    </li>
+                    <li>
+                      <a href="#">Month</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3 col-xs-6 col-sm-6">
+                <span class="dropdown" data-dropdown>
+                  <div class="notification-user budget-track-dropdown" data-toggle="dropdown">
+                    <i class="fa fa-circle" aria-hidden="true"></i>
+                    <i class="fa fa-circle" aria-hidden="true"></i>
+                    <i class="fa fa-circle" aria-hidden="true"></i>
+                  </div>
+                  <ul class="dropdown-menu notification-dropdown">
+                    <li>
+                      Email PDF Report
+                    </li>
+                    <li>
+                      Share Report
+                    </li>
+                    <li>
+                      Download Report
+                    </li>
+                  </ul>
+                </span>
+              </div>
+            </div>
+          </div>
+          <hr  class="budget-management-line"/>
+          <div class="row">
+            <div id="budget-forecast-page">
+            </div>
+          </div>
+
+
+
+
+        </div>
+      </div>
+
+      <!-- <div class="col-md-3">
+            <div class="card card-pricing add-team-card">
+                <div class=" ">
+                    <div class="top-card-content text-left">
+                      <div class="row">
+                        <div class="col-md-10">
+                            <h6 class="text-black flush-m text-left tack-budget-text "style="font-size: 17px">Add Team</h6>
+                            <p class="stext-primary paragraph-small text-weight-reg text-left">
+                              To assign budget 
+                            </p>
+                        </div>
+                        <div class="col-md-1">
+                            <span class="dropdown float-r" data-dropdown="">
+                                <div class="btn-add" data-toggle="dropdown">
+                                    <i class="icon-Dots_Add" aria-hidden="true">
+                                      </i>
+                                </div>
+                                <ul class="dropdown-menu notification-dropdown">
+                                  <li>
+                                    Email PDF Report
+                                  </li>
+                                  <li>
+                                    Share Report
+                                  </li>
+                                  <li>
+                                    Download Report
+                                  </li>
+                                  <li>
+                                    Clone Report
+                                  </li>
+                                </ul>
+                              </span>
+                        </div>
+                      </div>
+                        
+                        
+                        
+                    </div> 
+                    <hr>
+                
+                  <div class="report-options">
+                      <div class="row option-report" >
+                        <div class="col-md-2"> 
+                          <i class="icon-Dots_Lock"></i> 
+                        </div>
+                        <div class="col-md-10">
+                          <a href="#"><p class="text-primary paragraph-small text-weight-reg">Email PDF Report</p></a>
+                        </div>
+                      
+                      </div>
+                      <div class="row option-report"> 
+                          <div class="col-md-2"> 
+                              <i class="icon-Dots_Lock"></i> 
+                            </div>
+                            <div class="col-md-10">
+                                <a href="#"><p class="text-primary paragraph-small text-weight-reg">Share Report</p></a>
+                            </div>
+                            
+                      </div>
+                      <div class="row option-report">
+                          <div class="col-md-2"> 
+                              <i class="icon-Dots_Lock"></i> 
+                            </div> 
+                            <div class="col-md-10">
+                                <a href="#"><p class="text-primary paragraph-small text-weight-reg">Download Report</p></a>
+                            </div>
+                            
+                      </div>
+                      <div class="row option-report">
+                          <div class="col-md-2"> 
+                              <i class="icon-Dots_Lock"></i> 
+                            </div>
+                            <div class="col-md-10">
+                                <a href="#"><p class="text-primary paragraph-small text-weight-reg">Clone Report</p> </a>
+                            </div>
+                            
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+    </div>
+
+    <div class="row analytics-dashboard--summary mobi-card" style="height:583px;margin-top: 30px;">
+
+      <div class="col-md-6">
+        <div class="card raised card-budget-adjustment " style="height:609px;">
+          <div class="row budget budget-header">
+            <div class="col-md-10 col-xs-9 col-sm-9">
+              <div class="">
+                <h6 class="text-black flush-m text-left" style="font-size: 17px">Assigned Checks</h6>
+                <p class="stext-primary paragraph-small text-weight-reg text-left">
+                  Customize your Budget
+                </p>
+              </div>
+            </div>
+            <div class="col-md-2 col-xs-2 col-sm-2">
+              <span class="dropdown" data-dropdown>
+                <div class="notification-user budget-track-dropdown" data-toggle="dropdown">
+                  <i class="fa fa-circle" aria-hidden="true"></i>
+                  <i class="fa fa-circle" aria-hidden="true"></i>
+                  <i class="fa fa-circle" aria-hidden="true"></i>
+                </div>
+                <ul class="dropdown-menu notification-dropdown">
+                  <li>
+                    Email PDF Report
+                  </li>
+                  <li>
+                    Share Report
+                  </li>
+                  <li>
+                    Download Report
+                  </li>
+                </ul>
+              </span>
+            </div>
+          </div>
+          <hr  class="budget-management-line"/>
+          <div class="row">
+            <div class="table-responsive data-table table-interaction table-pad-zero table-users mobi-table" style="overflow:auto" data-my-candidates>
+              <table class="table table-striped" style="margin-bottom: 0px;">
+                <tbody>
+                  <thead>
+                    <tr>
+                      <td>
+                          Checks
+                      </td>
+                      <td>Amount</td>
+                      <td class="">Action </td>
+                    </tr>
+                  </thead>
+                  <tr>
+
+                    <td>
+                        ID Verification
+                    </td>
+
+                    <td>
+                        R 35,000.00
+                    </td>
+                    <td>
+                      <span class="btn btn-squared btn-result btn-assigned">
+                        Added
+                        <div class="ripple-container"></div>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+
+                      <td>
+                          ID Verification
+                      </td>
+  
+                      <td>
+                          R 35,000.00
+                      </td>
+                      <td>
+                        <span class="btn btn-squared btn-result btn-assign">
+                          Add
+                          <div class="ripple-container"></div>
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+
+                        <td>
+                            ID Verification
+                        </td>
+    
+                        <td>
+                            R 35,000.00
+                        </td>
+                        <td>
+                          <span class="btn btn-squared btn-result btn-assigned">
+                            Added
+                            <div class="ripple-container"></div>
+                          </span>
+                        </td>
+                      </tr>
+                      <tr>
+
+                          <td>
+                              ID Verification
+                          </td>
+      
+                          <td>
+                              R 35,000.00
+                          </td>
+                          <td>
+                            <span class="btn btn-squared btn-result btn-assign">
+                              Add
+                              <div class="ripple-container"></div>
+                            </span>
+                          </td>
+                        </tr>   
+                </tbody>
+              </table>
+            </div>
+            <hr style="height: 0px; margin-left: -25px; width: 110%;"> 
+            <div class="col-md-4 col-xs-6 col-sm-6">
+               <a href="#"> <small class="text-weight-reg text-magenta">R  750 000</a><br /> <small class="text-gray flush-m">Monthly
+                    Budget</small></small>
+            </div>
+            <div class="col-md-4 col-xs-6 col-sm-6">
+                <small class="text-weight-reg text-black">R 1 500 000<br /> <small class="text-gray flush-m">Monthly
+                    Budget</small></small>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12 mobi-center">
+              <span class="text-rubik-regular btn-checks--info btn-add--user text-center" style="width:150px;">
+                  Request Budget
+                  <div class="ripple-container"></div>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+          <div class="card raised card-budget-adjustment" style="height:609px; ">
+              <div class="row budget budget-header">
+                <div class="col-md-10 col-xs-9 col-sm-9">
+                  <div class="">
+                    <h6 class="text-black flush-m text-left" style="font-size: 17px">Budget Groups</h6>
+                    <p class="stext-primary paragraph-small text-weight-reg text-left" >
+                      Assign Budget
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-2 col-xs-1 col-sm-1">
+                    <span class="dropdown" data-dropdown>
+                        <div class="notification-user budget-track-dropdown" data-toggle="dropdown">
+                          <i class="fa fa-circle" aria-hidden="true"></i>
+                          <i class="fa fa-circle" aria-hidden="true"></i>
+                          <i class="fa fa-circle" aria-hidden="true"></i>
+                        </div>
+                        <ul class="dropdown-menu notification-dropdown">
+                          <li>
+                            Email PDF Report
+                          </li>
+                          <li>
+                            Share Report
+                          </li>
+                          <li>
+                            Download Report
+                          </li>
+                        </ul>
+                      </span>
+                </div>
+              </div>
+              <hr class="budget-management-line" />
+              <div class="row">
+                <div class="table-responsive data-table table-interaction table-pad-zero table-users mobi-table"  data-my-candidates>
+                  <table class="table table-striped text-center" style="margin-bottom: 0px;"> 
+                    <tbody>
+                      <thead>
+                        <tr>
+                          <td>
+                              Team(s)
+                          </td>
+                          <td>Members</td>
+                          <td class="">Action</td>
+                          <td></td>
+                        </tr>
+                      </thead>
+                      <tr>
+    
+                        <td>
+                          A Team
+                        </td>
+    
+                        <td class="hidden-xs hidden-sm">
+                            25
+                        </td>
+                        <td>
+                            <span class="btn btn-squared btn-result btn-assigned">
+                                Assigned <i class="icon-Dots_Success"></i>
+                              <div class="ripple-container"></div></span>
+                        </td>
+                        <td class="budget-progress">
+                            <div class="progress-wrap progress-wrap--btn default" data-candidate-progress="munei" data-check-status="success">
+                                <span class="current-percentage" id="munei">
+                                  0%
+                                </span>
+                                <div class="progress progress-bar--in-btn progress-bar-track" id="munei">
+                                  <div class="progress-bar progress-bar-striped active" data-progress="munei" aria-valuenow="60" aria-valuemin="0"
+                                   aria-valuemax="100"></div>
+                                </div>
+                              </div>
+                              <span class="btn btn-squared btn-result btn-result--confirmed" data-progress-status="munei" style="display:none;">
+                                Confirmed
+                              </span>
+                        </td>
+                      </tr>
+                      <tr>
+    
+                          <td>
+                              B Team
+                          </td>
+      
+                          <td class="hidden-xs hidden-sm">
+                             20
+                          </td>
+                          <td>
+                              <span class="btn btn-squared btn-result btn-assign" data-target="#assignBudget" data-toggle="modal">
+                                  Assign <i class="icon-Dots_Add"></i>
+                                </span>
+                            
+                          </td>
+                          <td class="budget-progress">
+                              <div class="progress-wrap progress-wrap--btn default" data-candidate-progress="munei" data-check-status="success">
+                                  <!-- <span class="current-percentage" id="munei">
+                                    0%
+                                  </span>
+                                  <div class="progress progress-bar--in-btn progress-bar-track" id="munei">
+                                    <div class="progress-bar progress-bar-striped active" data-progress="munei" aria-valuenow="60" aria-valuemin="0"
+                                     aria-valuemax="100"></div>
+                                  </div>
+                                </div>
+                                <span class="btn btn-squared btn-result btn-result--confirmed" data-progress-status="munei" style="display:none;">
+                                  Confirmed
+                                </span> -->
+                          </td>
+                        </tr>
+                        <tr>
+    
+                            <td>
+                              C Team
+                            </td>
+        
+                            <td class="hidden-xs hidden-sm">
+                                25
+                            </td>
+                            <td>
+                                <span class="btn btn-squared btn-result btn-assigned">
+                                    Assigned <i class="icon-Dots_Success"></i>
+                                  <div class="ripple-container"></div></span>
+                            </td>
+                            <td class="budget-progress">
+                                <div class="progress-wrap progress-wrap--btn default" data-candidate-progress="munei" data-check-status="success">
+                                    <span class="current-percentage" id="munei">
+                                      0%
+                                    </span>
+                                    <div class="progress progress-bar--in-btn progress-bar-track" id="munei">
+                                      <div class="progress-bar progress-bar-striped active" data-progress="munei" aria-valuenow="60" aria-valuemin="60"
+                                       aria-valuemax="100"></div>
+                                    </div>
+                                  </div>
+                                  <span class="btn btn-squared btn-result btn-result--error " data-progress-status="munei" style="display:none;" >
+                                    Confirmed
+                                  </span>
+                            </td>
+                          </tr>
+                          <tr>
+    
+                              <td>
+                                D Team
+                              </td>
+          
+                              <td class="hidden-xs hidden-sm">
+                                  25
+                              </td>
+                              <td>
+                                  <span class="btn btn-squared btn-result btn-assigned">
+                                      Assigned <i class="icon-Dots_Success"></i>
+                                    <div class="ripple-container"></div></span>
+                              </td>
+                              <td class="budget-progress">
+                                  <div class="progress-wrap progress-wrap--btn default" data-candidate-progress="munei" data-check-status="success">
+                                      <span class="current-percentage" id="munei">
+                                        0%
+                                      </span>
+                                      <div class="progress progress-bar--in-btn progress-bar-track" id="munei">
+                                        <div class="progress-bar progress-bar-striped active" data-progress="munei" aria-valuenow="60" aria-valuemin="60"
+                                         aria-valuemax="100"></div>
+                                      </div>
+                                    </div>
+                                    <span class="btn btn-squared btn-result btn-result--error " data-progress-status="munei" style="display:none;" >
+                                      Confirmed
+                                    </span>
+                              </td>
+                            </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <hr class="" style="height: 0px; margin-left: -25px; width: 110%;margin-bottom: 30px;">
+                <div class="col-md-6 col-xs-6 col-sm-6">
+                  <span class="team-counter">5 Team(s)</span>
+                </div>
+                <div class="col-md-6 col-xs-6 col-sm-6 text-align-right">
+                    <span class="text-rubik-regular btn-checks--info btn-add--user text-center">
+                        Add Team <i class="icon-Dots_Add"></i>
+                </span>
+                </div>
+              </div>
+            </div>
+      </div>
+    </div>
+  </div>
+
+
+  </div>
+  </div>
+
+  <div class="spacer"></div>
+  <footer class="container-fluid ">
+    <div class="footer animatedParent">
+      <div class="container text-center animated bounceIn delay-150">
+        <div class="col-md-3 col-xs-4 hidden-xs hidden-sm">
+          <div class="dropup table-dropdown">
+            <button href="#pablo" class="dropdown-toggle btn btn-rose btn-round btn-block text-gray text-rubik-regular"
+              data-toggle="dropdown">More Dots Recruit
+              <b class="caret"></b>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-right">
+              <li>
+                <a href="#pablo">Lorem</a>
+              </li>
+              <li>
+                <a href="#pablo">Lorem</a>
+              </li>
+              <li>
+                <a href="#pablo">Lorem</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 text-align-left col-xs-12 col-sm-12">
+          <div class="user-footer-links text-center">
+            <span class="text-gray text-rubik-regular">
+              Dots Africa 2018 -2019 All rights reserved.
+            </span>
+          </div>
+        </div>
+        <div class="col-md-3 hidden-xs hidden-sm">
+          <div class="user-footer-links">
+            <span class="text-gray text-rubik-regular">
+              <a href="#" class="text-gray terms-condition-text">Terms of Use</a> and <a href="#"
+                class="text-gray terms-condition-text">Privacy Policy</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="modal fade" id="editGroup" tabindex="-1" role="dialog" aria-labelledby="editGroupLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content thankYouModal">
+          <div class="modal-header">
+            <!-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+              <i class="material-icons">clear</i>
+            </button> -->
+            <h5 class="modal-title">Edit Group</h5>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+                <div class="form-group label-floating add-reference-input">
+                  <h6 class="add-ref">
+                    Group name
+                  </h6>
+                    <input type="text" class="form-control" placeholder="What would like to name this group">
+                    <span class="form-control-feedback">
+                    </span>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                      <h6 class="add-ref">
+                          Assign user(s)
+                      </h6>
+              </div>
+            </div>
+             <div class="row">
+               <div class="col-md-8">
+                  <div class="checkbox">
+                      <label class="text-black">
+                        <input type="checkbox" data-run-checkbox="academic-check" name="academic-check" checked> <span class="text-black">Check Owner</span>
+                      </label>
+                    </div>
+               </div>
+               <div class="col-md-4 checkout-list-progress">
+                  <span class="btn btn-squared btn-result btn-result--confirmed checkout--btn-result">
+                      Group Creator
+                    </span>
+                </div>
+                
+             </div>
+             <div class="row">
+               <div class="col-md-6">
+                  <div class="inputWithIcon">
+                      <input type="text" placeholder="Search users" class="input-search">
+                      <bold><i class="icon-Dots_Search" aria-hidden="true"></i></bold>
+                    </div>
+               </div>
+               <div class="col-md-6 text-gray">
+                  <span>
+                      Clear selected individuals
+                  </span>
+                </div>
+             </div>
+             <div class="row">
+               <div class="col-md-12">
+                  <div class="checkbox">
+                      <label class="text-black">
+                        <input type="checkbox" data-run-checkbox="academic-check" name="academic-check"> <span class="text-black text-weight-light">Name surname</span>
+                      </label>
+                    </div>
+               </div>
+             </div> 
+          </div>
+          <div class="modal-footer">
+            <div class="row">
+              <div class="col-md-8 text-align-left">
+                <a href="#"><button type="button" class="btn btn-default btn-primary btn-squared btn-magenta" >Create Group</button></a>
+              </div>
+              <div class="col-md-4 text-align-right">
+                  <p  class="text-black text-weight-light checks-cancel" data-dismiss="modal">Cancel</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="viewGroup" tabindex="-1" role="dialog" aria-labelledby="viewGroupLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content thankYouModal">
+            <div class="modal-header">
+              <!-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                <i class="material-icons">clear</i>
+              </button> -->
+              <h5 class="modal-title">Group name</h5>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-4">
+                  <h6 class="text-weight-light font18">
+                    Total Budget
+                  </h6>
+                </div>
+                <div class="col-md-4">
+                  <h6 class="text-weight-light font18">
+                    Used so far
+                  </h6>
+                </div>
+                <div class="col-md-4">
+                    
+                  </div>
+              </div>
+               <div class="row">
+                 <div class="col-md-4">
+                    <div class="checkbox">
+                        <label class="text-black">
+                          <input type="checkbox" data-run-checkbox="academic-check" name="academic-check" checked> <span class="text-black">ID Verification</span>
+                        </label>
+                      </div>
+                 </div>
+                 <div class="col-md-4 checkout-list-progress">
+                    <div class="progress-wrap progress-wrap--btn default no-bg--progress" data-candidate-progress="ofentse" data-check-status="error">
+                        <div class="progress progress-bar--in-btn progress-bar-track no-bg-height" id="ofentse">
+                          <div class="progress-bar progress-bar-striped progress-line-default  active" data-progress="ofentse"
+                           aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">0%</div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4 table-users">
+                      <span class="btn btn-squared btn-result btn-assign">
+                          Adjust
+                        </span>
+                  </div>
+               </div> 
+            </div>
+            <div class="row">
+              <div class="col-md-1 text-center">
+                  <span class="empty-user dashboard">
+                      ST
+                   </span>
+              </div>
+              <div class="col-md-7">
+                <span class="text-weight-light">Name Surname</span> 
+              </div>
+              <div class="col-md-4">
+                  <span class="btn btn-squared btn-result btn-result--confirmed checkout--btn-result">
+                      Group Creator
+                    </span>
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-md-1 text-center">
+                    <span class="empty-user dashboard">
+                        ST
+                     </span>
+                </div>
+                <div class="col-md-7">
+                    <span class="text-weight-light">Name Surname</span> 
+                </div>
+                <div class="col-md-4">
+                    <!-- <span class="btn btn-squared btn-result btn-result--confirmed checkout--btn-result">
+                        Group Creator
+                      </span> -->
+                </div>
+              </div>
+            <div class="modal-footer">
+              <div class="row">
+                <div class="col-md-8 text-align-left">
+                  <a href="#"><button type="button" class="btn btn-default btn-primary btn-squared btn-magenta" >Edit Group</button></a>
+                </div>
+                <div class="col-md-4 text-align-right">
+                    <p  class="text-black text-weight-light checks-cancel" data-dismiss="modal">Cancel</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="assignBudget" tabindex="-1" role="dialog" aria-labelledby="assignBudgetLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content thankYouModal">
+              <div class="modal-header">
+                <!-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                  <i class="material-icons">clear</i>
+                </button> -->
+                <h5 class="modal-title">Group name</h5>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                    <small class="text-black budget-text-pad">How much is your budget?</small>
+                    <div class="budget-form-group rangeSlider">
+                      R <input type="number" placeholder=""/>
+                    </div>
+                    <div class="form-group range-slider--holder">
+                      <p class="text-secondary text-weight-reg budget-text-pad">Assign Checks to Budget</p>
+        
+                      <span id="stepback"><i class="icon-Dots_Remove"></i></span>
+                      <div id="sliderRegular" class="slider"></div>
+                      <span id="stepforward"><i class="icon-Dots_Add"></i></span>
+                    </div>        
+                </div>
+                 <div class="row">
+                   <div class="col-md-4">
+                      <div class="checkbox">
+                          <label class="text-black">
+                            <input type="checkbox" data-run-checkbox="academic-check" name="academic-check" checked> <span class="text-black">ID Verification</span>
+                          </label>
+                        </div>
+                   </div>
+                   <div class="col-md-4 checkout-list-progress">
+                      <div class="progress-wrap progress-wrap--btn default no-bg--progress" data-candidate-progress="ofentse" data-check-status="error">
+                          <div class="progress progress-bar--in-btn progress-bar-track no-bg-height" id="ofentse">
+                            <div class="progress-bar progress-bar-striped progress-line-default  active" data-progress="ofentse"
+                             aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">0%</div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 table-users">
+                        <span class="btn btn-squared btn-result btn-assign">
+                            Adjust
+                          </span>
+                    </div>
+                 </div> 
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                    <div class="table-responsive data-table table-interaction table-pad-zero table-users" data-my-candidates>
+                        <table class="table table-striped">
+                          <tbody>
+                            <thead class="text-weight-med">
+                              <tr class="text-weight-med">
+                                <td class="text-weight-med">
+                                    Checks
+                                </td>
+                                <td class="text-weight-med">Amount</td>
+                                <td class="text-weight-med">Action </td>
+                              </tr>
+                            </thead>
+                            <tr>
+          
+                              <td>
+                                  ID Verification
+                              </td>
+          
+                              <td class="hidden-xs hidden-sm">
+                                  R 35,000.00
+                              </td>
+                              <td>
+                                <span class="btn btn-squared btn-result btn-assigned">
+                                  Added
+                                  <div class="ripple-container"></div>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+          
+                                <td>
+                                    ID Verification
+                                </td>
+            
+                                <td class="hidden-xs hidden-sm">
+                                    R 35,000.00
+                                </td>
+                                <td>
+                                  <span class="btn btn-squared btn-result btn-assign">
+                                    Add
+                                    <div class="ripple-container"></div>
+                                  </span>
+                                </td>
+                              </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <div class="row">
+                  <div class="col-md-8 text-align-left">
+                    <a href="#"><button type="button" class="btn btn-default btn-primary btn-squared btn-magenta" >Confirm Budget</button></a>
+                  </div>
+                  <div class="col-md-4 text-align-right">
+                      <p  class="text-black text-weight-light checks-cancel" data-dismiss="modal">Cancel</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="logged-in-panel" class="card side-menu-card hidden">
+
+              <div class="side-menu-header">
+          
+                <div class="row">
+                  <div class="col-md-2">
+                    <div class="active-users">
+                      <div class="circlce-no-icon"><img src="dist/assets/img/random_users/54.jpg" alt=""></div>
+                    </div>
+                  </div>
+                  <div class="col-md-5">
+                    <h6>Philisande</h6>
+                    <p>pila@dots.africa</p>
+                  </div>
+          
+                  <div class="col-md-5">
+                    <button class="btn btn-secondary btn-square text-black ">Logout<div class="ripple-container"></div></button>
+                  </div>
+                </div>
+          
+                <hr>
+                <div class="side-menu-list text-rubik-regular">
+                  <ul class="text-gray">
+                    <li>My Profile</li>
+                    <li>My Company</li>
+                    <li>Change Password</li>
+                  </ul>
+                </div>
+                <hr>
+                <div class="side-menu-contacts">
+                  <h6>Contacts</h6>
+                  <ul class="text-rubik-regular text-gray">
+                    <li>General feedback</li>
+                    <li>About Dots 360</li>
+                  </ul>
+                </div>
+                <hr>
+                <div class="side-menu-joinCommunity">
+                  <h6>Join the community</h6>
+                  <button class="btn btn-just-icon btn-twitter">
+                    <i class="fa fa-twitter"></i>
+                  </button>
+                  <button class="btn btn-just-icon  btn-facebook">
+                    <i class="fa fa-facebook"> </i>
+                  </button>
+                  <button class="btn btn-just-icon  btn-google">
+                    <i class="fa fa-google"> </i>
+                  </button>
+                  <button class="btn btn-just-icon  btn-linkedin">
+                    <i class="fa fa-linkedin"></i>
+                  </button>
+                </div>
+                <hr>
+                <div class="side-menu-assist">
+                  <ul class="text-rubik-regular text-gray">
+                    <li>Settings</li>
+                    <li>Help</li>
+                  </ul>
+                </div>
+          
+                <div class="btn-logIn-as">
+                  <button class="btn btn-secondary btn-square text-black ">Log in as<div class="ripple-container"></div></button>
+                </div>
+          
+                <div class="version">
+                  <p>V2.0</p>
+                </div>
+              </div>
+            </div>
+</body>
+<!--   Core JS Files   -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCx0PjbVTxih2QgBX-ovhYSaU2uuArm5OE&libraries=places">
+</script>
+<script src="dist/assets/js/jquery.dot360.min.js" type="text/javascript"></script>
+<script src="dist/assets/js/modules/custom-charts.js" type="text/javascript"></script>
+<script>
+var slider = document.getElementById('sliderRegular');
+var sliderValue = document.getElementById('adjust-budget').value;
+noUiSlider.create(slider, {
+  start: 0,
+  animate: true,
+  connect: [true,false],
+  step : 1,
+	range: {
+		min: 0,
+		max: 100000
+  },
+  format: wNumb({decimals: 0})
+});
+
+slider.noUiSlider.on('update', function (values, handle) {
+  // console.log(sliderValue)
+  document.getElementById('adjust-budget').value = values[0];
+});
+
+function manualStep (direction) {
+	
+    
+  var currentPosition = parseInt(slider.noUiSlider.get());
+  var stepSize = 20000;
+  
+  if(direction == 'f'){
+    currentPosition += stepSize;
+  }
+  if(direction == 'b'){
+    currentPosition -= stepSize;
+  }
+  
+  currentPosition = (Math.round(currentPosition / stepSize) * stepSize);
+  
+  
+  slider.noUiSlider.set(currentPosition);
+  
+}
+$('#stepforward').on('click', function() {
+  manualStep('f')
+})
+$('#stepback').on('click', function() {
+  manualStep('b')
+})
+
+</script>
+
+</html>

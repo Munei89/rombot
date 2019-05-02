@@ -1,0 +1,197 @@
+.btn.btn-round, .navbar .navbar-nav > li > a.btn.btn-round {
+    border-radius: 10px;
+}
+
+.btn.btn-border, .navbar .navbar-nav > li > a.btn.btn-border {
+    border: 2px solid #ce0a0a;
+}
+
+/*.btn.btn-rose, .btn.btn-rose:hover, .btn.btn-rose:focus, .btn.btn-rose:active, .btn.btn-rose.active, .btn.btn-rose:active:focus, .btn.btn-rose:active:hover, .btn.btn-rose.active:focus, .btn.btn-rose.active:hover, .open > .btn.btn-rose.dropdown-toggle, .open > .btn.btn-rose.dropdown-toggle:focus, .open > .btn.btn-rose.dropdown-toggle:hover, .navbar .navbar-nav > li > a.btn.btn-rose, .navbar .navbar-nav > li > a.btn.btn-rose:hover, .navbar .navbar-nav > li > a.btn.btn-rose:focus, .navbar .navbar-nav > li > a.btn.btn-rose:active, .navbar .navbar-nav > li > a.btn.btn-rose.active, .navbar .navbar-nav > li > a.btn.btn-rose:active:focus, .navbar .navbar-nav > li > a.btn.btn-rose:active:hover, .navbar .navbar-nav > li > a.btn.btn-rose.active:focus, .navbar .navbar-nav > li > a.btn.btn-rose.active:hover, .open > .navbar .navbar-nav > li > a.btn.btn-rose.dropdown-toggle, .open > .navbar .navbar-nav > li > a.btn.btn-rose.dropdown-toggle:focus, .open > .navbar .navbar-nav > li > a.btn.btn-rose.dropdown-toggle:hover {
+    background-color: #ce0a0a;
+}*/
+
+.btn.btn-rose, .btn.btn-rose:hover, .btn.btn-rose:focus, .btn.btn-rose:active, .btn.btn-rose.active, .btn.btn-rose:active:focus, .btn.btn-rose:active:hover, .btn.btn-rose.active:focus, .btn.btn-rose.active:hover, .open > .btn.btn-rose.dropdown-toggle, .open > .btn.btn-rose.dropdown-toggle:focus, .open > .btn.btn-rose.dropdown-toggle:hover, .navbar .navbar-nav > li > a.btn.btn-rose, .navbar .navbar-nav > li > a.btn.btn-rose:hover, .navbar .navbar-nav > li > a.btn.btn-rose:focus, .navbar .navbar-nav > li > a.btn.btn-rose:active, .navbar .navbar-nav > li > a.btn.btn-rose.active, .navbar .navbar-nav > li > a.btn.btn-rose:active:focus, .navbar .navbar-nav > li > a.btn.btn-rose:active:hover, .navbar .navbar-nav > li > a.btn.btn-rose.active:focus, .navbar .navbar-nav > li > a.btn.btn-rose.active:hover, .open > .navbar .navbar-nav > li > a.btn.btn-rose.dropdown-toggle, .open > .navbar .navbar-nav > li > a.btn.btn-rose.dropdown-toggle:focus, .open > .navbar .navbar-nav > li > a.btn.btn-rose.dropdown-toggle:hover {
+    background: #ce0a0a;
+}
+
+.logged--in-user .navbar-nav li .upload-btn:hover, .logged--in-user .navbar-nav li .upload-btn:focus, .logged--in-user .navbar-nav li .upload-btn:active {
+    border: 2px solid #ce0a0a;
+    background: initial;
+    color: rgb(233, 30, 99);
+}
+
+.bootstrap-select.btn-group .dropdown-menu li a:focus, .bootstrap-select.btn-group .dropdown-menu li a:hover {
+    background: #ce0a0a;
+}
+
+.btn-search {
+    background: #ce0a0a !important;
+}
+
+.btn.btn-border.btn-signin, .navbar .navbar-nav > li > a.btn.btn-border.btn-signin {
+    border-radius: 10px;
+    color: #ce0a0a;
+
+}
+
+.btn.btn-rose, .btn.btn-rose:hover, .btn.btn-rose:focus, .btn.btn-rose:active, .btn.btn-rose.active, .btn.btn-rose:active:focus, .btn.btn-rose:active:hover, .btn.btn-rose.active:focus, .btn.btn-rose.active:hover, .open > .btn.btn-rose.dropdown-toggle, .open > .btn.btn-rose.dropdown-toggle:focus, .open > .btn.btn-rose.dropdown-toggle:hover, .navbar .navbar-nav > li > a.btn.btn-rose, .navbar .navbar-nav > li > a.btn.btn-rose:hover, .navbar .navbar-nav > li > a.btn.btn-rose:focus, .navbar .navbar-nav > li > a.btn.btn-rose:active, .navbar .navbar-nav > li > a.btn.btn-rose.active, .navbar .navbar-nav > li > a.btn.btn-rose:active:focus, .navbar .navbar-nav > li > a.btn.btn-rose:active:hover, .navbar .navbar-nav > li > a.btn.btn-rose.active:focus, .navbar .navbar-nav > li > a.btn.btn-rose.active:hover, .open > .navbar .navbar-nav > li > a.btn.btn-rose.dropdown-toggle, .open > .navbar .navbar-nav > li > a.btn.btn-rose.dropdown-toggle:focus, .open > .navbar .navbar-nav > li > a.btn.btn-rose.dropdown-toggle:hover {
+    background-color: #ce0a0a;
+}
+
+.btn.btn-rose, .navbar .navbar-nav > li > a.btn.btn-rose {
+    background: #ce0a0a;
+}
+
+.background-gradient-magenta {
+    background: #ce0a0a;
+}
+[company-user] .img:before {
+    background-image: url(../dist/assets/img/pnet/pnet-sign-up-2.jpg);
+    background-position: 50%;
+}
+[company-user] .navbar-brand img {
+    height: auto;
+    width: 100%;
+}
+.btn.btn-border.btn-signin:focus, .btn.btn-border.btn-signin:hover, .navbar .navbar-nav > li > a.btn.btn-border.btn-signin:focus, .navbar .navbar-nav > li > a.btn.btn-border.btn-signin:hover {
+    border: none;
+    background:#ce0a0a !important;
+}
+.navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 0px 0px !important;
+    font-size: 18px;
+    line-height: 20px;
+    margin-left: -30px;
+    margin-top: -28px;
+}
+.pagination.pagination-info > .active > a, .pagination.pagination-info > .active > a:focus, .pagination.pagination-info > .active > a:hover, .pagination.pagination-info > .active > span, .pagination.pagination-info > .active > span:focus, .pagination.pagination-info > .active > span:hover {
+    border-color: none;
+    color: #fff;
+    background: #ce0a0a !important;
+}
+.btn .btn-lg .btn-primary {
+    background: #ce0a0a;
+}
+.btn-no-bg{
+    background: none !important;
+    color: #ce0a0a !important;
+    border: 2px solid #ce0a0a !important;
+}
+.btn-no-bg:hover{
+    background: #ce0a0a !important;
+    color: #fff !important;
+    border: 2px solid #ce0a0a !important;
+}
+.logged--in-user .navbar-nav > .active > a, .logged--in-user .navbar-nav > .active > a:hover, .logged--in-user .navbar-nav > .active > a:focus{
+    color: #333;
+    background-color: transparent;
+    border-top: 5px solid #ce0a0a;
+    border-bottom: none;
+    transition: all 0.2s;
+}
+.logged--in-user .navbar-brand {
+    margin-right: -80px;
+}
+.form-control-feedback.id-upload {
+    background: #ce0a0a;
+}
+.logged--in-user .navbar-nav li .upload-btn {
+    color: #ce0a0a;
+}
+
+.logged--in-user .navbar-nav li .upload-btn:hover {
+    background: #ce0a0a;
+    color: #fff;
+}
+.label.label-rose {
+    background-color: #ce0a0a;
+}
+.dropdown-menu li a:hover, .dropdown-menu li a:focus, .dropdown-menu li a:active {
+    background: #ce0a0a;
+    color: #fff;
+}
+.user-nav-links.active {
+    border-bottom: 2.5px solid #ce0a0a;
+}
+button.select-btn--form {
+    border-radius: 10px !important; 
+}
+.hex-shape-top {
+   display: none;
+}
+.hex-shape-bottom {
+    display: none;
+}
+.hidden-overflow {
+    overflow: hidden;
+}
+@media (min-width:1024px){
+    .hex-shape-top {
+        display: block;
+        background: #CE2336;
+        height: 100vh;
+        width: 40vw;
+        position: absolute;
+        top: -27vw;
+        left: -79vh;
+        z-index: 9;
+        -webkit-transform: rotateZ(-54.107046deg) skewX(20deg);
+        transform: rotateZ(-54.107046deg) skewX(20deg);
+    }
+    .hex-shape-bottom {
+        display: block;
+        background: #B2B4B6;
+        height: 100vh;
+        width: 40vw;
+        position: absolute;
+        bottom: -30vw;
+        left: -52vh;
+        z-index: 9;
+        -webkit-transform: rotateZ(-37.107046deg) skewX(0deg);
+        transform: rotateZ(-37.107046deg) skewX(0deg);
+    }
+}
+@media (min-width:1440px){
+    .hex-shape-top {
+        display: block;
+        background: #CE2336;
+        height: 100vh;
+        width: 40vw;
+        position: absolute;
+        top: -29vw;
+        left: -59vh;
+        z-index: 9;
+        -webkit-transform: rotateZ(-55.107046deg) skewX(0deg);
+        transform: rotateZ(-55.107046deg) skewX(0deg);
+    }
+    .hex-shape-bottom {
+        display: block;
+        background: #B2B4B6;
+        height: 100vh;
+        width: 40vw;
+        position: absolute;
+        bottom: -30vw;
+        left: -45vh;
+        z-index: 9;
+        -webkit-transform: rotateZ(-37.107046deg) skewX(0deg);
+        transform: rotateZ(-37.107046deg) skewX(0deg);
+    }
+}
+.form-control, .form-group .form-control {
+    border-radius: 10px !important;
+    -moz-border-radius: 10px !important;
+    -webkit-border-radius: 10px !important;
+}
+.pnet-user.navbar-brand {
+        float: left;
+        height: 50px;
+        padding: 0px 0px !important;
+        font-size: 18px;
+        line-height: 20px;
+        margin-left: -30px;
+        margin-top: -8px !important;
+        margin-left: 25px !important;
+        margin-right: 20px !important;
+}

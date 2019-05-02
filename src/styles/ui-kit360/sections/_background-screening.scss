@@ -1,0 +1,99 @@
+.background-screening {
+  .page-header {
+    padding: 25vh 0 0 0;
+    @media (max-width: $screen-sm-min){
+      padding: 20vh 0 0 0;
+      // height: 100vh;
+    }
+  }
+
+  .tab-content{
+
+    hr{
+      width: 116%;
+      margin-left: -25px;
+      height: 0px;
+  }
+  }
+
+  h1 {
+  font-family: $font-family-rubikbold;
+  font-size: 45px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.07;
+  letter-spacing: -1.1px;
+  color: #333333;
+  margin-bottom: 67px;
+  margin-top: 67px;
+  }
+
+  p {
+    font-family: $font-family-rubikregular;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.75;
+    letter-spacing: 0.8px;
+    color: #808080;
+    margin-bottom: 10vh;
+    @media (max-width: $screen-sm-min){
+      margin-bottom: 5vh;
+    }
+    &.text-white {
+      color: #fff;
+    }
+  }
+  h3 {
+    font-family: $font-family-rubikbold;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.17;
+    letter-spacing: normal;
+    color: #333333;
+  }
+
+  .landing-slider--title {
+    font-size: 6vh;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.06;
+    letter-spacing: -1.3px;
+    margin-top: 0px;
+    margin-bottom: 10vh;
+    color: #333333;
+    @media (max-width: $screen-sm-min){
+      margin-bottom: 5vh;
+    }
+  }
+  .buttons {
+    @media (max-width: $screen-sm-min){
+        margin-bottom: 5vh;
+    }
+    a {
+      margin: 0 auto;
+    }
+  }
+
+  .nav-navabr-checks{
+      margin-bottom: 20px;
+    li{
+   
+    a{
+      color:#333333 ;
+      font-family: rubikmedium;
+      font-size: 16px;
+      &:hover{
+        color: #FFFFFF;
+        background: #333333;
+        border-radius: 5px;
+
+      } 
+    }
+  }
+}
+}

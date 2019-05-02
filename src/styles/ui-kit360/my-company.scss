@@ -1,0 +1,595 @@
+
+.user-card{
+    width: 370px;
+    height: 100%;
+    padding: 40px;
+
+    hr{
+        height: 0px;
+        margin-left: -40px;
+        width: 130%;
+    }
+
+    h6{
+        font-size: 21px;
+        font-family: rubikbold;
+        margin-top: 15px;
+    }
+
+    p{
+        font-size: 14px;
+        font-family: rubikregular;
+    }
+
+    .upload-section{
+        border: 1px dotted #979797;
+        width: 185px;
+        height: 90px;
+        background: #F8F8F8;
+        margin-left: -15px;
+
+        i{
+            font-size:20px;
+            position: absolute;
+            margin: 30px 77px;
+            border-radius: 50px;
+            padding: 5px;
+            background: #E6E6E6;
+        }
+
+       
+    }
+    .account-status-section{
+        .bottom-card-content{
+            .btn-active{
+                width: 140px !important;
+                height: 30px !important;
+                padding: 5px;
+                margin-bottom: 15px;
+            }
+        }
+
+    }
+}
+
+.myCompany-dashbord-card{
+    height: 280px;
+    overflow: hidden;
+    padding: 50px 50px 0px 0px;
+    width: 280px;
+    .active-users{
+        margin: -5px;
+        margin-left: -20px;
+        padding: 0;
+        .circlce-no-icon{
+            display: inline-block;
+            margin-right: -20px;
+            overflow: hidden;
+            border: 1px solid #fff;
+            width: 40px;
+            height: 40px;
+            background: transparent;
+            margin: 0 auto;
+            border-radius: 50%;
+        }
+    }
+}
+
+.general-invoice-card{
+    padding: 40px;
+    height: 496px;
+
+    label{
+        padding-left: 20px;
+    }
+
+    input[type="date"]{
+        width: 100%;
+        border: 1px solid #CCCCCC;
+        border-radius: 4px;
+        margin: 8px 0;
+        color: #B3B3B3;
+        outline: none;
+        padding: 8px;
+        box-sizing: border-box;
+        transition: 0.3s;
+        border-radius: 30px;
+        height: 40px;
+        font-size: 14px;
+        font-family: rubikmedium;
+        padding-left: 15px;
+    }
+
+    i{
+        padding: 5px;
+        border-radius: 5px;
+        position: absolute;
+       
+    }
+
+    .time-error{
+        color: white;
+        background: #D4145A;
+        border: 1px solid #D4145A;
+        margin-top: 10px;
+    }
+    .time-pending{
+        color:black;
+        background: white;
+        border: 1px solid #B3B3B3;
+        margin-top: 10px;
+    }
+    .btn-usage-report{
+        width: 226px;   
+        font-size: 14px;
+        margin-top: 70px;
+        padding-bottom: 10px;
+
+        @media screen and (max-width: 2700px) and (min-width: 1440px) {
+            margin-top: 40px;
+        }
+    }
+}
+
+.about-us{
+    padding: 30px;
+    hr{
+        height: 0px;
+        margin-left: -30px;
+        width: 109%;
+        margin-top: 0px;
+    }
+
+    p{
+        margin-bottom: 10px;
+    }
+    .word-count{
+        margin-bottom: 0px;
+        color: #8CC63F;
+    }
+
+    .btn-good{
+        width: 120px !important;
+        height: 31px !important;
+        padding: 5px;
+        margin-bottom: 15px;
+        background: #D7F0DB;
+        color: #39B54A;
+        margin-top: 0px;
+    }
+    
+ 
+}
+.broadcast-card{
+    width: 370px;
+    padding: 30px 40px 30px 40px;
+    h6{
+        font-size:18px;
+        margin-bottom: 20px;
+        margin-top: 0px;
+    }
+    textarea{
+        font-size: 14px;
+        font-family: rubikregular;
+    }
+    .btn-broadcast{
+        padding: 14px;
+    }
+
+}
+.waive-card{
+    width: 370px;
+    padding: 40px 20px 20px 40px;
+    .btn--save{
+        margin-top: 0px;
+    }
+}
+
+.set-budget-card{
+    width: 370px;
+    padding: 40px;
+
+    .btn-set-budget {
+        border-radius: 10px;
+    }
+
+    label{
+        padding-left: 20px;
+    }
+
+    input[type="date"]{
+        width: 100%;
+        border: 1px solid #CCCCCC;
+        border-radius: 4px;
+        margin: 8px 0;
+        color: #B3B3B3;
+        outline: none;
+        padding: 8px;
+        box-sizing: border-box;
+        transition: 0.3s;
+        border-radius: 30px;
+        height: 40px;
+        font-size: 14px;
+        font-family: rubikmedium;
+        padding-left: 15px;
+    }
+
+}
+
+.dotnet-card{
+    width:370px;
+    padding: 40px;
+
+    i{
+        font-size: 25px;
+        position: absolute;
+        margin: 20px;
+
+       
+    }
+    .icon-Dots_Info{
+        font-size: 13px;
+    }
+    .text-magenta{
+        color: #D4145A;
+    }
+
+    hr{
+        height: 0px;
+        margin-left: -40px;
+        width: 130%;
+        
+    }
+    .dotnet-text-area{
+        hr{
+            height: 0px;
+            margin-left: -40px;
+            width: 112%;
+        }
+        textarea{
+            margin: -10px 0px -20px;
+            border: none;
+        }
+        i{
+            font-size: 20px;
+            color: black;
+            margin: 0px -5px;
+        }
+    }
+
+
+    
+}
+
+
+.margin15{
+    margin-top: 20px;
+}
+
+.blue-background{
+    background: #0FCADF;
+}
+.pink-background{
+    background: #EB95B4;
+}
+
+//company edit styling
+
+.company-info-header{
+    h6{
+        font-size: 16px;
+        font-family: rubikmedium;
+        color: #D4145A;
+
+    }
+    .btn-save{
+        width: 183px;
+        height: 40px;
+        color: #333333;
+
+        i{
+            font-size: 25px;
+            position: absolute;
+            left: 15px;
+            top: 7px;
+        }
+
+    }
+
+ 
+}
+.company-info-card {
+    padding: 35px;
+    hr{
+        margin-left: -35px;
+        width: 125%;
+    }
+}
+
+.company-info-body{
+    ul{
+        list-style: none;
+        color: #979797;
+        font-family: rubikregular;
+        padding-left: 0px;
+
+    }
+
+    hr{
+        margin-left: -35px;
+        width: 125%;
+        height: 0px;
+    }
+}
+
+
+.basic-info-cards{
+    padding: 40px;
+    h6{
+        font-size: 21px;
+        font-family: rubikbold;
+    }
+    .btn-save{
+        color: #333333;
+        width: 104px;
+        height: 40px;
+    }
+
+    hr{
+        margin-left: -40px;
+        width: 117%;
+        height: 0px;
+    }
+
+    .basic-info-body{
+
+        input{
+            padding: 15px;
+            font-size: 14px;
+            font-family: rubikregular;
+        }
+        label{
+            padding-left: 15px;
+        }
+        .user-upload-header{
+            font-size: 13px;
+            margin-left: -10px;
+            padding-left: 0px; 
+        }
+         .user-profile-section{
+            border: 1px dotted #979797;
+            width: 135px;
+            height: 117px;
+            background: #F8F8F8;
+            margin-left: -15px;
+            margin-bottom: 8px;
+            i{
+                font-size: 30px;
+                position: absolute;
+                margin: 35px 42px;
+                border-radius: 50px;
+                padding: 10px;
+                background: #E6E6E6;
+            }
+        }
+        .upload-section{
+            border: 1px dotted #979797;
+            width: 185px;
+            height: 90px;
+            background: #F8F8F8;
+            margin-left: -15px;
+            margin-bottom: 8px;
+    
+            i{
+                font-size:20px;
+                position: absolute;
+                margin: 30px 77px;
+                border-radius: 50px;
+                padding: 5px;
+                background: #E6E6E6;
+            }
+    
+           
+        }
+
+        p{
+            font-size: 12px;
+        }
+    }
+}
+
+.contact-info-cards{
+    padding: 40px;
+
+
+    .basic-info-header{
+        button{
+            color: #333333 !important;
+        }
+    }
+
+    hr{
+        margin-left: -40px;
+        width: 117%;
+        height: 0px;
+    }
+
+    .basic-info-body{
+        input{
+            padding: 15px;
+            font-size: 14px;
+            font-family: rubikregular;
+            border-color: #999999;
+            &:active{
+                border-color: #333333;
+            }
+        }
+
+        input[type="number"]{
+            margin-top: 8px ;
+        }
+        label{
+            padding-left: 15px;
+            color: #333333;
+        
+
+        }
+    }
+}
+
+.account-status-cards{
+    padding: 40px;
+
+    .basic-info-header{
+        button{
+            color: #333333 !important;
+        }
+    }
+
+    hr{
+        margin-left: -40px;
+        width: 117%;
+        height: 0px;
+    }
+
+        .selectpicker{
+            padding: 15px;
+            font-size: 14px;
+            font-family: rubikregular;
+            border-color: #999999;
+            &:active{
+                border-color: #333333;
+            }
+            &:hover{
+                border: 0px solid #D4D4D4;
+            }
+        }
+
+        label{
+            padding-left: 15px;
+            color: #333333;
+        
+
+        }
+
+}
+
+.company-bio-card{
+    padding: 40px;
+
+ 
+    hr{
+        margin-left: -40px;
+        width: 117%;
+        height: 0px;
+        margin-top: 0px;
+    }
+
+   
+    p{
+        margin-bottom: 10px;
+    }
+    .word-count{
+        margin-bottom: 0px;
+        color: #8CC63F;
+    }
+
+    .btn-good{
+        width: 120px !important;
+        height: 31px !important;
+        padding: 5px;
+        margin-bottom: 15px;
+        background: #D7F0DB;
+        color: #39B54A;
+        margin-top: 0px;
+    }
+}
+
+//my-details styling
+.verify-records-card{
+    padding: 40px;
+    width: 96%;
+    margin-left: 15px;
+    .verify-records-header{
+        h6{
+            font-size: 18px;
+            font-family: rubikbold;
+        }
+       
+    }
+    .left-header{
+        color: #69952F;
+    }
+
+    hr{
+        height: 0px;
+        width: 112%;
+        margin-left: -40px;
+    }
+    .verify-records-body{
+        h6{
+            font-size: 16px;
+            color: #333333;
+            font-family: rubikbold;
+        }
+        i.icon-Dots_Add{
+            font-size: 25px;
+            padding: 5px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+
+        .step-wizard{
+            height: fit-content;
+            .checkProgress{
+                width: 55%;
+            }
+        } 
+
+    }
+}
+
+.profile-card{
+
+    .btn-edit{
+        margin: 20px 0px;
+    }
+    .number-of-entries{
+        margin-left: -25px;
+    }
+
+    .profile-pic-placheloder{
+        border: 1px dotted #979797;
+        background: #F8F8F8;
+        i{
+            font-size: 20px;
+            position: absolute;
+            margin: 30px 30px;
+            border-radius: 50px;
+            padding: 5px;
+            background: #E6E6E6;
+        }
+    }
+}
+
+.group-card{
+    padding: 30px;
+    .btn-tag-section{
+        .btn-notification--pending{
+            width: 112px;
+            height: 28px;
+            text-align: center;
+            padding: 6px 10px;
+            color: #FFFFFF;
+            background: #4D4D4D;
+            i{
+                color: white;
+            }
+        }
+    }
+}
+
+.padding-zero{
+    padding: 0px;
+}
+

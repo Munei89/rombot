@@ -1,0 +1,767 @@
+<!doctype html>
+<html lang="en" class="background-light-grey">
+
+<head>
+  <!-- App Icons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="dist/assets/img/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="dist/assets/img/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="dist/assets/img/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="dist/assets/img/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="dist/assets/img/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="dist/assets/img/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="dist/assets/img/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="dist/assets/img/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="dist/assets/img/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="dist/assets/img/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="dist/assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="dist/assets/img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="dist/assets/img/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" href="favicon.ico">
+  <meta name="msapplication-TileColor" content="#f2f2f2">
+  <meta name="msapplication-TileImage" content="dist/assets/img/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#d4145a">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+  <title>dot360 - My Canditates</title>
+
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+
+  <!--     Fonts and icons     -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" /> -->
+
+  <!-- CSS Files -->
+  <link href="dist/assets/css/dot360.css" rel="stylesheet" />
+</head>
+
+<body class="background-light-grey">
+  <div id="loader-wrapper">
+    <!-- <div id="loader"></div> -->
+    <div class="loading-wrapper text-center">
+      <img src="dist/assets/img/loading-logo.svg" width="300px" height="46px" alt="">
+      <div class="dots-loading-logo">
+        <div id="percentage">
+          <span class="total"></span>
+        </div>
+      </div>
+      <div class="loading-slogan">
+        <p>Streamlined Offering, Improved Operations</p>
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-transparent border-bottom-solid logged--in-user navbar-fixed-top">
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse">
+            <a href="#" class="menu float-r">
+              <span class="sr-only">Toggle navigation</span>
+              <span style="width: 60%;margin-top: 10px;"></span>
+              <span style="width:40%"></span>
+            </a>
+          </button>
+          <a class="navbar-brand" href="home.html">
+            <img src="dist/assets/img/d.png" height="50px" width="50px" alt="">
+          </a>
+        </div>
+  
+        <div class="navbar-header navbar-right">
+            <button type="button" class="navbar-toggle" data-toggle="collapse">
+              <a href="#" class="menu float-r">
+                <span class="sr-only">Toggle navigation</span>
+                <span style="width: 60%;margin-top: 10px;"></span>
+                <span style="width:40%"></span>
+              </a>
+            </button>
+            <a class="navbar-brand" href="#">
+                <i class="fa fa-user-circle" width="35px" height="35px"></i>
+            </a>
+          </div> 
+  
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active">
+            <a href="#" class="active">Background Screening</a>
+          </li>
+          <li class="">
+              <a href="#" class="">Yimi</a>
+            </li>
+            <li class="">
+                <a href="#" class="">Trace</a>
+              </li>
+          <!-- <li class="visible-xs visible-sm">
+            <div class="text-right pos--rel z-index99">
+              <span class="btn btn-lg btn-rose btn-round perform-check">
+                <i class="fa fa-plus"></i> Perform Check
+              </span>
+            </div>
+          </li> -->
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="visible-xlgvisible-md">
+              <div class="text-center pos--rel z-index99" data-target="#checkList" data-toggle="modal">
+                  <span class="btn btn-primary btn-round btn-magenta btn-perform-check">
+                     Perform Check<i class="icon-Dots_Right-2"></i>
+                  </span>
+                </div>
+            </li>
+          <li class="user-header-controls">
+            <i class="icon-Dots_Notification"></i>
+            <span class="label label-rose notify-badge" data-toggle="dropdown">8</span>
+          </li>
+
+        </ul>
+  
+      </div>
+    </div>
+  </nav>
+  <nav class="navbar navbar-transparent border-bottom-solid logged--in-user navbar-fixed-top">
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse">
+            <a href="#" class="menu float-r">
+              <span class="sr-only">Toggle navigation</span>
+              <span style="width: 60%;margin-top: 10px;"></span>
+              <span style="width:40%"></span>
+            </a>
+          </button>
+          <a class="navbar-brand" href="home.html">
+            <img src="dist/assets/img/d.png" height="50px" width="50px" alt="">
+          </a>
+        </div>
+  
+        <div class="navbar-header navbar-right">
+            <button type="button" class="navbar-toggle" data-toggle="collapse">
+              <a href="#" class="menu float-r">
+                <span class="sr-only">Toggle navigation</span>
+                <span style="width: 60%;margin-top: 10px;"></span>
+                <span style="width:40%"></span>
+              </a>
+            </button>
+            <a class="navbar-brand" href="#">
+                <i class="fa fa-user-circle" width="35px" height="35px"></i>
+            </a>
+          </div> 
+  
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active">
+            <a href="#" class="active">Background Screening</a>
+          </li>
+          <li class="">
+              <a href="#" class="">Yimi</a>
+            </li>
+            <li class="">
+                <a href="#" class="">Trace</a>
+              </li>
+          <li class="visible-xs visible-sm">
+            <div class="text-right pos--rel z-index99">
+              <span class="btn btn-lg btn-rose btn-round perform-check">
+                <i class="fa fa-plus"></i> Perform Check
+              </span>
+            </div>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="visible-xlgvisible-md">
+            <!-- <div class="text-right pos--rel z-index99">
+              <span class="btn btn-primary btn-round btn-white btn-raised perform-check">
+                <i class="fa fa-plus"></i> Bulk Upload Sheet
+              </span>
+            </div> -->
+          </li>
+          <li class="visible-xlgvisible-md">
+              <div class="text-right pos--rel z-index99" data-target="#checkList" data-toggle="modal">
+                <span class="btn btn-primary btn-round btn-magenta perform-check">
+                   Perform Check 
+                </span>
+              </div>
+            </li>
+          <li class="user-header-controls">
+            <i class="icon-Dots_Notification"></i>
+          </li>
+          <!-- <li class="user-header-controls">
+            <i class="fa fa-user-circle"></i>
+          </li> -->
+        </ul>
+  
+      </div>
+    </div>
+  </nav>
+  <div class="xs-spacer"></div>
+  <div class="container dashboard-spacer analytics-dashboard--nav">
+      <div class="row">
+          <div class="col-md-2"></div>
+        <div class="col-md-7 col-md-push-0 col-xs-push-0">
+        
+          <span class="user-nav-links ">
+              My Company
+          </span>
+          <span class="user-nav-links">
+              Users
+            </span>
+            <span class="user-nav-links">
+                Groups
+            </span>
+            <span class="user-nav-links active">
+                My Details
+            </span>
+            <span class="user-nav-links ">
+                Statements
+            </span>
+            <span class="user-nav-links ">
+                General Settings
+            </span>
+
+        </div>
+        <div class="col-md-3"></div>
+        <!-- <div class="col-md-4 hidden-xs hidden-sm text-align-right">
+          <span class="download"><i class="fa fa-download" aria-hidden="true"></i></span>
+          <span class="forward"><i class="fa fa-reply" aria-hidden="true"></i></span>
+        </div> -->
+      </div>
+    </div>
+  <div class="xs-spacer"></div>
+
+  <div class="container">
+      <div class="row">
+    
+            <div class="col-md-4 ">
+                    <div class="profile-card">
+                  <div class="card raised padding-md-spacer " data-card>
+                    <div class="col-md-10 padding-zero">
+                      <h6 class="flush-m--top candidate-header">My Profile</h6>
+                      <p>Detailed user Information</p>
+                    </div>
+                    <div class="col-md-2">
+                            <div class=" btn-view-all btn-viewAll-interaction btn-edit">
+                                    <span class="number-of-entries">
+                                        Edit
+                                    </span>
+                             </div>
+                    </div>
+                
+                    <hr style="margin-bottom: 0px;" class="candidateInfo-card-line">
+                    <div class="">
+                      <div class="row">
+                      
+                      </div>
+            
+                      <div class="row">
+                        <div class="col-md-6 picture-pad">
+                          <div class="profile-pic-placheloder">
+                              <span><i class="icon-Dots_Upload"></i></span>  
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <h3 class="total-score-header">
+                            45
+                            <span class="notification-alerts good">
+                                <i class="icon icon--good icon--25 good-icon-margin"></i>
+                              </span>
+                          </h3>
+                          <span class="btn btn-squared btn-result btn-result--confirmed btn-total-score">
+                              Total Score
+                            </span>
+                        </div>
+                      </div>
+            
+                    <div>
+                        <div class="col-md-6 col-xs-6 text-align-right">
+                            <p class="result-titles">
+                              First Name:
+                            </p>
+                            <p class="result-titles">
+                              Surname:
+                            </p>
+                            <p class="result-titles">
+                              Maiden Name:
+                            </p>
+                            <p class="result-titles">
+                              ID Number:
+                            </p>
+                            <p class="result-titles">
+                              Date Of Birth:
+                            </p>
+            
+                          </div>
+                          <div class="col-md-6 col-xs-6 text-align-left">
+                            <p class="results-info text-black">
+                              Gary
+                            </p>
+                            <p class="results-info text-black">
+                              Smith
+                            </p>
+                            <p class="results-info text-black">
+                              Legary
+                            </p>
+                            <p class="results-info text-black">
+                              7009243512089
+                            </p>
+                            <p class="results-info text-black">
+                              1970/09/24
+                            </p>
+            
+                          </div>
+                    </div> 
+                   
+                    <div class="row">
+                            <div class="spacer"></div> 
+                            <div class="col-md-6 col-xs-6 text-align-right">
+                                <p class="result-titles">
+                                  Email Address: 
+                                </p>
+                                <p class="result-titles">
+                                   Contact: Number: 
+                                </p>
+                                <p class="result-titles">
+                                     Role: 
+                                </p>
+                                <p class="result-titles">
+                                    Username: 
+                                </p>
+                                <p class="result-titles">
+                                    Company:
+                                </p>
+                
+                              </div>
+                              <div class="col-md-6 col-xs-6 text-align-left">
+                                <p class="results-info text-black">
+                                        Gary@dots.africa 
+                                </p>
+                                <p class="results-info text-black">
+                                        +27 82 438 9330 
+                                </p>
+                                <p class="results-info text-black">
+                                        Admin Support
+                                </p>
+                                <p class="results-info text-black">
+                                        leGary 
+                                </p>
+                                <p class="results-info text-black">
+                                        No Brand
+                                </p>
+                
+                              </div>
+                        </div>  
+                    
+            
+                    </div> 
+                  </div>
+                  <!-- <div class="card raised padding-md-spacer comments" data-card>
+                      <div class="attachments-heading">
+                      
+                        <h5>  <span>
+                                <i class="icon-Dots_Bookmark">
+
+									</i>
+                        </span>
+                          Groups
+                          <i class="icon-Dots_Add  float-r" data-comments-expand aria-hidden="true"></i>
+                        </h5>
+                      </div>
+                      <div class="attachments-content hidden">
+                          <div class="row">
+                            <table class="table-attachments">
+                              <tbody>
+                                <tr>
+                                   <td>    
+                                           <div class="col-md-6">
+                                              <p class="attachment-title text-left text-gray">
+                                                  Copy of ID
+                                              </p>
+                                           </div>  
+                                           <div class="col-md-6">
+                                              <span class="btn btn-tag btn-notification btn-notification--pending attachment-file">
+                                                  Scan001.PDF
+                                                <a href=""><i class="icon-Dots_Close"></i></a> 
+                                            </span>
+                                           </div>              
+                                   </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                      <div class="col-md-3">
+                                         <a href=""> <i class="icon-Dots_Download"> </i> </a>
+                                      </div>
+                                      <div class="col-9">
+                                        <p class="text-left">Consent Form</p>
+                                      </div> 
+                                    </td>
+                                        
+              
+                                </tr>
+                                <tr>
+              
+                                  <td>
+                                      <div class="col-md-3">
+                                          <a href=""> <i class="icon-Dots_Upload"> </i> </a>
+                                       </div>
+                                       <div class="col-9">
+                                         <p class="text-left text-gray">Qualification</p>
+                                       </div> 
+                                      
+                                  </td>
+                                     
+                                </tr>
+                              </tbody>
+                            </table>
+                  
+                            </div>
+                        
+                        </div>
+                    </div> -->
+                </div>
+                <div class="card raised group-card">
+                        <div class="group-header">
+                            <h6>Groups</h6>
+                        </div>
+
+                        <div class="group-body">
+                                <div class="btn-tag-section">
+                                        <span class="btn btn-tag btn-notification btn-notification--pending">
+                                            HR Departme..
+                                            <span><a href=""><i class="icon-Dots_Close"> </i></a></span>
+                                          </span>
+                                          <span class="btn btn-tag btn-notification btn-notification--pending">
+                                                  Gary LeGrey
+                                                <span><a href=""><i class="icon-Dots_Close"></i></a></span> 
+                                         </span>
+                                    </div>
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="col-md-8">
+                            <div class="row">
+                                    <div class="col-md-4">
+                                            <div class="card card-pricing raised">
+                                              <div class="myCompany-dashbord-card dashboard-card">
+                                                <div class="top-card-content">
+                                                    <div class="circlce-no-icon">
+                                                        <div class="box">
+                                                            <div class="graph">
+                                                              <div class="m blue-background"></div>
+                                                              <div class="tu blue-background"></div>
+                                                              <div class="w blue-background"></div>
+                                                              <div class="tr blue-background"></div>
+                                                              <div class="f blue-background"></div>
+                                    
+                                                            </div>
+                                                            </div>
+                                                    </div>
+                                                  <h4 class="text-black flush-m">R 26 908k</h4>
+                                                  <p class="sub-heading">
+                                                    Total amount this month
+                                                  </p>
+                                                </div>
+                                                <hr style="width:20%">
+                                    
+                                                <div class="bottom-card-content">
+                                                  <span class="notification-alerts good">
+                                                    <i class="icon-Dots_Down-1"></i>
+                                                    11.7%
+                                                  </span>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                    
+                                    <div class="col-md-4">
+                                                <div class="card card-pricing raised">
+                                                  <div class="myCompany-dashbord-card dashboard-card">
+                                                    <div class="top-card-content">
+                                                      <div class="circlce-no-icon">
+                                                          <div class="box">
+                                                              <div class="graph">
+                                                                <div class="m"></div>
+                                                                <div class="tu"></div>
+                                                                <div class="w"></div>
+                                                                <div class="tr"></div>
+                                                                <div class="f"></div>
+                                        
+                                                              </div>
+                                                              </div>
+                                                      </div>
+                                                      <h4 class="text-black flush-m">1,865</h4>
+                                                      <p class="sub-heading">
+                                                        Checks this month
+                                                      </p>
+                                                    </div>
+                                                    <hr style="width:20%">
+                                                    <div class="bottom-card-content">
+                                                      <span class="btn btn-notification btn-notification--confirmed btn-completed-checks text-white">
+                                                        Completed: 1,694
+                                                      </span>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                    
+                                              <div class="col-md-4">
+                                                    <div class="card card-pricing raised">
+                                                      <div class="myCompany-dashbord-card dashboard-card">
+                                                        <div class="top-card-content">
+                                                          <div class="circlce-no-icon">
+                                                              <div class="box">
+                                                                  <div class="graph">
+                                                                    <div class="m pink-background"></div>
+                                                                    <div class="tu pink-background"></div>
+                                                                    <div class="w pink-background"></div>
+                                                                    <div class="tr pink-background"></div>
+                                                                    <div class="f pink-background"></div>
+                                            
+                                                                  </div>
+                                                                  </div>
+                                                          </div>
+                                                          <h4 class="text-black flush-m">89</h4>
+                                                          <p class="sub-heading">
+                                                                Pending Checks
+                                                          </p>
+                                                        </div>
+                                                        <hr style="width:20%">
+                                                        <div class="bottom-card-content">
+                                                          <span class="btn btn-notification btn-notification--pending btn-completed-checks text-white">
+                                                                Cloned : 14
+                                                          </span>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                              </div>
+
+                            <div class="row margin15">
+                                <div class="card verify-records-card raised">
+                                    <div class="verify-records--header">
+                                        <div class="col-md-7 padding-zero">
+                                                <h6>Verify My Records</h6>
+                                                <p>Ensure the correctness of your records</p>
+                                        </div>
+                                        <div class="col-md-5 ">
+                                            <h6 class="text-right left-header">Records Verified</h6>
+                                            <p class="text-right left-header">2 of 4</p>
+                                        </div>
+                                    </div>
+
+                                    <hr>
+                                    <div class="verify-records-body">
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <h6>Accountability Verifications</h6>
+                                            </div>
+                                            <div class="col-md-6">
+                                                    <div class="step-wizard" role="navigation">
+                                                            <div class="checkProgress">
+                                                                <div class="checkProgressBar empty"></div>
+                                                                <div id="prog" class="checkProgressBar" style="width: 25%;"></div>
+                                                            </div>
+                                                            <ul>
+                                                                <li class="done">
+                                                                    <div id="step1">
+                                                                        <div class="step"><i class="icon-Dots_Success"></i></div>
+                                                        
+                                                                    </div>
+                                                                </li>
+                                                                <li class="done">
+                                                                    <div id="step2">
+                                                                        <div class="step"><i class="icon-Dots_Success"></i></div>
+                                                                
+                                                                    </div>
+                                                                </li>
+                                                                <li class="">
+                                                                    <div id="step3">
+                                                                        <div class="step">3</div>
+                                                                        
+                                                                    </div>
+                                                                </li>
+                                                                <li class="">
+                                                                        <div id="step4">
+                                                                            <div class="step">4</div>
+                                                                            
+                                                                        </div>
+                                                                    </li>
+                                                            </ul>
+                                                        </div>
+                                            </div>
+                                            <div class="col-md-1">
+                                                <span>
+                                                    <i class="icon-Dots_Add  float-r" data-comments-expand="" aria-hidden="true"  data-toggle="collapse" data-target="#accountability" aria-expanded="false" aria-controls="accountability"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="row collapse" id="accountability" >
+                                          <div class="col-md-3 accountabilty-item" data-target="#accountability-identity" data-toggle="collapse" aria-expanded="false" aria-controls="accountability-identity">
+                                            a
+                                          </div>
+                                          <div class="col-md-3 accountabilty-item" data-target="#accountability-email" data-toggle="collapse" aria-expanded="false" aria-controls="accountability-email">
+                                            b
+                                          </div>
+                                          <div class="col-md-3 accountabilty-item" data-target="#accountability-mobile" data-toggle="collapse" aria-expanded="false" aria-controls="accountability-mobile">
+                                            c
+                                            </div>
+                                            <div class="col-md-3 accountabilty-item" data-target="#accountability-address" data-toggle="collapse" aria-expanded="false" aria-controls="accountability-address">
+                                              d
+                                            </div>
+                                        </div>
+                                       <div class="accountabilty-list">
+                                          <div class="row collapse" id="accountability-identity">
+                                              accountability-identity
+                                              <div class="close-current-account">
+                                                x
+                                              </div> 
+                                            </div>
+                                            <div class="row collapse" id="accountability-email">
+                                              email
+                                              <div class="close-current-account">
+                                                  x
+                                                </div> 
+                                            </div>
+                                            <div class="row collapse" id="accountability-mobile">
+                                              mobile
+                                              <div class="close-current-account">
+                                                  x
+                                                </div> 
+                                              </div>
+                                              <div class="row collapse" id="accountability-address">
+                                                address
+                                                <div class="close-current-account">
+                                                    x
+                                                  </div> 
+                                              </div>
+                                       </div>
+                                    </div>
+
+                                </div>
+                            </div>  
+     </div>      
+    
+    </div>
+              
+      </div>
+ 
+ 
+
+  </div>
+
+
+  </div>
+  <div id="logged-in-panel" class="card side-menu-card hidden">
+   
+    <div class="side-menu-header">
+
+      <div class="row">
+          <div class="col-md-2">
+            <div class="active-users">
+                <div class="circlce-no-icon"><img src="dist/assets/img/random_users/54.jpg" alt=""></div>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <h6>Philisande</h6>
+            <p>pila@dots.africa</p>
+          </div>
+    
+          <div class="col-md-5">
+              <button class="btn btn-secondary btn-square text-black ">Logout<div class="ripple-container"></div></button>
+          </div>
+      </div>
+       
+      <hr>
+      <div class="side-menu-list text-rubik-regular">
+        <ul class="text-gray">
+          <li>My Profile</li>
+          <li>My Company</li>
+          <li>Change Password</li>
+        </ul>
+      </div>
+      <hr>
+      <div class="side-menu-contacts">
+        <h6>Contacts</h6>
+        <ul class="text-rubik-regular text-gray">
+          <li>General feedback</li>
+          <li>About Dots 360</li>
+        </ul>
+      </div>
+      <hr>
+      <div class="side-menu-joinCommunity">
+        <h6>Join the community</h6>
+        <button class="btn btn-just-icon btn-twitter">
+            <i class="fa fa-twitter"></i>
+          </button>
+          <button class="btn btn-just-icon  btn-facebook">
+            <i class="fa fa-facebook"> </i>
+          </button>
+          <button class="btn btn-just-icon  btn-google">
+            <i class="fa fa-google"> </i>
+          </button>
+          <button class="btn btn-just-icon  btn-linkedin">
+            <i class="fa fa-linkedin"></i>
+          </button>
+      </div>
+      <hr>
+      <div class="side-menu-assist">
+        <ul class="text-rubik-regular text-gray">
+          <li>Settings</li>
+          <li>Help</li>
+        </ul>
+      </div>
+
+      <div class="btn-logIn-as">
+          <button class="btn btn-secondary btn-square text-black ">Log in as<div class="ripple-container"></div></button>
+      </div>
+
+      <div class="version">
+        <p>V2.0</p>
+      </div>
+    </div>
+  </div>
+  <div class="spacer"></div>
+  <footer class="container-fluid ">
+      <div class="footer animatedParent">
+        <div class="container text-center animated bounceIn delay-150">
+          <div class="col-md-3 col-xs-4 hidden-xs hidden-sm">
+            <div class="dropup table-dropdown">
+              <button href="#pablo" class="dropdown-toggle btn btn-rose btn-round btn-block text-gray text-rubik-regular"  data-toggle="dropdown">More Dots Recruit
+                <b class="caret"></b>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-right">
+                <li>
+                  <a href="#pablo">Lorem</a>
+                </li>
+                <li>
+                  <a href="#pablo">Lorem</a>
+                </li>
+                <li>
+                  <a href="#pablo">Lorem</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 text-align-left col-xs-12 col-sm-12">
+            <div class="user-footer-links text-center">
+              <span class="text-gray text-rubik-regular">
+                Dots Africa 2018 -2019 All rights reserved.
+              </span>
+            </div>
+          </div>
+          <div class="col-md-3 hidden-xs hidden-sm">
+            <div class="user-footer-links">
+              <span class="text-gray text-rubik-regular">
+                <a href="#" class="text-gray terms-condition-text">Terms of Use</a> and <a href="#" class="text-gray terms-condition-text">Privacy Policy</a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+</body>
+<!--   Core JS Files   -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCx0PjbVTxih2QgBX-ovhYSaU2uuArm5OE&libraries=places"></script>
+<script src="dist/assets/js/jquery.dot360.min.js" type="text/javascript"></script>
+<script src="dist/assets/js/modules/custom-charts.js" type="text/javascript"></script>
+
+</html>

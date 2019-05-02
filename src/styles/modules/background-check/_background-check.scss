@@ -1,0 +1,134 @@
+.background-check--block {
+    padding: 25px;
+    background: #fff;
+    border-radius: 5px;
+    // height: 230px;
+    width: auto;
+    margin-bottom: 3vh;
+    transition: all .8s ease-in-out;
+    cursor: pointer;
+
+    h6{
+      font-size: 18px;
+    }
+    .verificatin-text{
+      height: 140px;
+
+      p{
+        font-size: 14px;
+        color:#808080;
+      }
+    }
+    // hr{
+    //   margin-left: -25px !important;
+    //   height: 0px !important;
+    //   width: 120% !important;
+    // }
+    p{
+      font-size: 13px;
+      color: #333333;
+    }
+
+    .required-info-header{
+      h6{
+        font-size: 16px;
+        color: #D9316E;
+        i{
+          color: #333333;
+          position: absolute;
+          bottom: 6px;
+          right: -20px;
+        }
+      }
+      .icon-Dots_Right-2{
+        font-size: 25px;
+        padding: 10px;
+        position: absolute;
+        bottom: 0px;
+        right: 10px;
+        color: #D9316E;
+        box-shadow: #333333;
+        border: 1px solid #eee;
+        border-radius: 50px;
+        background: #ffffff;
+        box-shadow: 0px 1px 4px -2px #D9316E;
+      }
+    }
+
+    .block--img{
+      .check-card-num{
+        margin-top: 50px;
+        margin-bottom: 40px;
+        
+      }
+
+    }
+
+    // .block--img {
+    //   @media (max-width: $screen-sm-min){
+    //   padding: 28px 13vw 0vw;
+    // }
+    //     padding: 5vh;
+    // }
+    // p {
+    //   padding: 0vh 1vw;
+    // }
+    // @media (max-width: $screen-sm-min){
+    //     height: auto;
+    //     min-height: 22vh;
+    //     width: auto;
+    //     margin-bottom: 3vh;
+
+    //     p {
+    //       padding: 1vh 2vh;
+    //       font-size: 14px;
+    //       margin-bottom: 0;
+    //     }
+    // }
+    &:hover {
+      transform: scale(1.1);
+    }
+    &:active {
+      transform: scale(0.9);
+    }
+}
+.parent-card {
+  // background: url("http://www.theabsolutelongestwebdomainnameinthewholegoddamnfuckinguniverse.com/wp-content/uploads/2010/08/hot_chick.jpg");
+  // width: 600px;
+  // height: 400px;
+  // margin: 0 auto;
+  // width: 200px;
+  height: 400px;
+ 
+}
+
+
+.card-hover {
+  // background: #66FF33;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+   transition: display .25s ease-in-out;
+   -moz-transition: display .25s ease-in-out;
+   -webkit-transition: display .25s ease-in-out;
+}
+
+
+.parent-card:hover > .card-hover {
+  opacity: 1;
+  // height: 400px;
+  display: block;
+}
+.parent-card:hover > .block--img {
+  opacity: 0;
+  // height: 100%;
+  height: 0;
+  display: none;
+}
+.parent-card:hover {
+  width: 100%;
+  height: 400px;
+}

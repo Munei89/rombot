@@ -1,0 +1,112 @@
+.icon {
+  display: inline-block;
+  &--more {
+    width: 12px;
+    height: 12px;
+  }
+  &--xxs {
+    width: 16px;
+    height: 16px;
+  }
+  &--xs {
+    width: 20px;
+    height: 20px;
+  }
+  &--sm {
+    width: 35px;
+    height: 35px;
+  }
+  &--md {
+    width: 45px;
+    height: 45px;
+  }
+  &--25 {
+    width: 25px;
+    height: 25px;
+  }
+}
+.icon--logo {
+  &-lg {
+    width: 74px;
+    height: 34px;
+  }
+  &-md {
+    width: 54px;
+    height: 24px;
+  }
+}
+.icon--screning {
+  width: 65px;
+  height: 50px;
+}
+.icon--bell-rotate {
+  transform: rotate(-40deg);
+}
+span.notify-badge {
+  position: absolute;
+  top: -7px;
+  right: 6px;
+  width: 23px;
+  text-align: left;
+  height: 22px;
+  font-size: 0.8em;
+  padding: 6px 15px 0px 7px;
+}
+
+.secondary-nav-icon{
+  padding: 7px 10px;
+  border: 3px solid #ebebeb;
+  border-radius: 7px;
+  margin-top: 20px;
+  font-size: larger;
+}
+
+.pad--icon {
+  padding-top:20px;
+}
+
+i.fa.fa-user-circle{
+  font-size: 35px;
+  padding: 20px 20px;
+}
+
+.good-icon-margin{
+  margin-bottom: 15px;
+}
+
+.info-dots--icon{
+  border: 1px solid #D4145A;
+    border-radius: 50px;
+    padding: 5px;
+    font-size: 13px;
+    color: #D4145A;
+}
+.plus-sign{
+  border: 1px solid #8CC63F;
+  color: black;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 28px;
+  &:hover{
+    border: 1px solid rgb(39, 56, 17);
+  }
+}
+.report-info-icon{
+  margin: 43px;
+}
+.icon-Dots_Delete{
+  position: absolute;
+  font-size: 25px;
+  padding: 5px;
+  border: 1px solid #E6E6E6;
+  color: #E6E6E6;
+  border-radius: 5px;
+  top: 10px;
+  left: 0px;
+  &:hover{
+    color: #333333;
+    border: 1px solid #333333;
+
+  }
+
+}

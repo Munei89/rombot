@@ -1,0 +1,48 @@
+.label {
+    border-radius: $border-radius-label;
+    padding: 5px 12px;
+    // text-transform: uppercase;
+    font-size: 10px;
+
+    &.label-default{
+        background-color: $gray-light;
+    }
+    &.label-transparent {
+      background-color: none;
+      border: 2px solid $gray-light;
+      color: $gray-light;
+    }
+    &.label-unconfirmed {
+        background: transparent;
+        border: 2px solid #8CC63F;
+        color: #8CC63F
+    }
+    &.label-confirmed {
+        background-color: #4caf50;
+    }
+    &.label-pending {
+        background-color: #999999;
+    }
+    &.label-error {
+        background-color: #f44336;
+    }
+}
+.text-magenta{
+    color: #D4145A;
+}
+.badge-magenta {
+    background: $magenta;
+    &.checkout {
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        padding-top: 7px;
+        top: 10px;
+        position: absolute;
+        right: 0px;
+    }
+}
+.team-counter{
+    font-family: rubikregular;
+    font-size: 14px;
+}

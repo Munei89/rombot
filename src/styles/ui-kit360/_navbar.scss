@@ -1,0 +1,543 @@
+.navbar {
+  border: 0;
+  border-radius: $border-radius-base;
+  //@include shadow-big-navbar();
+  margin-bottom: 0px;
+  @extend .animation-transition-fast;
+
+  padding: 10px 0;
+  
+  .nav-links {
+    transition: all 0.5s ease;
+    margin-top: -10px;
+}
+
+  .navbar-brand {
+    position: relative;
+    height: 50px;
+    line-height: 30px;
+    color: inherit;
+    // padding: 10px 15px;
+    
+
+    &:hover,
+    &:focus {
+      color: inherit;
+      background-color: transparent;
+    }
+  }
+
+  .navbar-text {
+    color: inherit;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .navbar-nav {
+    > li > a {
+      padding-right: 25px;
+      padding-left: 25px;
+      margin-right: 20px;
+      // font-weight: $font-weight-default;
+      font-size: 16px;
+      font-family: rubikregular;
+      // text-transform: uppercase;
+      height: 75px;
+      padding-top: 35px;
+
+      color:#979797;
+      @media only screen and (min-width: $screen-md) and (max-width: $screen-lg-min){
+          padding-right: 10px;
+          font-size: 10px;
+      }
+      &:hover,
+      &:focus {
+        color: #4D4D4D;
+        background-color: transparent;
+        // font-family: rubikbold;
+        // border-top: 4px solid #d4145a;
+        // padding-top: 20px;
+        // padding-bottom: 0px;
+      }
+      &:active{
+        color: #4D4D4D;
+        background-color: transparent;
+        border-top: 4px solid #d4145a;
+        // padding-top: 20px;
+        // padding-bottom: 0px;
+      }
+
+      .material-icons,
+      .fa{
+            font-size: 20px;
+            max-width: 24px;
+      }
+
+      &:not(.btn-just-icon){
+          .fa{
+            position: relative;
+            top: 2px;
+            margin-top: -4px;
+            margin-right: 4px;
+          }
+      }
+    }
+
+    > li > .dropdown-menu{
+        margin-top: -20px;
+    }
+
+    > li.open > .dropdown-menu{
+        margin-top: 0;
+    }
+
+    > .active > a {
+      &:hover::before {
+        width: 100%;
+      }
+      &::before {
+        content: '';
+        display: block;
+        width: 0;
+        height: 4px;
+        // background: #d4145a;
+        background: transparent;
+        position: absolute;
+        top:0;
+        left:0;
+        transition: width .3s;
+      }
+    }
+    > .disabled > a {
+      &,
+      &:hover,
+      &:focus {
+        color: inherit;
+        background-color: transparent;
+        opacity: 0.9;
+      }
+    }
+    .profile-photo{
+        padding: 0;
+        .profile-photo-small{
+            height: 40px;
+            width: 40px;
+        }
+    }
+
+    .caret{
+        margin-top: -3px;
+    }
+
+  }
+
+  // Darken the responsive nav toggle
+  .navbar-toggle {
+    border: 0;
+    &:hover,
+    &:focus {
+      background-color: transparent;
+    }
+    .icon-bar {
+      background-color: inherit;
+      border: 1px solid;
+      color: $white-color;
+    }
+  }
+
+  .navbar-default .navbar-toggle,
+  .navbar-inverse .navbar-toggle {
+    border-color: transparent;
+  }
+
+  .navbar-collapse,
+  .navbar-form {
+    border-top: none;
+    box-shadow: none;
+  }
+
+  // Dropdowns
+  .navbar-nav {
+    > .open > a {
+      &,
+      &:hover,
+      &:focus {
+        background-color: transparent;
+        color: inherit;
+      }
+    }
+
+    @media (max-width: $grid-float-breakpoint-max) {
+      .navbar-text {
+        color: inherit;
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+
+      // Dropdowns get custom display
+      .open .dropdown-menu {
+        > .dropdown-header {
+          border: 0;
+          color: inherit;
+        }
+        .divider {
+          border-bottom: 1px solid;
+          opacity: 0.08;
+        }
+      }
+    }
+  }
+
+    &.navbar-default{
+        .logo-container .brand{
+            color: $gray;
+        }
+    }
+
+  .navbar-link {
+    color: inherit;
+    &:hover {
+      color: inherit;
+    }
+  }
+
+  .btn{
+      margin-top: 0;
+      margin-bottom: 0;
+  }
+  .btn-link {
+    color: inherit;
+    &:hover,
+    &:focus {
+      color: inherit;
+    }
+    &[disabled],
+    fieldset[disabled] & {
+      &:hover,
+      &:focus {
+        color: inherit;
+      }
+    }
+  }
+
+  .navbar-form {
+    margin: 4px 0 0;
+    .form-group {
+      margin: 0;
+      padding: 0;
+
+      .material-input:before,
+      &.is-focused .material-input:after {
+        background-color: inherit;
+      }
+    }
+
+    .form-group .form-control,
+    .form-control {
+      border-color: inherit;
+      color: inherit;
+      padding: 0;
+      margin: 0;
+
+      // re-normalize inputs in a navbar the size of standard bootstrap since our normal inputs are larger by spec than bootstrap
+      //---
+      //height: $mdb-input-height-base;
+      $bs-line-height-base: 1.428571429 !default;
+      $bs-line-height-computed:    floor(($font-size-base * $bs-line-height-base)) !default; // ~20px
+      height: ($bs-line-height-computed + 8px);
+      font-size: $font-size-base;
+      line-height: $bs-line-height-base;
+      //---
+    }
+  }
+
+  // SASS conversion note: please mirror any content change in _mixins-shared.scss navbar-variations-content
+  @include navbar-variations(unquote(".navbar"), unquote(""), $brand-primary);
+
+  &-inverse {
+    background-color: $indigo;
+  }
+
+  &.navbar-transparent{
+      background-color: #FFFFFF;
+      color: #fff;
+      padding-top: 10px;
+      box-shadow:none;
+
+      .logo-container .brand{
+          color: $white-color;
+      }
+  }
+  &-fixed-top{
+      border-radius: 0;
+      box-shadow:none;
+  }
+  @media (max-width: $screen-md-max) {
+
+    .navbar-brand {
+      height: 50px;
+      padding: 5px 15px;
+      padding-left: 20px !important;  
+    }
+/*
+    .navbar-form {
+      margin-top: 10px;
+    }
+*/
+
+    .navbar-nav > li > a {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+  }
+
+    .alert{
+        border-radius: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 85px;
+        width: 100%;
+        z-index: 3;
+        transition: all 0.3s;
+    }
+}
+
+.nav-align-center{
+    text-align: center;
+
+    .nav-pills{
+        display: inline-block;
+    }
+}
+.navbar-absolute{
+    position: absolute;
+    width: 100%;
+    padding-top: 10px;
+    z-index: 1029;
+}
+.logged--in-user {
+  &.navbar.navbar-transparent {
+    padding-top:0px;
+    min-height: 84px;
+    background:white;
+    margin-bottom: 25px;
+    &.sticky-scroll {
+      min-height: 60px !important;
+      height: 64px !important;
+      background: rgba(255, 255, 255, 1);
+      
+     .navbar-brand{
+        img{
+          margin: -18px 0px 0px;
+        }
+     }
+
+      .container > .navbar-header {
+        padding-top: 10px;
+      }
+      .user-details {
+        padding-top: 10px;
+      }
+      .navbar-nav{
+        padding-left: 30px;
+      }
+      .navbar-nav.navbar-right {
+        padding-top: 7px;
+      }
+      .perform-check {
+        width: 160px;
+        height: 40px;
+        padding: 10px;
+        margin-top: 5px;
+      }
+      .process-btn {
+        width: 220px;
+        height: 47px;
+        font-size: 12px;
+        padding-top: 15px;
+      }
+      .upload-btn {
+        width: 174px;
+        height: 47px;
+        margin-right: 15px;
+        padding: 12px;
+        
+
+      }
+    }
+  }
+ 
+  .container > .navbar-header {
+    padding-top: 30px;
+  }
+  .navbar-nav {
+      > li > a {
+        color: inherit;
+        padding-top: 35px;
+        padding-bottom: 30px;
+        padding-right: 20px;
+        // font-weight: $font-weight-default;
+        font-size: 16px;
+        font-family: rubikmedium;
+        // text-transform: uppercase;
+        transition: all 0.2s;
+        color:#B3B3B3;
+        @media only screen and (min-width: $screen-md) and (max-width: $screen-lg-min){
+            padding-right: 10px;
+            font-size: 10px;
+        }
+
+        &:hover,
+        &:focus {
+          color: #333333;
+          background-color: transparent;
+          // border-top: 11px solid #d4145a;
+          border-bottom: none;
+          transition: all 0.2s;
+        }
+
+
+        .material-icons,
+        .fa{
+              font-size: 20px;
+              max-width: 24px;
+              color: #333;
+        }
+
+        &:not(.btn-just-icon){
+            .fa{
+              position: relative;
+              top: 2px;
+              margin-top: -4px;
+              margin-right: 4px;
+            }
+        }
+      }
+      .user-header-controls {
+        margin-left: 10px;
+        width: 50px;
+        padding-top: 15px;
+        .fa {
+          font-size: 20px;
+          // max-width: 24px;
+          color: #333;
+          vertical-align: middle;
+          &.fa-bell {
+            transform: rotate(-45deg);
+          }
+        }
+      }
+
+      li {
+        .upload-btn {
+          width: 184px;
+          height: 57px;
+          margin-right: 15px;
+          color: $magenta;
+
+          &:hover,
+          &:focus,
+          &:active {
+            background: $gradient-background-magenta-webkit-gradient;
+            background: $gradient-background-magenta-webkit-linear-gradient;
+            background: $gradient-background-magenta-moz-linear-gradient;
+            background: $gradient-background-magenta-o-linear-gradient;
+            background: $gradient-background-magenta-linear-gradient;
+            border: none;
+            color:#fff;
+          }
+        }
+        .process-btn {
+          width: 231px;
+          height: 54px;
+        }
+        .perform-check {
+          width: 165px;
+          height: 45px;
+          padding: 15px;
+          font-size:12px;
+
+          i {
+            &.fa-plus {
+              font-size: 12px;
+              top: 0px;
+            }
+          }
+        }
+      }
+      > li > .dropdown-menu{
+          margin-top: -20px;
+      }
+
+      > li.open > .dropdown-menu{
+          margin-top: 0;
+      }
+
+      > .active > a {
+        &,
+        &:hover,
+        &:focus {
+          color: #333;
+          background-color: transparent;
+          border-top: 5px solid #d4145a;
+          border-bottom: none;
+          transition: all 0.2s;
+          padding: 30px 0px;
+        
+        }
+       
+      }
+      > .disabled > a {
+        &,
+        &:hover,
+        &:focus {
+          color: inherit;
+          background-color: transparent;
+          opacity: 0.9;
+        }
+      }
+      .profile-photo{
+          padding: 0;
+          .profile-photo-small{
+              height: 40px;
+              width: 40px;
+          }
+      }
+
+      .caret{
+          margin-top: -3px;
+      }
+      &.navbar-right {
+        padding-top: 22px;
+      }
+    }
+}
+.navbar-nav {
+   li{
+      &.link-silent {
+    a {
+      &:hover::before {
+        width: 100%;
+      }
+      &::before {
+        content: '';
+        display: block;
+        width: 0;
+        height: 4px;
+        background:transparent;
+        position: absolute;
+        top:0;
+        left:0;
+        transition: width .3s;
+      }
+    }
+  }
+}
+}
+.btn-nav-btn{
+  width: 143px!important;
+}
+.left-navbar{
+  padding-left: 180px;
+}

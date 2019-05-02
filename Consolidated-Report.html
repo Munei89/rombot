@@ -1,0 +1,896 @@
+<!doctype html>
+<html lang="en" class="background-light-grey">
+
+<head>
+  <!-- App Icons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="dist/assets/img/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="dist/assets/img/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="dist/assets/img/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="dist/assets/img/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="dist/assets/img/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="dist/assets/img/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="dist/assets/img/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="dist/assets/img/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="dist/assets/img/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="dist/assets/img/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="dist/assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="dist/assets/img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="dist/assets/img/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" href="favicon.ico">
+  <meta name="msapplication-TileColor" content="#f2f2f2">
+  <meta name="msapplication-TileImage" content="dist/assets/img/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#d4145a">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+  <title>dot360 - Report</title>
+
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+
+  <!-- CSS Files -->
+  <link href="dist/assets/css/dot360.css" rel="stylesheet" />
+</head>
+
+<body class="background-light-grey">
+  <div id="loader-wrapper">
+    <!-- <div id="loader"></div> -->
+    <div class="loading-wrapper text-center">
+      <img src="dist/assets/img/loading-logo.svg" width="300px" height="46px" alt="">
+      <div class="dots-loading-logo">
+        <div id="percentage">
+          <span class="total"></span>
+        </div>
+      </div>
+      <div class="loading-slogan">
+        <p>Streamlined Offering, Improved Operations</p>
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-transparent border-bottom-solid logged--in-user navbar-fixed-top">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <span class="navbar-brand user-icon" href="#">
+          <img src="dist/assets/img/user-icon.png" width="47" alt="GN">
+        </span>
+        <span>
+          <span class="text-black visible-xs hidden-sm hidden-md hidden-lg">Gary Ngwenya</span>
+        </span>
+        <span class="float-r visible-xs hidden-sm hidden-md hidden-lg" data-report-mobi-icons>
+          <i class="fa fa-times float-r" data-close-report></i>
+          <i class="fa fa-comment-o float-r" aria-hidden="true" data-comments></i>
+          <span class="dropdown float-r" data-dropdown>
+            <div class="notification-user" data-toggle="dropdown">
+              <i class="fa fa-circle" aria-hidden="true"></i>
+              <i class="fa fa-circle" aria-hidden="true"></i>
+              <i class="fa fa-circle" aria-hidden="true"></i>
+            </div>
+            <ul class="dropdown-menu notification-dropdown btn-report-share">
+              <li>
+                Email PDF Report
+              </li>
+              <li>
+                Share Report
+              </li>
+              <li>
+                Download Report
+              </li>
+              <li>
+                Clone Report
+              </li>
+            </ul>
+          </span>
+        </span>
+      </div>
+      <div class="hidden-xs hidden-sm">
+        <ul class="nav navbar-nav">
+          <li class="user-details">
+            <span class="text-black">Gary Ngwenya</span>
+            <br />
+            <span class="text-grey">Check processed: March 23, 2018 at 14:15</span>
+          </li>
+          <li class="visible-xs visible-sm">
+            <div class="text-right pos--rel z-index99">
+              <i class="fa fa-times"></i>
+            </div>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="user-header-controls">
+            <div class="dropdown">
+              <i class="icon icon-Dots_Notification " aria-hidden="true" data-toggle="dropdown"></i>
+              <span class="label label-rose notify-badge" data-toggle="dropdown">8</span>
+              <div class="dropdown-menu dropdown-menu-right notification-panel">
+                <div class="header">
+                  <h3>
+                    Your Notitfications
+                    <span class="label clear-all">Clear All</span>
+                    <span class="label mute">Mute</span>
+                  </h3>
+                </div>
+                <div class="message-board">
+                  <div class="content">
+                    <div class="card-message">
+                      <div class="message-content">
+                        <div class="row">
+                          <div class="col-md-1">
+                            <i class="fa fa-circle read" aria-hidden="true"></i>
+                          </div>
+                          <div class="col-md-10">
+                            <p>
+                              <span>Academic Check</span> Please be informed that there will be a delay with verifying
+                              Wits university
+                              qualifications due to technical difficulties and the relocation of the department
+                              Wits has informed us that operations should continue by the 10-11-2017 We will,
+                              however, still do our best in order for the verification request to be issued.
+                              Apologies for any inconvenience caused.
+                            </p>
+                            <div class="date">
+                              Yesterday 08h00
+                            </div>
+                          </div>
+                          <div class="col-md-1">
+                            <i class="icon icon-Dots_Close font18"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-message">
+                      <div class="message-content">
+                        <div class="row">
+                          <div class="col-md-1">
+                            <i class="fa fa-circle unread" aria-hidden="true"></i>
+                          </div>
+                          <div class="col-md-10">
+                            <p>
+                              <span>Academic Check</span> Please be informed that there will be a delay with verifying
+                              Wits university
+                              qualifications due to technical difficulties and the relocation of the department
+                              Wits has informed us that operations should continue by the 10-11-2017 We will,
+                              however, still do our best in order for the verification request to be issued.
+                              Apologies for any inconvenience caused.
+                            </p>
+                            <div class="date">
+                              Yesterday 08h00
+                            </div>
+                          </div>
+                          <div class="col-md-1">
+                            <i class="icon icon-Dots_Close font18"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-message">
+                      <div class="message-content">
+                        <div class="row">
+                          <div class="col-md-1">
+                            <i class="fa fa-circle unread" aria-hidden="true"></i>
+                          </div>
+                          <div class="col-md-10">
+                            <p>
+                              <span>Academic Check</span> Please be informed that there will be a delay with verifying
+                              Wits university
+                              qualifications due to technical difficulties and the relocation of the department
+                              Wits has informed us that operations should continue by the 10-11-2017 We will,
+                              however, still do our best in order for the verification request to be issued.
+                              Apologies for any inconvenience caused.
+                            </p>
+                            <div class="date">
+                              Yesterday 08h00
+                            </div>
+                          </div>
+                          <div class="col-md-1">
+                            <i class="icon icon-Dots_Close font18"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="user-header-controls">
+            <i class="icon-Dots_Chat text-black" aria-hidden="true"></i>
+            <span class="text-white">4</span>
+          </li>
+          <li class="dropdown">
+            <div class="notification-user btn-report-share " data-toggle="dropdown">
+              <i class="fa fa-circle" aria-hidden="true"></i>
+              <i class="fa fa-circle" aria-hidden="true"></i>
+              <i class="fa fa-circle" aria-hidden="true"></i>
+            </div>
+            <ul class="dropdown-menu notification-dropdown">
+              <li>
+                Email PDF Report
+              </li>
+              <li>
+                Share Report
+              </li>
+              <li>
+                Download Report
+              </li>
+              <li>
+                Clone Report
+              </li>
+            </ul>
+          </li>
+
+          <li class="report-close">
+            <span class="v-line">&nbsp;&nbsp;</span>
+            <i class="fa fa-times no-border"></i>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <div class="spacer"></div>
+  <div class="container dashboard-spacer report-container">
+    <div class="col-md-1"></div>
+    <div class="col-md-4">
+      <div class="candidate-scroll">
+        <div class="card raised padding-md-spacer candidate-info-top" data-card>
+          <div class="col-md-10">
+            <h6 class="flush-m--top candidate-header">Candidate information</h6>
+          </div>
+          <div class="col-md-2">
+            <span class="info-icon">
+              <i class="icon-Dots_Info info-dots--icon"></i>
+            </span>
+          </div>
+
+          <hr style="margin-bottom: 0px;" class="candidateInfo-card-line">
+          <div class="">
+
+            <div class="row">
+              <div class="col-md-6 picture-pad">
+                <div class="profile-pic-placheloder">
+
+                </div>
+              </div>
+              <div class="col-md-6">
+                <h3 class="total-score-header">
+                  45
+                  <span class="notification-alerts good">
+                    <i class="icon icon--good icon--25 good-icon-margin"></i>
+                  </span>
+                </h3>
+                <span class="btn btn-squared btn-result btn-result--confirmed btn-total-score">
+                  Total Score
+                </span>
+              </div>
+            </div>
+
+            <div>
+              <div class="col-md-6 col-xs-6 text-align-right">
+                <p class="result-titles">
+                  First Name:
+                </p>
+                <p class="result-titles">
+                  Surname:
+                </p>
+                <p class="result-titles">
+                  Maiden Name:
+                </p>
+                <p class="result-titles">
+                  ID Number:
+                </p>
+                <p class="result-titles">
+                  Date Of Birth:
+                </p>
+
+              </div>
+              <div class="col-md-6 col-xs-6 text-align-left">
+                <p class="results-info text-black">
+                  Gary
+                </p>
+                <p class="results-info text-black">
+                  Smith
+                </p>
+                <p class="results-info text-black">
+                  Legary
+                </p>
+                <p class="results-info text-black">
+                  7009243512089
+                </p>
+                <p class="results-info text-black">
+                  1970/09/24
+                </p>
+
+              </div>
+            </div>
+
+
+
+          </div>
+          <div class="card">
+
+
+          </div>
+
+        </div>
+        <div class="card raised padding-md-spacer attachment-section comments " data-card>
+          <div class="attachments-heading">
+
+            <h5> <span>
+                <i class="icon-Dots_Attachment">
+
+                </i>
+              </span>
+              Attachment
+              (<span class="comment-count">5</span>)
+              <i class="icon-Dots_Add  float-r" data-comments-expand aria-hidden="true"></i>
+            </h5>
+          </div>
+          <div class="attachments-content hidden">
+              <div class="row">
+                <table class="table-attachments">
+                  <tbody>
+                    <tr>
+                       <td>    
+                               <div class="col-md-6">
+                                  <p class="attachment-title text-left text-gray">
+                                      Copy of ID
+                                  </p>
+                               </div>  
+                               <div class="col-md-6">
+                                  <span class="btn btn-tag btn-notification btn-notification--pending attachment-file">
+                                      Scan001.PDF
+                                    <a href=""><i class="icon-Dots_Close"></i></a> 
+                                </span>
+                               </div>              
+                       </td>
+                    </tr>
+                    <tr>
+                        <td>
+                          <div class="col-md-3">
+                             <a href=""> <i class="icon-Dots_Download"> </i> </a>
+                          </div>
+                          <div class="col-9">
+                            <p class="text-left">Consent Form</p>
+                          </div> 
+                        </td>
+                            
+  
+                    </tr>
+                    <tr>
+  
+                      <td>
+                          <div class="col-md-3">
+                              <a href=""> <i class="icon-Dots_Upload"> </i> </a>
+                           </div>
+                           <div class="col-9">
+                             <p class="text-left text-gray">Qualification</p>
+                           </div> 
+                          
+                      </td>
+                         
+                    </tr>
+                  </tbody>
+                </table>
+      
+                </div>
+            
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 card-pad-right0 margin--right-10">
+      <div class="card raised padding-md-spacer" data-card>
+        <div class="col-md-10">
+          <h6 class="text-black candidate-header">1.Transunion Comprehensive</h6>
+        </div>
+        <div class="col-md-2">
+          <span class="info-icon">
+            <i class="icon-Dots_Info info-dots--icon report-info-icon"></i>
+          </span>
+        </div>
+
+        <hr style="margin-top: 0px" class="academic-card-line">
+        <div class="row">
+            <div class="col-md-12 candidate-info-notification">
+              <span class="btn  btn-notification btn-notification--error btn-req-verification">
+                Manual Verification requested
+              </span>
+
+            </div>
+
+          </div>
+        <div class="row">
+          <div class="col-md-6 col-xs-6 text-align-left ">
+            <!-- <h6 class="academic-sub-header">
+                    Matric Post 1992 Umalusi
+                  </h6> -->
+            <br>
+            <p class="sub-header text-rubik-regular">
+              Valid Until:2018/07/14
+            </p>
+          </div>
+          <div class="col-md-6 col-xs-6 text-align-right">
+            <span class="btn  btn-notification btn-notification--error btn-results">
+              Results: Unconfirmed
+            </span>
+          </div>
+        </div>
+
+        <div class="container transUnion-container">
+          <div class="row">
+            <div class="col-md-6 umalusi-img">
+              <img src="dist/assets/img/company-logos/TransUnion.png" style="height:45px;width:180px" alt="">
+            </div>
+            <div class="col-md-6 report-enquiries">
+              <p class="text-primary paragraph-small text-weight-reg text-right">
+                For Enquiries or Disputes:
+              </p>
+              <p class="text-primary paragraph-small text-weight-reg text-right">
+                (011) 345 0933 info@umalusi.co.za
+              </p>
+            </div>
+          </div>
+          <div class="spacer"></div>
+          <div class="row">
+
+            <table class="transUnion-table">
+              <tbody>
+                <tr>
+                  <td>
+                    <p class="result-titles text-right">
+                      Credit Standing:
+                    </p>
+                  </td>
+                  <td>
+                    <p class="results-info text-black text-left">
+                      Through TransUnion Credit Report (No Financial Default Data against Applicant)
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="result-titles text-right">
+                      Name 1:
+                    </p>
+                  </td>
+                  <td>
+                    <p class="results-info text-black text-left">
+                      Refcheck
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="result-titles text-right">
+                      ID Verified Description:
+                    </p>
+                  </td>
+                  <td>
+                    <p class="results-info text-black text-left">
+                      ID Not Yet Verified
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="result-titles text-right">
+                      Judgements:
+                    </p>
+                  </td>
+                  <td>
+                    <p class="results-info text-left text-error">
+                      2
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="result-titles text-right">
+                      Notices:
+                    </p>
+                  </td>
+                  <td>
+                    <p class="results-info text-left text-error">
+                      2
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="result-titles text-right ">
+                      Notorial Bonds:
+                    </p>
+                  </td>
+                  <td>
+                    <p class="results-info  text-left text-success">
+                      0
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="result-titles text-right">
+                      Trace Alerts:
+                    </p>
+                  </td>
+                  <td>
+                    <p class="results-info text-left text-success">
+                      0
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="result-titles text-right">
+                      Summary:
+                    </p>
+                  </td>
+                  <td>
+                    <p class="results-info text-left text-error">
+                      1
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+  
+          </div>
+          <div class="row">
+
+          </div>
+        </div>
+      </div>
+      <div class="spacer"></div>
+      <div class="card raised padding-md-spacer" data-card>
+        <div class="col-md-10">
+          <h6 class="text-black candidate-header">2. ID Verification & Validation</h6>
+        </div>
+        <div class="col-md-2">
+          <span class="info-icon">
+            <i class="icon-Dots_Info info-dots--icon report-info-icon"></i>
+          </span>
+        </div>
+
+        <hr style="margin-top: 0px" class="academic-card-line">
+        <div class="row">
+          <div class="col-md-6 col-xs-6 text-align-left ">
+            <!-- <h6 class="academic-sub-header">
+                          Matric Post 1992 Umalusi
+                        </h6> -->
+            <br>
+            <p class="sub-header text-rubik-regular">
+              Valid Until:2018/07/14
+            </p>
+          </div>
+          <div class="col-md-6 col-xs-6 text-align-right">
+            <span class="btn  btn-notification btn-notification--error btn-results">
+              Results: Negative
+            </span>
+          </div>
+        </div>
+
+        <div class="container homeAffairs-container">
+          <div class="row">
+            <div class="col-md-7 report-enquiries">
+              <!-- <p class="text-primary paragraph-small text-weight-reg text-right">
+                                    For Enquiries or Disputes:
+                                  </p>
+                                  <p class="text-primary paragraph-small text-weight-reg text-right">
+                                       (011) 345 0933 info@umalusi.co.za
+                                    </p> -->
+            </div>
+            <div class="col-md-5 umalusi-img">
+              <img src="dist/assets/img/company-logos/HomeAffairs.png" style="height:45px;width:180px" alt="">
+            </div>
+
+          </div>
+          <div class="row">
+            <h6 class="academic-sub-header text-gray">
+              Summary:
+            </h6>
+            <p class="text-black report-paragraph">The ID number provided is verified and it was issued to Matching
+              details Surname: Zungu, Name: Philasande Ntokozo
+            </p>
+          </div>
+        </div>
+
+        <div class="warning">
+          <h6 class="warning-header-text academic-sub-header ">
+            Warning:
+          </h6>
+          <p class="report-paragraph"> Beware of forgeries. When in doubt, contact <b>Dots Africa</b> . Always quote the
+            <b>Dots Africa</b> reference number when communicating with <b>Dots Africa</b>. </p>
+        </div>
+      </div>
+
+      <div class="spacer"></div>
+      <div class="card raised padding-md-spacer" data-card>
+        <div class="col-md-10">
+          <h6 class="text-black candidate-header">Academic Qualifications</h6>
+        </div>
+        <div class="col-md-2">
+          <span class="info-icon">
+            <i class="icon-Dots_Info info-dots--icon report-info-icon"></i>
+          </span>
+        </div>
+
+        <hr style="margin-top: 0px" class="academic-card-line">
+        <div class="row">
+          <div class="col-md-6 col-xs-6 text-align-left ">
+            <h6 class="academic-sub-header">
+              Matric Post 1992 Umalusi
+            </h6>
+            <p class="sub-header text-rubik-regular">
+              Valid Until:2018/07/14
+            </p>
+          </div>
+          <div class="col-md-6 col-xs-6 text-align-right">
+            <span class="btn  btn-notification btn-notification--confirmed btn-results">
+              Results: Unconfirmed
+            </span>
+          </div>
+        </div>
+
+        <div class="container umalusi-container">
+          <div class="row">
+            <div class="col-md-6 umalusi-img">
+              <img src="dist/assets/img/company-logos/Umalusi logo.png" style="height:45px;width:180px" alt="">
+            </div>
+            <div class="col-md-6 report-enquiries">
+              <p class="text-primary paragraph-small text-weight-reg text-right">
+                For Enquiries or Disputes:
+              </p>
+              <p class="text-primary paragraph-small text-weight-reg text-right">
+                (011) 345 0933 info@umalusi.co.za
+              </p>
+            </div>
+          </div>
+          <div class="row">
+
+          </div>
+          <div class="row">
+              <h6 class="academic-sub-header">
+                  Qualifications
+                </h6>
+                <p class="text-black report-paragraph">Matric from Hoerskool Overvaal(Province:Free State)(2001)</p>
+
+          </div>
+          <div class="row">
+            <h6 class="academic-sub-header">
+              Outcomes:
+            </h6>
+            <p class="report-paragraph text-black">Umalusi (Statutory Council for Quality Assurance in Education)
+              confirmed
+              that the candidate qualified and obtained the Seniour Certifiacate in 2001.
+              Please Note:Surname differs(_VISSER).
+            </p>
+
+          </div>
+        </div>
+        <hr class="academic-card-line">
+
+        <div class="warning">
+          <h6 class="warning-header-text academic-sub-header ">
+            Warning:
+          </h6>
+          <p class="report-paragraph"> Beware of forgeries. When in doubt, contact <b>Dots Africa</b> . Always quote the
+            <b>Dots Africa</b> reference number when communicating with <b>Dots Africa</b>. </p>
+          <h6 class="warning-header-text  academic-sub-header">Notice:</h6>
+          <p class="report-paragraph">The <b>CANDIDATE</b> must be informed of the contents of this BV Certificate. This
+            information may not be withheld.</p>
+        </div>
+      </div>
+      <div class="card raised padding-md-spacer comments" data-card>
+        <div class="comments-heading">
+          <h5>Comments
+            (<span class="comment-count">5</span>)
+            <i class="icon-Dots_Add float-r" data-comments-arrow aria-hidden="true"></i>
+          </h5>
+        </div>
+        <div class="comments-content hidden">
+          <hr style="margin-top: 0px" class="academic-card-line">
+          <div class="media-area">
+            <div class="media">
+              <a class="pull-left" href="#">
+                <div class="avatar">
+                  <img class="media-object" src="dist/assets/img/user-icon.png" alt="GS" />
+                </div>
+              </a>
+              <div class="media-body">
+                <h4 class="media-heading">Gary Smith
+                  <small class="">&middot; March 23, 2018 at 14:15 PM
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                  </small>
+                </h4>
+                <h6 class="text-muted"></h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse laboriosam impedit ab quia atque at,
+                  totam
+                  eaque voluptate ipsam dicta fugit suscipit tempora, commodi alias excepturi deleniti iusto, quod
+                  cumque.</p>
+              </div>
+              <div class="show-more--comments">
+                <div class="comments--wrap">
+                  <div class="media">
+                    <a class="pull-left" href="#">
+                      <div class="avatar">
+                        <img class="media-object" src="dist/assets/img/user-icon.png" alt="GS" />
+                      </div>
+                    </a>
+                    <div class="media-body">
+                      <h4 class="media-heading">Gary Smith
+                        <small class="">&middot; March 23, 2018 at 14:15 PM
+                          <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </small>
+                      </h4>
+                      <h6 class="text-muted"></h6>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse laboriosam impedit ab quia atque
+                        at, totam
+                        eaque voluptate ipsam dicta fugit suscipit tempora, commodi alias excepturi deleniti iusto, quod
+                        cumque.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-center">
+                  <span class="btn btn-secondary btn-square pull-right" data-more-comments>
+                    View More
+                  </span>
+                </div>
+              </div>
+              <div class="spacer"></div>
+              <div class="">
+                <div class="row">
+                  <div class="col-md-2">
+                    <a class="pull-left author" href="#pablo">
+                      <div class="avatar">
+                        <img class="media-object" alt="GS" src="dist/assets/img/user-icon.png">
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-10">
+
+                    <textarea class="form-control comment-input" rows="5"
+                      placeholder="What are your thoughts on this report?"></textarea>
+
+
+                  </div>
+                  <div class="media-footer">
+                    <a href="#" class="btn btn-primary btn-round  btn-white btn-raised pull-right">Post Comment</a>
+                  </div>
+
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+  </div>
+  </div>
+  <div id="logged-in-panel" class="card side-menu-card hidden">
+
+    <div class="side-menu-header">
+
+      <div class="row">
+        <div class="col-md-2">
+          <div class="active-users">
+            <div class="circlce-no-icon"><img src="dist/assets/img/random_users/54.jpg" alt=""></div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <h6>Philisande</h6>
+          <p>pila@dots.africa</p>
+        </div>
+
+        <div class="col-md-5">
+          <button class="btn btn-secondary btn-square text-black ">Logout<div class="ripple-container"></div></button>
+        </div>
+      </div>
+
+      <hr>
+      <div class="side-menu-list text-rubik-regular">
+        <ul class="text-gray">
+          <li>My Profile</li>
+          <li>My Company</li>
+          <li>Change Password</li>
+        </ul>
+      </div>
+      <hr>
+      <div class="side-menu-contacts">
+        <h6>Contacts</h6>
+        <ul class="text-rubik-regular text-gray">
+          <li>General feedback</li>
+          <li>About Dots 360</li>
+        </ul>
+      </div>
+      <hr>
+      <div class="side-menu-joinCommunity">
+        <h6>Join the community</h6>
+        <button class="btn btn-just-icon btn-twitter">
+          <i class="fa fa-twitter"></i>
+        </button>
+        <button class="btn btn-just-icon  btn-facebook">
+          <i class="fa fa-facebook"> </i>
+        </button>
+        <button class="btn btn-just-icon  btn-google">
+          <i class="fa fa-google"> </i>
+        </button>
+        <button class="btn btn-just-icon  btn-linkedin">
+          <i class="fa fa-linkedin"></i>
+        </button>
+      </div>
+      <hr>
+      <div class="side-menu-assist">
+        <ul class="text-rubik-regular text-gray">
+          <li>Settings</li>
+          <li>Help</li>
+        </ul>
+      </div>
+
+      <div class="btn-logIn-as">
+        <button class="btn btn-secondary btn-square text-black ">Log in as<div class="ripple-container"></div></button>
+      </div>
+
+      <div class="version">
+        <p>V2.0</p>
+      </div>
+    </div>
+  </div>
+  <div class="spacer"></div>
+  <div class="container-fluid">
+    <footer class="container-fluid ">
+      <div class="footer animatedParent">
+        <div class="container text-center animated bounceIn delay-150">
+          <div class="col-md-3 col-xs-4 hidden-xs hidden-sm">
+            <div class="dropup table-dropdown">
+              <button href="#pablo"
+                class="dropdown-toggle btn btn-rose btn-round btn-block text-gray text-rubik-regular"
+                data-toggle="dropdown">More Dots Recruit
+                <b class="caret"></b>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-right">
+                <li>
+                  <a href="#pablo">Lorem</a>
+                </li>
+                <li>
+                  <a href="#pablo">Lorem</a>
+                </li>
+                <li>
+                  <a href="#pablo">Lorem</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 text-align-left col-xs-12 col-sm-12">
+            <div class="user-footer-links text-center">
+              <span class="text-gray text-rubik-regular">
+                Dots Africa 2018 -2019 All rights reserved.
+              </span>
+            </div>
+          </div>
+          <div class="col-md-3 hidden-xs hidden-sm">
+            <div class="user-footer-links">
+              <span class="text-gray text-rubik-regular">
+                <a href="#" class="text-gray terms-condition-text">Terms of Use</a> and <a href="#"
+                  class="text-gray terms-condition-text">Privacy Policy</a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+<!--   Core JS Files   -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCx0PjbVTxih2QgBX-ovhYSaU2uuArm5OE&libraries=places">
+</script>
+<script src="dist/assets/js/jquery.dot360.min.js" type="text/javascript"></script>
+
+</html>

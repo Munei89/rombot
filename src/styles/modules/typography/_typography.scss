@@ -1,0 +1,148 @@
+.text-vertical {
+	transform: rotate(180deg);
+	writing-mode: vertical-rl;
+
+	@media (max-width: $screen-sm-min){
+			transform: none;
+			writing-mode: initial;
+	}
+
+}
+.text-caps {
+	text-transform: uppercase;
+}
+.text-small {
+	font-size: 12px !important;
+}
+.text-xsmall {
+	font-size: 10px;
+}
+.text-align-left {
+	text-align: left;
+}
+.text-align-right {
+	text-align: right;
+}
+.text-medium {
+	font-size: 18px;
+
+	i {
+		margin-left: 10px;
+	}
+}
+.text-black {
+	color: #333333;
+}
+.text-rose {
+	color: $magenta;
+}
+.text-gray {
+	color: #999999;
+}
+.link--silent {
+  text-decoration:none;
+  color: $white-color;
+  &:hover {
+    text-decoration:none;
+  }
+}
+.text-uppercase {
+	text-transform: uppercase;
+}
+
+.link--alt {
+  text-decoration:none;
+  &:hover {
+    text-decoration:underline;
+  }
+}
+.side-links--landing{
+	padding-top: 37vh;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: $font-size-base;
+	font-family: $font-family-rubikbold;
+
+	@media (max-width: $screen-sm-min){
+	padding-top: 10vh;
+	}
+	&-left {
+		padding-left: 2vw;
+		height: 100vh;
+		@media (max-width: $screen-sm-min){
+			height: 5vh;
+		}
+		p {
+			color:$white;
+			// transition: all .2s ease-in-out;
+
+			&:hover {
+				// transform: scale(1.4);
+			}
+		}
+	}
+	&-right {
+		padding-right: 2vw;
+		& i {
+			padding-bottom: 3vh;
+			transition: all .2s ease-in-out;
+			cursor: pointer;
+	    font-size: 2.2vh;
+			&:hover {
+				transform: scale(1.4);
+			}
+		}
+	}
+	&-pad--top {
+    padding-top: 10vh;
+	}
+}
+.landing-page--sound {
+  padding-top: 40vh;
+
+	@media (max-width: $screen-sm-min){
+			padding-top: 5vh;
+	}
+
+	& i {
+    padding-left: 7px;
+		transition: all .2s ease-in-out;
+		cursor: pointer;
+		&:hover {
+			transform: scale(1.4);
+		}
+	}
+	& p {
+    padding-right: 7px;
+	}
+}
+// .landing-slider--title {
+//   height: 156px;
+//   font-family: 'asapbold';
+//   font-size: 10vh;
+//   line-height: 0.98;
+//   letter-spacing: normal;
+//   text-align: left;
+//   color: #ffffff;
+// 	margin-top: 0;
+//
+// 	&.home-title {
+// 		font-size: 48px;
+// 		height: 100%;
+// 		padding-bottom: 5vh;
+// 		padding-top: 2vh !important;
+// 	}
+// 	&.text-only {
+// 		font-size: 54px;
+// 		text-align: center;
+// 	}
+// }
+.landing-slide--sub-title {
+	font-family: $font-family-rubikregular;
+	margin-bottom: 0;
+	text-align: left;
+  font-size: 2vh;
+}
+.no-shadow {
+	box-shadow: unset;
+}

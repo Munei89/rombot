@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en" class="background-very-lightGrey no-overflow">
+
+<head>
+  <!-- App Icons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="dist/assets/img/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="dist/assets/img/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="dist/assets/img/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="dist/assets/img/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="dist/assets/img/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="dist/assets/img/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="dist/assets/img/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="dist/assets/img/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="dist/assets/img/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="dist/assets/img/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="dist/assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="dist/assets/img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="dist/assets/img/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" href="favicon.ico">
+  <meta name="msapplication-TileColor" content="#f2f2f2">
+  <meta name="msapplication-TileImage" content="dist/assets/img/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#d4145a">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+  <title>dot360 - My Checks</title>
+
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+
+  <!-- CSS Files -->
+  <link href="dist/assets/css/dot360.css" rel="stylesheet" />
+</head>
+
+<body class="background-very-lightGrey no-overflow">
+  <div id="loader-wrapper">
+    <!-- <div id="loader"></div> -->
+    <div class="loading-wrapper text-center">
+      <img src="dist/assets/img/loading-logo.svg" width="300px" height="46px" alt="">
+      <div class="dots-loading-logo">
+        <div id="percentage">
+          <span class="total"></span>
+        </div>
+      </div>
+      <div class="loading-slogan">
+        <p>Streamlined Offering, Improved Operations</p>
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-transparent border-bottom-solid logged--in-user navbar-fixed-top background-very-lightGrey">
+    <div class="navbar-header">
+      <span class="visible-xs visbile-sm user-header-controls" style="position: absolute; right: 30%; width:0px;">
+        <div class="user-header--icons" style=" border-right: 0px solid #E6E6E6;border-left: 0px solid #E6E6E6;">
+              <i class="icon-Dots_Notification"></i> <span class="badge badge-magenta">3</span>
+           </div>
+      </span>
+      <button type="button" class="navbar-toggle" data-toggle="collapse">
+        <a href="#" class="menu float-r">
+          <span class="sr-only">Toggle navigation</span>
+          <span style="width: 60%;margin-top: 10px;"></span>
+          <span style="width:40%"></span>
+        </a>
+      </button>
+      <a class="navbar-brand" href="home.html">
+        <img src="dist/assets/img/Logo Redesign-25.svg" height="50px" width="150px" alt="">
+      </a>
+     
+    </div>
+    <div class="navbar-right user-header-controls text-black hidden-xs hidden-sm">
+       <div class="user-header--icons">
+          <i class="icon-Dots_Notification"></i> <span class="badge badge-magenta">3</span>
+       </div>
+       <div class="user-header--icons">
+         <div class="empty-user">
+           MN
+         </div>  
+       </div>
+      </div>
+    <div class="container">
+        <div class="collapse navbar-collapse">
+            <div class="card side-menu-card">
+     
+                <div class="side-menu-header">
+            
+                  <div class="row">
+                    <div class="col-md-12 text-right navbar-toggle" data-toggle="collapse"><i class="icon-Dots_Close font18 text-black"></i></div>
+                  </div>
+                  <div class="row">
+                      <div class="col-xs-2 col-sm-2">
+                        <div class="active-users">
+                            <div class="circlce-no-icon"><img src="dist/assets/img/random_users/54.jpg" alt=""></div>
+                        </div>
+                      </div>
+                      <div class="col-xs-10 col-sm-10">
+                        <h6>Philisande</h6>
+                        <p>pila@dots.africa</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-6 col-sm-6">
+                        <span class="btn text-left btn-primary btn-round btn-white btn-raised perform-check visible-xs col-xs-3" id="" style="margin: 10px 10px 0px 19px;float: right;">
+                            Share Idea 
+                         </span> 
+                    </div>
+                    <div class="col-xs-6 col-sm-6">
+                      <div class="md-spacer"></div>
+                        <i class="icon-Dots_Notification text-black font18"></i>
+                      </div>
+                  </div>
+                  <hr>
+                  <div class="side-menu-list text-rubik-regular">
+                    <ul class="text-gray">
+                      <li>My Profile</li>
+                      <li>My Company</li>
+                      <li>Change Password</li>
+                    </ul>
+                  </div>
+                  <hr>
+                  <div class="side-menu-contacts">
+                    <h6>Contacts</h6>
+                    <ul class="text-rubik-regular text-gray">
+                      <li>General feedback</li>
+                      <li>About Dots 360</li>
+                    </ul>
+                  </div>
+                  <hr>
+                  <div class="side-menu-joinCommunity">
+                    <h6>Join the community</h6>
+                    <button class="btn btn-just-icon btn-twitter">
+                        <i class="fa fa-twitter"></i>
+                      </button>
+                      <button class="btn btn-just-icon  btn-facebook">
+                        <i class="fa fa-facebook"> </i>
+                      </button>
+                      <button class="btn btn-just-icon  btn-google">
+                        <i class="fa fa-google"> </i>
+                      </button>
+                      <button class="btn btn-just-icon  btn-linkedin">
+                        <i class="fa fa-linkedin"></i>
+                      </button>
+                  </div>
+                  <hr>
+                  <div class="side-menu-assist">
+                    <ul class="text-rubik-regular text-gray">
+                      <li>Settings</li>
+                      <li>Help</li>
+                    </ul>
+                  </div>  
+                  <div class="version">
+                    <p>V2.0</p>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-6 col-xs-6 col-sm-6">
+                          <button class="btn btn-secondary btn-square text-black">Logout<div class="ripple-container"></div></button>
+                      </div>
+                      <div class="col-md-6 col-xs-6 col-sm-6">
+                              <span class="text-black ">Log in as<div class="ripple-container"></div></span>
+                      </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+  </nav>
+  <div class="md-spacer"></div>
+  </div>
+  <div class="clearfix"></div>
+  <div class="container ">
+    <div data-no-check-page data-checks-heading class="mobi-body">
+      <div class="row">
+        <div class="col-md-8 col-md-pull-2">
+          <div class="container">
+            <div id="container">
+              <div class="step-wizard" role="navigation">
+                <div class="checkProgress">
+                  <div class="checkProgressBar empty"></div>
+                  <div id="prog" class="checkProgressBar" style="width: 25%;"></div>
+                </div>
+                <ul>
+                  <li class="done">
+                    <div id="step1">
+                      <div class="step"><i class="icon-Dots_Success"></i></div>
+                      <div class="title hidden-sm hidden-xs">Sign Up</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div id="step2">
+                      <div class="step">2</div>
+                      <div class="title hidden-sm hidden-xs">ID Verification</div>
+                    </div>
+                  </li>
+                  <li class="">
+                    <div id="step3">
+                      <div class="step">3</div>
+                      <div class="title hidden-sm hidden-xs">Complete Details</div>
+                    </div>
+                  </li>
+                  <li class="">
+                    <div id="step4">
+                      <div class="step">4</div>
+                      <div class="title hidden-sm hidden-xs">Account Verification</div>
+                    </div>
+                  </li>
+                  <li class="">
+                    <div id="step5">
+                      <div class="step">5</div>
+                      <div class="title hidden-sm hidden-xs">Activation</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7 hidden-sm hidden-xs">
+        <div class="welcome-content">
+          <h5 class="text-weight-light">Welcome, Philasande! Your account is being verified.</h5>
+          <h4>
+            Relax for now. Perform checks on a Pay-As-you-Use Basis until Your Account is Enabled.
+          </h4>
+        </div>
+        <div class="welcome-content--btns">
+          <button class="btn btn--med btn-primary btn-round btn-magenta">Perform first check <i class="icon-Dots_Right-2 icon--btn font26">
+            </i>
+          </button>
+          <span>
+            <a href="#" class="text-weight-med">Learn more</a>
+          </span>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <img src="dist/assets/img/guru.svg" alt="" class="img-responsive">
+      </div>
+      <div class="col-md-7 visible-sm visible-xs">
+          <div class="welcome-content">
+            <h5 class="text-weight-light">Welcome, Philasande! Your account is being verified.</h5>
+            <h4>
+              Relax for now. Perform checks on a Pay-As-you-Use Basis until Your Account is Enabled.
+            </h4>
+          </div>
+          <div class="welcome-content--btns text-center">
+            <button class="btn btn--med btn-primary btn-round btn-magenta">Perform first check <i class="icon-Dots_Right-2 icon--btn font26">
+              </i>
+            </button>
+            <div class="text-center">
+              <a href="#" class="text-weight-med">Learn more</a>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div id="logged-in-panel" class="card">
+    <i class="fa fa-times close text-black"></i>
+    <div class="spacer"></div>
+    <div>
+      <span> Munei</span>
+      <span class="label label-transparent float-r">Logout</span>
+      <br />
+      <span>mail@mail.com</span>
+    </div>
+    <div class="spacer"></div>
+    <div class="user-controls">
+      <p class="text-black">
+        <strong>
+          My Profile
+        </strong>
+      </p>
+      <p class="text-black">
+        <strong>
+          Change Password
+        </strong>
+      </p>
+    </div>
+    <div class="spacer"></div>
+    <div class="user-contacts">
+      <h4>Contacts</h4>
+      <p>
+        General feedback
+      </p>
+      <p>
+        Report a bug
+      </p>
+    </div>
+    <div class="spacer"></div>
+    <div class="user-socials">
+      <h4>
+        Join the community
+      </h4>
+      <button class="btn btn-just-icon btn-twitter">
+        <i class="fa fa-twitter"></i>
+      </button>
+      <button class="btn btn-just-icon  btn-facebook">
+        <i class="fa fa-facebook"> </i>
+      </button>
+      <button class="btn btn-just-icon  btn-google">
+        <i class="fa fa-google"> </i>
+      </button>
+      <button class="btn btn-just-icon  btn-linkedin">
+        <i class="fa fa-linkedin"></i>
+      </button>
+    </div>
+    <div class="spacer"></div>
+    <div class="user-settings">
+      <h5>
+        Settings
+      </h5>
+      <h5>
+        Help
+      </h5>
+    </div>
+  </div>
+  <div class="spacer"></div>
+  <!-- <footer class="container-fluid background-white">
+    <div class="footer animatedParent">
+      <div class="container text-center animated bounceIn delay-150">
+        <div class="col-md-2 col-xs-4 hidden-xs hidden-sm">
+          <div class="dropup table-dropdown">
+            <button href="#pablo" class="dropdown-toggle btn btn-rose btn-round btn-block" data-toggle="dropdown">More
+              Dots Recruit
+              <b class="caret"></b>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-right">
+              <li>
+                <a href="#pablo">Lorem</a>
+              </li>
+              <li>
+                <a href="#pablo">Lorem</a>
+              </li>
+              <li>
+                <a href="#pablo">Lorem</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-8 text-align-left col-xs-12 col-sm-12">
+          <div class="user-footer-links">
+            <span class="hidden-xs hidden-sm">|</span>
+            <span>TOU</span>
+            <span>Privacy</span>
+            <span>Community</span>
+            <span>FAQs</span>
+            <span class="hidden-xs hidden-sm">|</span>
+            <span class="hidden-xs hidden-sm">Follow</span>
+          </div>
+        </div>
+        <div class="col-md-2 hidden-xs hidden-sm">
+          <div class="user-footer-links">
+            <span>
+              Help
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer> -->
+</body>
+<!--   Core JS Files   -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCx0PjbVTxih2QgBX-ovhYSaU2uuArm5OE&libraries=places"></script>
+<script src="dist/assets/js/jquery.dot360.min.js" type="text/javascript"></script>
+
+</html>

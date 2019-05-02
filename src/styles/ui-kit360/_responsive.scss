@@ -1,0 +1,1423 @@
+@media (min-width: $screen-md-min){
+    .navbar{
+        .navbar-collapse{
+            text-align: center;
+        }
+
+        .navbar-center{
+            display: inline-block;
+            float: none;
+        }
+    }
+
+    .table-responsive{
+        overflow: hidden;
+    }
+
+    .table-interaction{
+  
+        overflow: hidden;
+      }
+
+}
+@media (max-width: $screen-sm-max){
+
+    .page-header{
+        height: auto;
+        min-height: 100vh;
+
+        .iframe-container{
+            padding: 30px 0;
+        }
+    }
+
+    .footer{
+        nav,
+        .social-area{
+            float:none !important;
+        }
+    }
+
+    .card-form-horizontal .form-group{
+        padding-bottom: 20px;
+    }
+    .contactus-2 {
+        .card-contact{
+            margin: 45px 0 0;
+        }
+
+        .map{
+            height: auto;
+            min-height: 910px;
+        }
+    }
+    .carousel{
+        .page-header{
+            padding: 0 30px;
+        }
+        .buttons{
+            margin-bottom: 100px;
+        }
+    }
+
+    .btn.btn-simple,
+    .navbar .navbar-nav > li > a.btn.btn-simple {
+        padding-left: 0;
+        padding-right: 0;
+        text-align: left;
+    }
+
+    .presentation-page,
+    .index-page{
+        .section-components .image-container{
+            height: 400px;
+
+            img{
+                max-width: 410px;
+                height: auto;
+            }
+        }
+
+        .section-cards{
+            .image-container{
+                height: 300px;
+                margin-top: -100px;
+
+                img{
+                    max-width: 500px;
+                }
+            }
+        }
+        .section-content{
+            padding-top: 0;
+        }
+
+        .section-overview{
+            .card .content{
+                text-align: center;
+            }
+            .card-image{
+                max-width: 60px;
+                margin: 0 auto 20px;
+            }
+        }
+    }
+
+
+
+
+}
+@media (max-width: $screen-xs-max){
+    h1,
+    .h1,
+    .presentation-page .brand h1{
+        font-size: 3em;
+    }
+
+    .presentation-page .pro-badge{
+        font-size: 14px;
+        margin-right: 0;
+        right: -47px;
+        padding: 4px 8px;
+        top: -4px;
+        display: inline-block;
+    }
+    .subscribe-line{
+        .btn{
+            margin-top: 15px;
+        }
+    }
+
+
+
+
+
+}
+
+@media all and (max-width: $screen-sm) {
+
+    #bodyClick {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        opacity: 0;
+        top: 0;
+        left: auto;
+        right: 300px;
+        content: "";
+        z-index: 1029;
+        overflow-x: hidden;
+    }
+
+    .navbar-header{
+        float: none;
+
+        .navbar-toggle{
+            display: block;
+            float: right;
+        }
+    }
+
+
+    .navbar-collapse{
+        position: fixed;
+        display: block;
+        top: 0px;
+        height: 100vh;
+        width: 230px;
+        right: 0;
+        margin-right: 0 !important;
+        z-index: 1032;
+        visibility: visible;
+        background-color: #999;
+        overflow-y: visible;
+        border-top: none;
+        text-align: left;
+        padding-right: 0;
+        padding-left: 0;
+
+        max-height: none !important;
+
+        &.collapse{
+            height: 100vh !important;
+        }
+
+        @include transform-translate-x(230px);
+        @include transition (0.50s, cubic-bezier(0.685, 0.0473, 0.346, 1));
+
+        ul {
+            position: relative;
+            z-index: 3;
+            overflow-y: auto;
+            height: 100%;
+            float: none !important;
+            margin: 0;
+        }
+        .nav > li{
+            &:after{
+                width: calc(100% - 30px);
+                content: "";
+                display: block;
+                height: 1px;
+                margin-left: 15px;
+                // background-color: #e5e5e5;
+            }
+
+            &:last-child {
+                &:after{
+                    display: none;
+                }
+            }
+        }
+
+        &::after{
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            background-color: $white-color;
+            display: block;
+            content: "";
+            z-index: 1;
+        }
+        &.has-image::after{
+
+        }
+    }
+
+    .navbar.navbar-transparent .navbar-toggle{
+        .icon-bar{
+            color: $white-color;
+        }
+    }
+
+    .navbar.navbar-default .navbar-toggle{
+        .icon-bar{
+            color: inherit;
+        }
+    }
+
+    .navbar .navbar-collapse{
+
+        .caret{
+            position: absolute;
+            right: 16px;
+            margin-top: 8px;
+        }
+
+        .nav > li {
+            padding: 0;
+            float: none;
+        }
+
+        .navbar-nav{
+            margin-top: 0;
+
+            > li > a{
+                color: $black-color;
+                margin: 5px 15px;
+
+                &:hover,
+                &:focus{
+                    color: $black-color;
+                }
+            }
+
+            > li.button-container > a{
+                margin: 15px;
+            }
+
+            > li.open > .dropdown-menu{
+                padding-bottom: 10px;
+                margin-bottom: 5px;
+                box-shadow: none;
+            }
+        }
+
+        .open .dropdown-menu.dropdown-with-icons > li > a{
+            padding: 12px 20px 12px 35px;
+        }
+
+        .open .dropdown-menu > li > a{
+            color: $black-color;
+            margin: 0;
+            padding-left: 46px;
+
+            &:hover,
+            &:focus{
+                color: $white-color;
+            }
+        }
+
+        .dropdown-menu li{
+            margin:0 15px;
+        }
+
+        .dropdown.open .dropdown-menu{
+            display: block;
+        }
+
+        .dropdown .dropdown-menu{
+            display: none;
+        }
+    }
+
+
+
+
+    nav .container,
+    nav .navbar-header{
+        @include transition-transform(0.50s, cubic-bezier(0.685, 0.0473, 0.346, 1));
+    }
+
+    .nav-open nav .navbar-header{
+        left: 0;
+        @include transform-translate-x(-245px);
+    }
+
+    .nav-open .navbar-collapse{
+        @include transform-translate-x(0px);
+        width: 100%;
+    }
+
+    .features-5{
+        .container{
+            [class*="col-"]{
+                border-right: 0;
+                border-left: 0;
+            }
+
+            .row:last-child [class*="col-"]:last-child,
+            .row:last-child [class*="col-"]:nth-last-child(2){
+                border-top: 1px solid rgba(255, 255, 255, 0.35);
+            }
+        }
+    }
+}
+
+@media all and (max-width:1050px) and (min-width:991px) {
+    .main.main-raised{
+        .container{
+            width: 920px;
+        }
+    }
+}
+/* ----------- Galaxy S3 ----------- */
+
+/* Portrait and Landscape */
+@media screen
+  and (device-width: 320px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media screen
+  and (device-width: 320px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+}
+
+/* Landscape */
+@media screen
+  and (device-width: 320px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}
+
+/* ----------- Galaxy S4, S5 and Note 3 ----------- */
+
+/* Portrait and Landscape */
+@media screen
+  and (device-width: 320px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 3) {
+
+}
+
+/* Portrait */
+@media screen
+  and (device-width: 320px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+
+}
+
+/* Landscape */
+@media screen
+  and (device-width: 320px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+
+}
+
+/* ----------- Galaxy S6 ----------- */
+
+/* Portrait and Landscape */
+@media screen
+  and (device-width: 360px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 4) {
+
+}
+
+/* Portrait */
+@media screen
+  and (device-width: 360px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 4)
+  and (orientation: portrait) {
+
+}
+
+/* Landscape */
+@media screen
+  and (device-width: 360px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 4)
+  and (orientation: landscape) {
+
+}
+
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+
+}
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+
+}
+
+@media(min-width:1440px){
+    .my-checks-search{
+        padding: 10px;
+    }
+}
+// Adiitional Screens
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+    //CSS
+    //tahnk you page
+    .checkout-confrimed--amounts{
+        // width: 100%
+        .amounts{
+            h4{
+               margin-left: -15px!important;
+                .badge-magenta{
+                    &.checkout{
+                        right: 0px !important;
+                    }
+                }
+            }
+        }
+    
+    }
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+    //CSS
+    .checkout-confrimed--amounts{
+        // width: 100%
+        .amounts{
+            h4{
+               margin-left: -15px!important;
+                .badge-magenta{
+                    &.checkout{
+                        right: 0px !important;
+                    }
+                }
+            }
+        }
+    
+    }
+
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    //CSS
+    .thank-you-line{
+        // margin-left: -25px!important;
+        height: 0px;
+
+    }
+    .invoice-download{
+        font-size: 30px;
+        margin-top: 15px;
+    }
+
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    //CSS
+    //thank you page
+    .thank-you-table{
+        width: 100%;
+    }
+
+    .card-backround-checks {
+        hr{
+            margin-left: -15px !important;
+        }
+
+        .arrow i.icon-Dots_Left-1 {
+            font-size: 25px;
+            position: absolute;
+            left: 25px;
+        }
+
+        .arrow i.icon-Dots_Right-1 {
+            font-size: 25px;
+            position: absolute;
+            right: 25px;
+            bottom: 32px;
+        }
+        .applicant-info-header{
+            h3{
+                color: #E578A0;
+            }
+            p{
+                margin-left: 0px;
+            }
+
+        }
+
+
+
+        .applicant-form{
+
+            .checkbox{
+                label{
+                    font-size: 12px;
+                    font-family: rubikregular;
+                    color: #999999;
+                }
+            }
+
+            input {
+                width: 100%!important;
+            }
+
+            .attachment-icon{
+                margin-top: 10px;
+                .icon-Dots_Attachment{
+                    padding: 6px;
+                    border: 1px solid #B3B3B3;
+                    border-radius: 5px;
+                    font-size: 20px;
+                }
+            }
+
+        }
+
+
+    }
+
+    
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    //CSS
+    //thank you page
+    .thank-you-table{
+        width: 100%;
+    }
+    .checkout-card[data-card]{
+        padding: 20px 25px;
+
+        .thank-you-line{
+            margin-left: -25px!important;
+        }
+        .invoice-download{
+            font-size: 30px;
+            margin-top: 15px;
+        }
+    }
+
+    .applicant-form{
+
+        .checkbox{
+            label{
+                font-size: 12px;
+                font-family: rubikregular;
+                color: #999999;
+            }
+        }
+
+        input {
+            width: 100%!important;
+        }
+
+        .checkout-confrimed--amounts{
+            // width: 100%
+            .amounts{
+                h4{
+                    // margin-left: 30px;
+                    .badge-magenta{
+                        &.checkout{
+                            right: 15px;
+                        }
+                    }
+                }
+            }
+        
+        }
+
+        .attachment-icon{
+            margin-top: 10px;
+            .icon-Dots_Attachment{
+                padding: 6px;
+                border: 1px solid #B3B3B3;
+                border-radius: 5px;
+                font-size: 20px;
+            }
+        }
+
+    }
+    
+    
+  }
+
+
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    
+    //CSS
+
+    //NAV
+    .navbar-header{
+        padding-top: 15px;
+    }
+
+    nav.navbar .navbar-toggle {
+        margin: 5px 10px 8px 0;
+        padding: 4px 5px;
+        width: 50px;
+    }
+
+    //thank you page
+    .thank-you-table{
+        width: 100%;
+    }
+    
+    
+    .checkout-confrimed--amounts{
+        // width: 100%
+        margin-left: -5px;
+        .amounts{
+            h4{
+                margin-left: 0px;
+                font-size: 30px;
+                text-align: center;
+                .badge-magenta{
+                    &.checkout{
+                        right: 32px;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .checkout-card[data-card]{
+        padding: 15px 0px 15px 9px;
+
+        h5{
+            margin-left: 15px;
+        }
+        .thank-you-line{
+            margin-left: -15px!important;
+            height: 0px;
+            width: 105% !important;
+        }
+        .invoice-download{
+            font-size: 30px;
+            margin-top: 15px;
+            margin-right: 15px;
+        }
+    }
+
+    //Analytics
+    .analytics-dashboard--header{
+        h5{
+            color: #E578A0;
+            
+        }
+    }
+
+    .analytics-summary-header{
+        font-size: 28px!important;
+    }
+
+    .dropdown .open{
+
+       ul .dropdown-menu {
+            margin-left: -90px!important;
+        }
+    }
+
+    .analytics-dashboard--summary{
+
+        h5{
+            color: #E578A0;
+            margin-left: 20px;
+        }
+        
+        h5.analytics-numbers{
+            color: black;
+            margin-left: 0px;
+        
+        }
+
+
+
+
+    }
+
+    .mobi-carousel-item {
+        
+        h5{
+            margin-left: 20px
+        }
+        p{
+            margin-left: 20px;
+        }
+
+    }
+
+    .dashboard-mobi-progress{
+        p{
+            margin: 0px;
+            color: #333333;
+        }
+        span{
+            color: #333333;
+        }
+    }
+//nochecks
+    .welcome-content{
+        h5{
+            font-size: 20px;
+            font-family: rubikregular;
+        }
+        h4{
+            font-size: 25px;
+            font-family: rubikbold;
+        }
+    }
+//budget management
+
+    .card-budget-adjustment{
+
+        .btn--budget{
+            margin-left: -10px;
+        }
+
+    }
+
+    .mobi-center{
+        .btn-add--user{
+            width: 100% !important;
+            height: 50px;
+            padding: 15px 0px 0px;
+            color: #FFFFFF;
+            background: #E6E6E6;
+            border-color: #E6E6E6;
+            margin-top: 15px;
+
+            &:active{
+                color: #333333;
+                border-color: #333333;
+            }
+        }
+    }
+
+    .tack-budget-text{
+        color: #E578A0;
+    }
+
+    .budget-header{
+        h6{
+            color: #E578A0;
+        }
+        
+    }
+    .btn-add--user{
+        color: #D4145A;
+        border-color: #D4145A;
+    }
+
+    .card-track-budget{
+        margin-top: 20px;
+    }
+
+    .table-dropdown button .caret {
+        margin-left: -3px;
+        margin-top: 7px;
+        color: #333;
+        font-size: 20px;
+        height: 10px;
+        width: 10px;
+    }
+
+    .dropdown.open .caret, .dropup.open .caret, .btn-group.bootstrap-select.open .caret {
+        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg);
+        margin: 0px;
+        margin-left: -3px;
+        margin-top: 0px;
+    }
+
+    .card-dots-budget{        
+        h6{
+            &.dots-budget-header{
+                color: #E578A0;
+            }
+            
+           }
+            
+        // .pos--rel .z-index99{
+        //     text-align: center;
+
+        //     .btn-adjust-budget{
+        //         margin: 25px 0px;
+        //     }  
+        // }
+        .btn-adjust-budget{
+            margin: 25px 85px;
+        }
+
+
+    }
+
+    //dashboard
+
+    .dasboard-mobile-slick{
+        width: 100%;
+        overflow-x: scroll;
+        .slick-slide{
+            width: 20% !important;
+        }
+    }
+
+    .card-usage-log{
+        table{
+            td:nth-child(2){
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+            }
+        }
+        .usage-log-header-content{
+            h6{
+                color: #E578A0 !important;
+                margin-left: 20px;
+            }
+            p{
+                margin-left: 20px;
+            }
+        }
+    }
+    .card-interactions-log{
+        .interactions-log-header{
+            h6{
+                color: #E578A0!important;
+                margin-left: 20px;
+            }
+            p{
+                margin-left: 20px;
+            }
+        }
+        hr{
+            width: 105% !important;
+            margin-left: -10px!important;
+            height: 0.7px!important;
+        }
+
+        .notification-user-interaction {
+            margin-left: 0px;
+        }
+    }
+    .card-dots-budget{
+        padding-left: 20px!important;
+        padding-right: 15px!important;
+
+        hr{
+            width: 111%!important;
+            margin-left: -20px!important;
+            height: 0.7px!important;
+        }
+    }
+
+    .card-usage-log{
+        .notification-user-usage {
+            margin-left: 0px;
+        }
+    }
+
+
+
+    .user-log-line{
+        height: 0px!important;
+        width: 100% !important;
+        margin-left: 0%!important;
+    }
+
+    .btn-viewAll-usage{
+        margin: 20px 0px;
+    }
+    
+
+    .card-interactions-log{
+        margin-top: 20px; 
+    }
+
+    p.total-checks-sub{
+        margin-left: 0px;
+    }
+
+    .open > .dropdown-menu {
+    
+        margin-left: -95px;
+    }
+
+
+    .xs-border{
+        border-right: 1px solid #f2f2f2;
+    }
+
+    //Perform Check
+
+    .card-backround-checks {
+        padding: 4vh!important;
+        hr{
+            margin-left: -26px !important;
+            width: 119% !important;
+        }
+
+        .arrow i.icon-Dots_Left-1 {
+            font-size: 25px;
+            position: relative;
+            left: 15px;
+            top: 5px;
+        }
+
+        .arrow i.icon-Dots_Right-1 {
+            font-size: 25px;
+            position: relative;
+            right: 5px;
+            top: 5px;
+        }
+        .applicant-info-header{
+            h3{
+                color: #E578A0;
+            }
+            p{
+                margin-left: 0px;
+            }
+
+        }
+
+
+
+        .applicant-form{
+
+            .checkbox{
+                label{
+                    font-size: 12px;
+                    font-family: rubikregular;
+                    color: #999999;
+                }
+            }
+
+            input {
+                width: 100%!important;
+            }
+
+            .attachment-icon{
+                margin-top: 10px;
+                .icon-Dots_Attachment{
+                    padding: 6px;
+                    border: 1px solid #B3B3B3;
+                    border-radius: 5px;
+                    font-size: 20px;
+                }
+            }
+
+        }
+
+
+    }
+
+    .check-option-container{
+        padding: 20px 0px 0px 20px;
+        font-family: rubikbold;
+        .close-nav{
+            margin-left: -15px;
+            span {
+                i{
+                    padding: 5px;
+                    border: 1px solid #b3b3b3;
+                    border-radius: 5px;
+                    margin-left: -10px;
+                }
+
+            }
+        }
+
+        span{
+            a{
+                font-size: 14px;
+            }
+        }
+    }
+
+    .required-checks-header{
+        h3{
+            color: #E578A0;
+        }
+    }
+
+    .collaboration-header-section{
+        h6{
+            color: #E578A0;
+        }
+    }
+
+    .applicant-info-header{
+        h3{
+            color: #E578A0;
+            i{
+                
+                    font-size: larger;
+                    color: #333333;
+            }
+        }
+    }
+    //checkout-list
+
+    .mobi-body{
+        .checkout-card{
+            padding: 15px 0px 15px 0px;
+            hr{
+                margin-left: -20px !important;
+            }
+            .link-arrow{
+                span{
+                    font-size: 18px;
+                    i{
+                        font-size: 30px;
+                    }
+                }
+
+            }
+            .btn-secondary.btn-square{
+                margin-left: -10px;
+            }
+        }
+
+    }
+
+    .container-fluid {
+        margin-top: 25px!important;
+        margin-bottom: 25px!important;
+
+        .checkout-amount{
+            left: -4px;
+            .amounts{
+                h4{
+                    text-align: right;
+                    
+                }
+            }
+        }
+    }
+
+    .checkout-button-section{
+             padding-left: 0px; 
+        .btn{
+            width: 100%;
+            border-radius: 5px;
+            height: 65px;
+            font-size: 21px;
+            padding: 15px;
+            background-color: white;         
+            
+            .icon--btn{
+                font-size: 35px;
+            }
+        }
+    }
+
+    .navbar-header{
+        .checkout-header{
+            font-size: 21px;
+            font-family: rubikbold;
+            text-align: center;
+        }
+
+        .close-btn{
+            margin-top: 10px;
+            i.icon-Dots_Close{
+                font-size: 20px;
+                padding: 5px;
+                border: 1px solid #B3B3B3;
+                border-radius: 5px;
+            }
+        }
+
+        .edit-section{
+            margin-top: 15px;
+            span{
+                font-family: rubikmedium;
+                a{
+                    color: #D1D1D1;
+                }
+            }
+        }
+
+    }
+
+    //my candidates
+
+    .analytics-dashboard--nav{
+
+        .nav-links-mobi{
+            width: 130%;
+            overflow-x: scroll;
+        }
+
+    }
+
+    .animatedParent{
+        .btn-filter{
+            margin: 0px -4px;
+            width: 95% !important;
+            font-size: 14px;
+        }
+        .btn-checks--info{
+            margin: 22px 0px 0px 0px;
+            font-size: 14px;
+            width: 116%;
+
+            
+            span.label{
+                padding: 5px;
+            }
+        }
+
+        [data-mobi-search-input]{
+            position: relative;
+            top: 15px!important;
+            right: 5px;
+        }
+        .my-checks-search{
+            .inputWithIcon{
+                margin-top: 0px;
+
+            }
+            .icon-Dots_Search{
+                position: relative;
+                top: -37px;
+                right: 5px;
+            }
+        }
+        [data-cancel]{
+            margin: 15px 0px;
+            font-family: rubikregular;
+        }
+
+    }
+
+    .mycandidate-table table thead tr td {
+        font-family: rubikregular;
+        text-align: center;
+        font-size: 16px;
+        color: #979797;
+    }
+
+
+    .pagination{
+
+        li:first-child > a{
+            width: 83px;
+            text-align: center;
+
+            i{
+                left: 7px;
+                top: 10px;
+            }
+        }
+
+        li:last-child > a{
+            width: 83px;
+            text-align: center;
+            i{
+                right: 7px;
+                top: 10px;
+            }
+        }
+        li{
+            a{
+                margin: 0px 1px;
+                font-size: 14px;
+            }
+        }
+    }
+    .modal-content{
+        .modal-body{
+            .picture-pad{
+                padding: 35px 0px 35px 25vw;
+
+            }
+            .side-picture-pad{
+                padding: 35px 10px;
+                .check-check-status{
+                    h5{
+                        font-size: 14px;
+                        margin-bottom: 25px;
+                    }
+                    .label{
+                        border-radius: 5px;
+                        padding: 12px 20px;
+                        font-family: rubikmedium;
+                        font-size: 12px;
+
+                    }
+                }
+            }
+        }
+
+        .candidate-top-info{
+            font-family: rubikmedium;
+            margin-bottom: 20px;
+        }
+
+        .candidate-bottom-info{
+            margin-top: 20px;
+            font-family: rubikmedium;
+        }
+
+        .modal-footer{
+            button{
+                color: #D4145A;
+            }
+        }
+
+
+    }
+
+
+  }
