@@ -1,0 +1,137 @@
+.pagination{
+    > li > a,
+    > li > span{
+        border: 0;
+        border-radius: 5px !important;
+        transition: all .3s;
+        padding: 5px 17px;
+        margin: 0 3px;
+        min-width: 40px;
+        height: 40px;
+        line-height: 30px;
+        color: #333;
+        background:unset !important;
+        font-family: $font-family-rubikregular;
+        font-size: 16px;
+        text-transform: capitalize;
+        background: transparent;
+        padding-left: 15px;
+        border:1px solid #b3b3b3;
+
+        &:hover,
+        &:focus{
+            
+            border: 1px solid black;
+            color: #333;
+            // position: static;
+            overflow: hidden;
+            // font-family: $font-family-rubikbold;
+            // //font-size: 14px;
+        }
+        // i {
+        //      color: #999999 !important;
+        // }
+    }
+
+    > .active > a,
+    > .active > span{
+        color: $gray-color;
+
+        &,
+        &:focus,
+        &:hover{
+            background-color: $brand-primary;
+            border-color: $brand-primary;
+            color: $white-color;
+            
+            //@include shadow-4dp-color($brand-primary);
+        }
+
+    }
+
+    // Colors
+    &.pagination-info{
+        > .active > a,
+        > .active > span{
+            &,
+            &:focus,
+            &:hover{
+                border-color: #fff;
+                color: #fff;
+                // @include shadow-4dp-color($brand-info);
+                // background: $gradient-background-magenta-webkit-gradient !important;
+                // background: $gradient-background-magenta-webkit-linear-gradient !important;
+                // background: $gradient-background-magenta-moz-linear-gradient !important;
+                // background: $gradient-background-magenta-o-linear-gradient !important;
+                // background: $gradient-background-magenta-linear-gradient !important;
+                background: #d4145a!important;
+            }
+        }
+    }
+
+    &.pagination-success{
+        > .active > a,
+        > .active > span{
+            &,
+            &:focus,
+            &:hover{
+                background-color: $brand-success;
+                border-color: $brand-success;
+                @include shadow-4dp-color($brand-success);
+            }
+        }
+    }
+
+    &.pagination-warning{
+        > .active > a,
+        > .active > span{
+            &,
+            &:focus,
+            &:hover{
+                background-color: $brand-warning;
+                border-color: $brand-warning;
+                @include shadow-4dp-color($brand-warning);
+            }
+        }
+    }
+
+    &.pagination-danger{
+        > .active > a,
+        > .active > span{
+            &,
+            &:focus,
+            &:hover{
+                background-color: $brand-danger;
+                border-color: $brand-danger;
+                @include shadow-4dp-color($brand-danger);
+            }
+        }
+    }
+}
+.mychecks-pagination-pad{
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-top:-10px;
+    i{
+        font-size: 20px;
+        top: 9px;
+        position: absolute;
+      
+    }
+    .icon-Dots_Left-1{
+        left: 10px;
+    }
+}
+
+.mycandidate-pagination-pad{
+    padding: 0px 20px 20px;
+    i{
+        font-size: 20px;
+        top: 9px;
+        position: absolute;
+
+    }
+    .icon-Dots_Left-1{
+        left: 10px;
+    }
+}

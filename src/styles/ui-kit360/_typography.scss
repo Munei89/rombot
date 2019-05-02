@@ -1,0 +1,151 @@
+h1, .h1 {
+    font-size: $font-size-h1;
+    line-height: 1.15em;
+}
+h2, .h2{
+    font-size: $font-size-h2;
+}
+h3, .h3{
+    font-size: $font-size-h3;
+    line-height: 1.4em;
+    margin: 20px 0 10px;
+}
+h4, .h4{
+    font-size: $font-size-h4;
+    line-height: 1.55em;
+}
+h5, .h5 {
+     font-size:22px ;//$font-size-h5;
+    line-height: 1.55em;
+    margin-bottom: 15px;
+}
+h6, .h6{
+    font-size: $font-size-h6;
+    // text-transform: uppercase;
+    font-weight: $font-weight-bold;
+}
+
+.title,
+.card-title,
+.info-title,
+.footer-brand,
+.footer-big h5,
+.footer-big h4,
+.media .media-heading{
+    font-weight: $font-weight-extra-bold;
+    font-family: $font-family-rubikregular;
+
+    &,
+    a{
+        color: $black-color;
+        text-decoration: none;
+    }
+}
+
+h2.title{
+    margin-bottom: $margin-base * 2;
+}
+
+.description,
+.card-description,
+.footer-big p{
+    color: $gray-light;
+}
+
+.text-warning {
+  color: $brand-warning;
+}
+.text-primary {
+  color: $brand-primary;
+}
+.text-secondary {
+    color: $brand-secondary;
+  }
+.text-danger {
+  color: $brand-danger;
+}
+.text-success {
+  color: $brand-success;
+}
+.text-info {
+  color: $brand-info;
+}
+.text-rose{
+    color: $brand-rose;
+}
+.text-gray{
+    color: $gray-color;
+}
+.text-white {
+    color: $white !important;
+}
+p {
+    color: #333;
+    &.paragraph-large {
+        font-size: $font-paragraph-lg;
+    }
+    &.paragraph-medium {
+        font-size: $font-paragraph-md;
+    }
+    &.paragraph-small {
+        font-size: $font-paragraph-sm;
+    }
+}
+.text-weight-reg {
+    font-family: $font-family-rubikregular;
+}
+.text-weight-med {
+    font-family: $font-family-rubikmedium;
+}
+.text-weight-light {
+    font-family: $font-family-rubiklight;
+}
+.text-rubik-regular{
+    font-family: "rubikregular", "Helvetica", "Arial";
+}
+.text-rubik-medium{
+    font-family: "rubikmedium", "Helvetica", "Arial";
+}
+
+.text-rubik-italic {
+    font-family: "rubikblack_italic", "Helvetica", "Arial" !important;
+}
+
+.total-score-header{
+    margin-bottom: 0;
+}
+.candidate-header{
+    font-size: 17px;
+    margin-left: -10px;
+}
+.academic-sub-header{
+    font-size: 16px;
+}
+.sub-header{
+    font-size: 13px;
+    color:#d4145a;
+}
+.report-paragraph{
+    font-size: 13px;
+}
+.warning-header-text{
+    color: #666666 !important;
+}
+.text-white{
+    color: white;
+}
+.terms-condition-text{
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+.text-error{
+    color:#ED1C24;
+}
+.text-success{
+    color: green;
+}
+.text-pending{
+    color: #B3B3B3;
+}

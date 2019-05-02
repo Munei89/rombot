@@ -1,0 +1,1688 @@
+<!doctype html>
+<html lang="en" class="background-light-grey">
+
+<head>
+  <!-- App Icons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="dist/assets/img/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="dist/assets/img/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="dist/assets/img/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="dist/assets/img/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="dist/assets/img/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="dist/assets/img/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="dist/assets/img/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="dist/assets/img/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="dist/assets/img/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="dist/assets/img/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="dist/assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="dist/assets/img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="dist/assets/img/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" href="favicon.ico">
+  <meta name="msapplication-TileColor" content="#f2f2f2">
+  <meta name="msapplication-TileImage" content="dist/assets/img/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#d4145a">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+  <title>dot360 - My Canditates</title>
+
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+
+  <!--     Fonts and icons     -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" /> -->
+
+  <!-- CSS Files -->
+  <link href="dist/assets/css/dot360.css" rel="stylesheet" />
+</head>
+
+<body class="background-light-grey">
+  <div id="loader-wrapper">
+    <!-- <div id="loader"></div> -->
+    <div class="loading-wrapper text-center">
+      <img src="dist/assets/img/loading-logo.svg" width="300px" height="46px" alt="">
+      <div class="dots-loading-logo">
+        <div id="percentage">
+          <span class="total"></span>
+        </div>
+      </div>
+      <div class="loading-slogan">
+        <p>Streamlined Offering, Improved Operations</p>
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-transparent border-bottom-solid logged--in-user navbar-fixed-top">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse">
+        <a href="#" class="menu float-r">
+          <span class="sr-only">Toggle navigation</span>
+          <span style="width: 60%;margin-top: 10px;"></span>
+          <span style="width:40%"></span>
+        </a>
+
+      </button>
+      <span class="btn text-left btn-primary btn-round btn-white btn-raised perform-check visible-xs col-xs-3" id=""
+        style="margin: 10px 10px 0px 19px;float: right;">
+        Perform Check
+      </span>
+      <a class="navbar-brand" href="home.html">
+        <img src="dist/assets/img/d.png" height="50px" width="50px" alt="">
+      </a>
+    </div>
+
+    <div class="navbar-header navbar-right hidden-sm hidden-xs">
+      <button type="button" class="navbar-toggle" data-toggle="collapse">
+        <a href="#" class="menu float-r">
+          <span class="sr-only">Toggle navigation</span>
+          <span style="width: 60%;margin-top: 10px;"></span>
+          <span style="width:40%"></span>
+        </a>
+      </button>
+      <a class="navbar-brand" href="#">
+        <i class="fa fa-user-circle" width="35px" height="35px"></i>
+      </a>
+    </div>
+
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active">
+            <a href="#" class="active">Background Screening</a>
+          </li>
+          <li class="">
+            <a href="#" class="">Yimi</a>
+          </li>
+          <li class="">
+            <a href="#" class="">Trace</a>
+          </li>
+          <li class="visible-xs visible-sm">
+            <div class="text-right pos--rel z-index99">
+              <span class="btn btn-lg btn-rose btn-round perform-check">
+                <i class="fa fa-plus"></i> Perform Check
+              </span>
+            </div>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="visible-xlgvisible-md">
+            <div class="text-right pos--rel z-index99">
+              <span class="btn btn-primary btn-round btn-white btn-raised perform-check">
+                <i class="fa fa-plus"></i> Bulk Upload Sheet
+              </span>
+            </div>
+          </li>
+          <li class="visible-xlgvisible-md">
+            <div class="text-right pos--rel z-index99">
+              <span class="btn btn-primary btn-round btn-magenta perform-check">
+                <i class="fa fa-plus"></i> Perform Check
+              </span>
+            </div>
+          </li>
+          <li class="user-header-controls">
+            <i class="icon-Dots_Notification"></i>
+          </li>
+          <!-- <li class="user-header-controls">
+            <i class="fa fa-user-circle"></i>
+          </li> -->
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <div class="xs-spacer"></div>
+  <div class="container dashboard-spacer analytics-dashboard--nav">
+    <div class="row">
+      <div class="col-md-7 col-md-push-1 col-xs-push-0 col-xs-12 nav-links-mobi">
+
+        <span class="user-nav-links ">
+          Dashboard
+        </span>
+        <span class="user-nav-links">
+          All Checks
+        </span>
+        <span class="user-nav-links active">
+          All Candidates
+        </span>
+        <span class="user-nav-links">
+          360 Analytics
+        </span>
+      </div>
+      <!-- <div class="col-md-4 hidden-xs hidden-sm text-align-right">
+          <span class="download"><i class="fa fa-download" aria-hidden="true"></i></span>
+          <span class="forward"><i class="fa fa-reply" aria-hidden="true"></i></span>
+        </div> -->
+    </div>
+  </div>
+  <div class="xs-spacer"></div>
+  <div class="container">
+    <div data-page-content data-checks-heading class=" animatedParent">
+      <div class="card">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7 col-xs-4" id="mobi-search-filter">
+              <div class="lg-spacer"></div>
+              <div class="dropdown table-dropdown">
+                <button href="#pablo" class="dropdown-toggle btn btn-block btn-filter" data-toggle="dropdown">Filter
+                  <i class="icon-Dots_Down-1"></i>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <li>
+                    <a href="#pablo">Completed</a>
+                  </li>
+                  <li>
+                    <a href="#pablo">Pending</a>
+                  </li>
+                  <li>
+                    <a href="#pablo">Something else here</a>
+                  </li>
+                </ul>
+              </div>
+              <span class="text-gray text-rubik-regular btn-checks--info hidden-sm hidden-xs">
+                Docs/Info Required
+                <span class="label label-rose">13</span>
+              </span>
+              <span class="text-gray text-rubik-regular btn-checks--info hidden-sm hidden-xs">
+                ADDL Charges Requested
+                <span class="label label-rose">13</span>
+              </span>
+              <div class="md-spacer"></div>
+            </div>
+            <div class="col-xs-6 col-sm-7 visible-xs visible-sm" id="mobi-search">
+              <div class="lg-spacer"></div>
+              <div class="text-gray text-rubik-regular btn-checks--info visible-sm visible-xs" data-toggle="dropdown">
+                Additional Info
+                <span class="label label-rose float-r">13</span>
+              </div>
+              <div class="dropdown-menu pos--rel dropdown-checks">
+                <span class="text-gray text-rubik-regular btn-checks--info">
+                  Docs/Info Required
+                  <span class="label label-rose">13</span>
+                </span>
+                <br />
+                <span class="text-gray text-rubik-regular btn-checks--info">
+                  ADDL Charges Requested
+                  <span class="label label-rose">13</span>
+                </span>
+              </div>
+            </div>
+            <div class="col-md-5 col-xs-2 my-checks-search">
+              <div class="md-spacer"></div>
+              <div class="col-md-9 col-xs-7 visible-sm visible-xs">
+                <div class="inputWithIcon hidden" id="mobi-search-input">
+                  <input type="text" placeholder="Search here" class="input-search">
+                  <bold><i class="icon-Dots_Search" aria-hidden="true"></i></bold>
+                </div>
+                <bold class="visible-sm visible-xs"><i class="icon-Dots_Search"
+                    data-mobi-search-input="#mobi-search-input" data-mobi-search="#mobi-search" aria-hidden="true"></i>
+                </bold>
+
+              </div>
+              <div class="col-md-9 col-xs-7 hidden-sm hidden-xs">
+                <div class="inputWithIcon" id="mobi-search-input">
+                  <input type="text" placeholder="Search here" class="input-search">
+                  <bold><i class="icon-Dots_Search" aria-hidden="true"></i></bold>
+                </div>
+                <!-- <bold class=""><i class="icon-Dots_Search" data-mobi-search-input="#mobi-search-input" data-mobi-search="#mobi-search" aria-hidden="true"></i></bold> -->
+
+              </div>
+              <div class="col-xs-5 hidden" data-cancel>
+                <span class="text-black">
+                  Cancel
+                </span>
+              </div>
+              <div class="col-md-2 hidden-xs hidden-sm">
+                <span class="dropdown" data-dropdown>
+                  <div class="notification-user " data-toggle="dropdown">
+                    <i class="fa fa-circle" aria-hidden="true"></i>
+                    <i class="fa fa-circle" aria-hidden="true"></i>
+                    <i class="fa fa-circle" aria-hidden="true"></i>
+                  </div>
+                  <ul class="dropdown-menu notification-dropdown">
+                    <li>
+                      Email PDF Report
+                    </li>
+                    <li>
+                      Share Report
+                    </li>
+                    <li>
+                      Download Report
+                    </li>
+                  </ul>
+                </span>
+              </div>
+              <div class="md-spacer"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card raised">
+      <div class="">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="padding-md-spacer">
+              <div class="candidates-fixed-table">
+                <!-- <table class="table">
+                  <thead>
+                    <tr>
+                      <td></td>
+                      <td class="hidden-xs hidden-sm">RC</td>
+                      <td class="hidden-xs hidden-sm">
+                        ID Number
+                      </td>
+                      <td class="hidden-xs hidden-sm">
+                        Candidate
+                      </td>
+                      <td>
+                        Enquired
+                      </td>
+                      <td class="hidden-xs hidden-sm">Number of checks
+
+                      </td>
+                      <td>Status
+                      </td>
+                      <td class="hidden-xs hidden-sm amount-td">Amount
+                      </td>
+                      <td></td>
+                    </tr>
+                  </thead>
+                </table> -->
+              </div>
+              <div class="table-responsive data-table mycandidate-table mobi-table" data-my-candidates>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <td class="hidden-xs hidden-sm"></td>
+                      <td class="hidden-xs hidden-sm">RC</td>
+                      <td class="hidden-xs hidden-sm">
+                        ID Number
+                      </td>
+                      <td>
+                        Candidate
+                      </td>
+                      <td class="hidden-xs hidden-sm">
+                        Enquired
+                      </td>
+                      <td class="hidden-xs hidden-sm">No. Checks
+
+                      </td>
+                      <td>Status
+                      </td>
+                      <td class="hidden-xs hidden-sm amount-td">Amount
+                      </td>
+                      <td></td>
+                    </tr>
+                  </thead>
+                  <tbody>
+
+                    <tr class="confirmed" jane-doe>
+                      <td class="hidden-xs hidden-sm">
+                        <a href="perform-check.html">
+                          <i class="icon-Dots_Refresh text-black" aria-hidden="true"></i>
+                        </a>
+                      </td>
+                      <td class="hidden-xs hidden-sm">2078</td>
+                      <td class="hidden-xs hidden-sm">892567768878</td>
+                      <td>Jane Doe</td>
+                      <td class="hidden-xs hidden-sm">15 Jan 2019
+                      </td>
+                      <td class="number-of-checks hidden-xs hidden-sm">
+                        <span class="">
+                          5
+                        </span>
+                      </td>
+                      <td class="prgoress-of-checks" data-check-user='jane-doe'>
+                        <div class="progress-wrap progress-wrap--btn success" data-candidate-progress="ofentse"
+                          data-check-status="error">
+                          <span class="current-percentage" data-percentage="ofentse">
+                            0%
+                          </span>
+                          <div class="progress progress-bar--in-btn progress-bar-track" id="ofentse">
+                            <div class="progress-bar progress-bar-striped progress-line-success  active"
+                              data-progress="ofentse" aria-valuenow="60" aria-valuemin="0" style="width : 100%;"
+                              aria-valuemax="100"></div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="hidden-xs hidden-sm text-center">
+                        R56.00
+                      </td>
+                      <td class="hidden-sm hidden-xs">
+                        <span data-status-icon="" class="table-doc-icon mychecks-table-icon">
+                          <i class="icon-Dots_View font26 unconfimed" aria-hidden="true"></i>
+                        </span>
+                        <i class="icon-Dots_Add plus-sign" data-check-user='jane-doe'></i>
+                      </td>
+                    </tr>
+                    <tr class="data-table sub-table hidden confirmed" data-sub-jane-doe>
+                      <td colspan="12" class="table--border-active">
+                        <table class="table mobi-table sub" data-sub-parent="jane-doe">
+                          <tr class="confirmed">
+                            <td class="hidden-xs hidden-sm">
+                              <a href="perform-check.html">
+                                <i class="icon-Dots_Refresh text-black" aria-hidden="true"></i>
+                              </a>
+
+                            </td>
+                            <td class="hidden-xs hidden-sm" class="hidden-xs hidden-sm">2078</td>
+                            <td class="hidden-xs hidden-sm">892567768878</td>
+                            <td>Jane Doe</td>
+                            <td class="hidden-xs hidden-sm">15 Jan 2019
+                            </td>
+                            <td class="number-of-checks hidden-xs hidden-sm">
+                              <span class="">
+                                5
+                              </span>
+                            </td>
+                            <td class="prgoress-of-checks" data-check-user='jane-doe'>
+                              <div class="progress-wrap progress-wrap--btn success" data-candidate-progress="ofentse"
+                                data-check-status="error">
+                                <span class="current-percentage" data-percentage="ofentse">
+                                  0%
+                                </span>
+                                <div class="progress progress-bar--in-btn progress-bar-track" id="ofentse">
+                                  <div class="progress-bar progress-bar-striped progress-line-success  active"
+                                    data-progress="ofentse" aria-valuenow="60" aria-valuemin="0" style="width : 100%;"
+                                    aria-valuemax="100"></div>
+                                </div>
+                              </div>
+                            </td>
+                            <td class="hidden-xs hidden-sm text-center">
+                              R56.00
+                            </td>
+                            <td class="hidden-sm hidden-xs">
+                              <span data-status-icon="" class="table-doc-icon mychecks-table-icon">
+                                <i class="icon-Dots_View font26 unconfimed" aria-hidden="true"></i>
+                              </span>
+                              <i class=" icon-Dots_Remove plus-sign" data-close-check="jane-doe"></i>
+                            </td>
+                          </tr>
+                        </table>
+                        <table class="table confirmed" sub-table-data>
+                          <thead>
+                            <tr>
+                              <td class="hidden-xs hidden-sm"></td>
+                              <td class="hidden-xs hidden-sm">
+                                RC
+                              </td>
+                              <td>
+                                Candidate
+                              </td>
+                              <td class="hidden-xs hidden-sm">
+                                Enquired
+                              </td>
+                              <td>Status
+
+                              </td>
+                              <td class="hidden-xs hidden-sm">Completed
+                              </td>
+                              <td class="hidden-xs hidden-sm"></td>
+                              <td class="hidden-xs hidden-sm">Expires
+                              </td>
+                              <td class="hidden-xs hidden-sm">Amount</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="background-white">
+                              <td class="hidden-xs hidden-sm">
+                                <i class="icon-Dots_Refresh text-black" aria-hidden="true"></i>
+                              </td>
+                              <td class="hidden-xs hidden-sm" class="hidden-xs hidden-sm">2078</td>
+                              <td>John John</td>
+                              <td class="hidden-xs hidden-sm">15 Sept</td>
+                              <td class="visible-xs visible-sm" data-toggle="modal" data-target="#reportView">
+                                <span class="label label-pending">
+                                  Unconfirmed
+                                </span>
+                              </td>
+                              <td class="hidden-sm hidden-xs">
+                                  <span class="label label-pending">
+                                    Unconfirmed
+                                  </span>
+                                </td>
+                              <td class="hidden-xs hidden-sm">15 Sept</td>
+                              <td class="prgoress-of-checks hidden-xs hidden-sm">
+                                <div class="progress-wrap progress-wrap--btn success" data-candidate-progress="ofentse"
+                                  data-check-status="error">
+                                  <span class="current-percentage" data-percentage="ofentse">
+                                    0%
+                                  </span>
+                                  <div class="progress progress-bar--in-btn progress-bar-track" id="ofentse">
+                                    <div class="progress-bar progress-bar-striped progress-line-success  active"
+                                      data-progress="ofentse" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="hidden-xs hidden-sm">15 Sept</td>
+                              <td class="hidden-xs hidden-sm">R400</td>
+                              <td class="hidden-sm hidden-xs">
+                                <span data-status-icon="" class="table-doc-icon mychecks-table-icon">
+                                  <i class="icon-Dots_View font26 unconfimed" aria-hidden="true"></i>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr class="background-white">
+                              <td class="hidden-sm hidden-xs"> 
+                                <i class="icon-Dots_Refresh text-black" aria-hidden="true"></i>
+                              </td>
+                              <td class="hidden-xs hidden-sm" class="hidden-xs hidden-sm">2078</td>
+                              <td>John John</td>
+                              <td class="hidden-xs hidden-sm">15 Sept</td>
+                              <td>
+                                <span class="label label-success">
+                                  Confirmed
+                                </span>
+                              </td>
+                              <td class="hidden-xs hidden-sm">15 Sept</td>
+                              <td class="prgoress-of-checks hidden-sm hidden-xs">
+                                <div class="progress-wrap progress-wrap--btn success" data-candidate-progress="ofentse"
+                                  data-check-status="error">
+                                  <span class="current-percentage" data-percentage="ofentse">
+                                    0%
+                                  </span>
+                                  <div class="progress progress-bar--in-btn progress-bar-track" id="ofentse">
+                                    <div class="progress-bar progress-bar-striped progress-line-success  active"
+                                      data-progress="ofentse" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="hidden-xs hidden-sm">15 Sept</td>
+                              <td class="hidden-xs hidden-sm">R400</td>
+                              <td class="hidden-sm hidden-xs">
+                                <span data-status-icon="" class="table-doc-icon mychecks-table-icon">
+                                  <i class="icon-Dots_View font26 unconfimed" aria-hidden="true"></i>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr class="background-white">
+                              <td class="hidden-sm hidden-xs">
+                                <i class="icon-Dots_Refresh text-black" aria-hidden="true"></i>
+                              </td>
+                              <td class="hidden-xs hidden-sm" class="hidden-xs hidden-sm">2078</td>
+                              <td>John John</td>
+                              <td class="hidden-xs hidden-sm">15 Sept</td>
+                              <td>
+                                <span class="label label-danger">
+                                  Error
+                                </span>
+                              </td>
+                              <td class="hidden-xs hidden-sm">15 Sept</td>
+                              <td class="prgoress-of-checks hidden-sm hidden-xs">
+                                <div class="progress-wrap progress-wrap--btn success" data-candidate-progress="ofentse"
+                                  data-check-status="error">
+                                  <span class="current-percentage" data-percentage="ofentse">
+                                    0%
+                                  </span>
+                                  <div class="progress progress-bar--in-btn progress-bar-track" id="ofentse">
+                                    <div class="progress-bar progress-bar-striped progress-line-success  active"
+                                      data-progress="ofentse" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="hidden-xs hidden-sm">15 Sept</td>
+                              <td class="hidden-xs hidden-sm">R400</td>
+                              <td class="hidden-sm hidden-xs">
+                                <span data-status-icon="" class="table-doc-icon mychecks-table-icon">
+                                  <i class="icon-Dots_View font26 confirmed" aria-hidden="true"></i>
+                                </span>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr class="confirmed" john-john>
+                      <td class="hidden-xs hidden-sm">
+                        <a href="perform-check.html">
+                          <i class="icon-Dots_Refresh text-black" aria-hidden="true"></i>
+                        </a>
+
+                      </td>
+                      <td class="hidden-xs hidden-sm" class="hidden-xs hidden-sm">2078</td>
+                      <td class="hidden-xs hidden-sm">892567768878</td>
+                      <td>Joe-doe Doe</td>
+                      <td class="hidden-xs hidden-sm">15 Jan 2019
+                      </td>
+                      <td class="number-of-checks hidden-xs hidden-sm">
+                        <span class="">
+                          5
+                        </span>
+                      </td>
+                      <td class="prgoress-of-checks" data-check-user='john-john'>
+                        <div class="progress-wrap progress-wrap--btn success" data-candidate-progress="ofentse"
+                          data-check-status="error">
+                          <span class="current-percentage" data-percentage="ofentse">
+                            0%
+                          </span>
+                          <div class="progress progress-bar--in-btn progress-bar-track" id="ofentse">
+                            <div class="progress-bar progress-bar-striped progress-line-success  active"
+                              data-progress="ofentse" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="hidden-xs hidden-sm text-center">
+                        R56.00
+                      </td>
+                      <td class="hidden-sm hidden-xs">
+                        <span data-status-icon="" class="table-doc-icon mychecks-table-icon">
+                          <i class="icon-Dots_View font26 unconfimed" aria-hidden="true"></i>
+                        </span>
+                        <i class="icon-Dots_Add plus-sign" data-check-user='john-john'></i>
+                      </td>
+                    </tr>
+                    <tr class="data-table sub-table hidden confirmed" data-sub-john-john>
+                      <td colspan="12" class="table--border-active">
+                        <table class="table mobi-table sub" data-sub-parent="john-john">
+                          <tr class="confirmed">
+                            <td class="hidden-xs hidden-sm">
+                              <a href="perform-check.html">
+                                <i class="icon-Dots_Refresh text-black" aria-hidden="true"></i>
+                              </a>
+                            </td>
+                            <td class="hidden-xs hidden-sm">2078</td>
+                            <td class="hidden-xs hidden-sm">892567768878</td>
+                            <td>Jane Doe</td>
+                            <td class="hidden-xs hidden-sm">15 Jan 2019
+                            </td>
+                            <td class="number-of-checks hidden-xs hidden-sm">
+                              <span class="">
+                                5
+                              </span>
+                            </td>
+                            <td class="prgoress-of-checks" data-check-user='john-john'>
+                              <div class="progress-wrap progress-wrap--btn success" data-candidate-progress="ofentse"
+                                data-check-status="error">
+                                <span class="current-percentage" data-percentage="ofentse">
+                                  0%
+                                </span>
+                                <div class="progress progress-bar--in-btn progress-bar-track" id="ofentse">
+                                  <div class="progress-bar progress-bar-striped progress-line-success  active"
+                                    data-progress="ofentse" aria-valuenow="60" aria-valuemin="0" style="width : 35%;"
+                                    aria-valuemax="100"></div>
+                                </div>
+                              </div>
+                            </td>
+                            <td class="hidden-xs hidden-sm text-center">
+                              R56.00
+                            </td>
+                            <td class="hidden-sm hidden-xs">
+                              <span data-status-icon="" class="table-doc-icon mychecks-table-icon">
+                                <i class="icon-Dots_View font26 confirmed" aria-hidden="true"></i>
+                              </span>
+                              <i class="icon-Dots_Remove plus-sign" data-close-check="john-john"></i>
+                            </td>
+                          </tr>
+                        </table>
+                        <table class="table confirmed" sub-table-data>
+                          <thead>
+                            <tr>
+                              <td class="hidden-xs hidden-sm"></td>
+                              <td class="hidden-xs hidden-sm">
+                                RC
+                              </td>
+                              <td>
+                                Candidate
+                              </td>
+                              <td class="hidden-xs hidden-sm">
+                                Enquired
+                              </td>
+                              <td>Status
+
+                              </td>
+                              <td class="hidden-xs hidden-sm">Completed
+                              </td>
+                              <td class="hidden-xs hidden-sm"></td>
+                              <td class="hidden-xs hidden-sm">Expires
+                              </td>
+                              <td class="hidden-xs hidden-sm">Amount</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="background-white">
+                              <td class="hidden-xs hidden-sm">
+                                <i class="icon-Dots_Refresh text-black" aria-hidden="true"></i>
+                              </td>
+                              <td class="hidden-xs hidden-sm">2078</td>
+                              <td>John John</td>
+                              <td class="hidden-xs hidden-sm">15 Sept</td>
+                              <td>
+                                <span class="label label-pending">
+                                  Unconfirmed
+                                </span>
+                              </td>
+                              <td class="hidden-xs hidden-sm">15 Sept</td>
+                              <td class="prgoress-of-checks hidden-sm hidden-xs">
+                                <div class="progress-wrap progress-wrap--btn success" data-candidate-progress="ofentse"
+                                  data-check-status="error">
+                                  <span class="current-percentage" data-percentage="ofentse">
+                                    0%
+                                  </span>
+                                  <div class="progress progress-bar--in-btn progress-bar-track" id="ofentse">
+                                    <div class="progress-bar progress-bar-striped progress-line-success  active"
+                                      data-progress="ofentse" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="hidden-xs hidden-sm">15 Sept</td>
+                              <td class="hidden-xs hidden-sm">R400</td>
+                              <td class="hidden-sm hidden-xs">
+                                <span data-status-icon="" class="table-doc-icon mychecks-table-icon">
+                                  <i class="icon-Dots_View font26 confirmed" aria-hidden="true"></i>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr class="background-white">
+                                <td class="hidden-xs hidden-sm">
+                                  <i class="icon-Dots_Refresh text-black" aria-hidden="true"></i>
+                                </td>
+                                <td class="hidden-xs hidden-sm">2078</td>
+                                <td>John John</td>
+                                <td class="hidden-xs hidden-sm">15 Sept</td>
+                                <td>
+                                  <span class="label label-pending">
+                                    Unconfirmed
+                                  </span>
+                                </td>
+                                <td class="hidden-xs hidden-sm">15 Sept</td>
+                                <td class="prgoress-of-checks hidden-sm hidden-xs">
+                                  <div class="progress-wrap progress-wrap--btn success" data-candidate-progress="ofentse"
+                                    data-check-status="error">
+                                    <span class="current-percentage" data-percentage="ofentse">
+                                      0%
+                                    </span>
+                                    <div class="progress progress-bar--in-btn progress-bar-track" id="ofentse">
+                                      <div class="progress-bar progress-bar-striped progress-line-success  active"
+                                        data-progress="ofentse" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="hidden-xs hidden-sm">15 Sept</td>
+                                <td class="hidden-xs hidden-sm">R400</td>
+                                <td class="hidden-sm hidden-xs">
+                                  <span data-status-icon="" class="table-doc-icon mychecks-table-icon">
+                                    <i class="icon-Dots_View font26 confirmed" aria-hidden="true"></i>
+                                  </span>
+                                </td>
+                              </tr>
+                              <tr class="background-white">
+                                  <td class="hidden-xs hidden-sm">
+                                    <i class="icon-Dots_Refresh text-black" aria-hidden="true"></i>
+                                  </td>
+                                  <td class="hidden-xs hidden-sm">2078</td>
+                                  <td>John John</td>
+                                  <td class="hidden-xs hidden-sm">15 Sept</td>
+                                  <td>
+                                    <span class="label label-pending">
+                                      Unconfirmed
+                                    </span>
+                                  </td>
+                                  <td class="hidden-xs hidden-sm">15 Sept</td>
+                                  <td class="prgoress-of-checks hidden-sm hidden-xs">
+                                    <div class="progress-wrap progress-wrap--btn success" data-candidate-progress="ofentse"
+                                      data-check-status="error">
+                                      <span class="current-percentage" data-percentage="ofentse">
+                                        0%
+                                      </span>
+                                      <div class="progress progress-bar--in-btn progress-bar-track" id="ofentse">
+                                        <div class="progress-bar progress-bar-striped progress-line-success  active"
+                                          data-progress="ofentse" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td class="hidden-xs hidden-sm">15 Sept</td>
+                                  <td class="hidden-xs hidden-sm">R400</td>
+                                  <td class="hidden-sm hidden-xs">
+                                    <span data-status-icon="" class="table-doc-icon mychecks-table-icon">
+                                      <i class="icon-Dots_View font26 confirmed" aria-hidden="true"></i>
+                                    </span>
+                                  </td>
+                                </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr class="confirmed" munei-doe>
+                      <td class="hidden-xs hidden-sm">
+                        <a href="perform-check.html">
+                          <i class="icon-Dots_Refresh text-black" aria-hidden="true"></i>
+                        </a>
+                      </td>
+                      <td class="hidden-xs hidden-sm">2078</td>
+                      <td class="hidden-xs hidden-sm">892567768878</td>
+                      <td>Jane Doe</td>
+                      <td class="hidden-xs hidden-sm">15 Jan 2019
+                      </td>
+                      <td class="number-of-checks hidden-xs hidden-sm">
+                        <span class="">
+                          5
+                        </span>
+                      </td>
+                      <td class="prgoress-of-checks" data-check-user='munei-doe'>
+                        <div class="progress-wrap progress-wrap--btn success" data-candidate-progress="ofentse"
+                          data-check-status="error">
+                          <span class="current-percentage" data-percentage="ofentse">
+                            0%
+                          </span>
+                          <div class="progress progress-bar--in-btn progress-bar-track" id="ofentse">
+                            <div class="progress-bar progress-bar-striped progress-line-success  active"
+                              data-progress="ofentse" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="hidden-xs hidden-sm text-center">
+                        R56.00
+                      </td>
+                      <td class="hidden-sm hidden-xs">
+                        <span data-status-icon="" class="table-doc-icon mychecks-table-icon">
+                          <i class="icon-Dots_View font26 confirmed" aria-hidden="true"></i>
+                        </span>
+                        <i class="icon-Dots_Add plus-sign" data-check-user='munei-doe'></i>
+                      </td>
+                    </tr>
+                    <tr class="data-table sub-table hidden confirmed" data-sub-munei-doe>
+                      <td colspan="12" class="table--border-active">
+                        <table class="table mobi-table sub" data-sub-parent="munei-doe">
+                          <tr class="confirmed">
+                            <td class="hidden-xs hidden-sm">
+                              <a href="perform-check.html">
+                                <i class="icon-Dots_Refresh text-black" aria-hidden="true"></i>
+                              </a>
+                            </td>
+                            <td class="hidden-xs hidden-sm">2078</td>
+                            <td class="hidden-xs hidden-sm">892567768878</td>
+                            <td>Jane Doe</td>
+                            <td class="hidden-xs hidden-sm">15 Jan 2019
+                            </td>
+                            <td class="number-of-checks hidden-xs hidden-sm">
+                              <span class="">
+                                5
+                              </span>
+                            </td>
+                            <td class="prgoress-of-checks" data-check-user='munei-doe'>
+                              <div class="progress-wrap progress-wrap--btn success" data-candidate-progress="ofentse"
+                                data-check-status="error">
+                                <span class="current-percentage" data-percentage="ofentse">
+                                  0%
+                                </span>
+                                <div class="progress progress-bar--in-btn progress-bar-track" id="ofentse">
+                                  <div class="progress-bar progress-bar-striped progress-line-success  active"
+                                    data-progress="ofentse" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                  </div>
+                                </div>
+                              </div>
+                            </td>
+                            <td class="hidden-xs hidden-sm text-center">
+                              R56.00
+                            </td>
+                            <td class="hidden-sm hidden-xs">
+                              <span data-status-icon="" class="table-doc-icon mychecks-table-icon">
+                                <i class="icon-Dots_View font26 confirmed" aria-hidden="true"></i>
+                              </span>
+                              <i class="icon-Dots_Remove plus-sign" data-close-check="munei-doe"></i>
+                            </td>
+                          </tr>
+                        </table>
+                        <table class="table confirmed" sub-table-data>
+                          <thead>
+                            <tr>
+                              <td class="hidden-xs hidden-sm"></td>
+                              <td class="hidden-xs hidden-sm">
+                                RC
+                              </td>
+                              <td>
+                                Candidate
+                              </td>
+                              <td class="hidden-xs hidden-sm">
+                                Enquired
+                              </td>
+                              <td>Status
+
+                              </td>
+                              <td class="hidden-xs hidden-sm">Completed
+                              </td>
+                              <td class="hidden-xs hidden-sm"></td>
+                              <td class="hidden-xs hidden-sm">Expires
+                              </td>
+                              <td class="hidden-xs hidden-sm">Amount</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="background-white">
+                              <td class="hidden-xs hidden-sm">
+                                <i class="icon-Dots_Refresh text-black" aria-hidden="true"></i>
+                              </td>
+                              <td class="hidden-xs hidden-sm">2078</td>
+                              <td >John John</td>
+                              <td class="hidden-xs hidden-sm">15 Sept</td>
+                              <td>
+                                <span class="label label-pending">
+                                  Unconfirmed
+                                </span>
+                              </td>
+                              <td class="hidden-xs hidden-sm">15 Sept</td>
+                              <td class="prgoress-of-checks hidden-sm hidden-xs">
+                                <div class="progress-wrap progress-wrap--btn success" data-candidate-progress="ofentse"
+                                  data-check-status="error">
+                                  <span class="current-percentage" data-percentage="ofentse">
+                                    0%
+                                  </span>
+                                  <div class="progress progress-bar--in-btn progress-bar-track" id="ofentse">
+                                    <div class="progress-bar progress-bar-striped progress-line-success  active"
+                                      data-progress="ofentse" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="hidden-xs hidden-sm">15 Sept</td>
+                              <td class="hidden-xs hidden-sm">R400</td>
+                              <td class="hidden-sm hidden-xs">
+                                <span data-status-icon="" class="table-doc-icon mychecks-table-icon">
+                                  <i class="icon-Dots_View font26 confirmed" aria-hidden="true"></i>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr class="background-white">
+                                <td class="hidden-xs hidden-sm">
+                                  <i class="icon-Dots_Refresh text-black" aria-hidden="true"></i>
+                                </td>
+                                <td class="hidden-xs hidden-sm">2078</td>
+                                <td >John John</td>
+                                <td class="hidden-xs hidden-sm">15 Sept</td>
+                                <td>
+                                  <span class="label label-pending">
+                                    Unconfirmed
+                                  </span>
+                                </td>
+                                <td class="hidden-xs hidden-sm">15 Sept</td>
+                                <td class="prgoress-of-checks hidden-sm hidden-xs">
+                                  <div class="progress-wrap progress-wrap--btn success" data-candidate-progress="ofentse"
+                                    data-check-status="error">
+                                    <span class="current-percentage" data-percentage="ofentse">
+                                      0%
+                                    </span>
+                                    <div class="progress progress-bar--in-btn progress-bar-track" id="ofentse">
+                                      <div class="progress-bar progress-bar-striped progress-line-success  active"
+                                        data-progress="ofentse" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="hidden-xs hidden-sm">15 Sept</td>
+                                <td class="hidden-xs hidden-sm">R400</td>
+                                <td class="hidden-sm hidden-xs">
+                                  <span data-status-icon="" class="table-doc-icon mychecks-table-icon">
+                                    <i class="icon-Dots_View font26 confirmed" aria-hidden="true"></i>
+                                  </span>
+                                </td>
+                              </tr>
+                              <tr class="background-white">
+                                  <td class="hidden-xs hidden-sm">
+                                    <i class="icon-Dots_Refresh text-black" aria-hidden="true"></i>
+                                  </td>
+                                  <td class="hidden-xs hidden-sm">2078</td>
+                                  <td >John John</td>
+                                  <td class="hidden-xs hidden-sm">15 Sept</td>
+                                  <td>
+                                    <span class="label label-pending">
+                                      Unconfirmed
+                                    </span>
+                                  </td>
+                                  <td class="hidden-xs hidden-sm">15 Sept</td>
+                                  <td class="prgoress-of-checks hidden-sm hidden-xs">
+                                    <div class="progress-wrap progress-wrap--btn success" data-candidate-progress="ofentse"
+                                      data-check-status="error">
+                                      <span class="current-percentage" data-percentage="ofentse">
+                                        0%
+                                      </span>
+                                      <div class="progress progress-bar--in-btn progress-bar-track" id="ofentse">
+                                        <div class="progress-bar progress-bar-striped progress-line-success  active"
+                                          data-progress="ofentse" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td class="hidden-xs hidden-sm">15 Sept</td>
+                                  <td class="hidden-xs hidden-sm">R400</td>
+                                  <td class="hidden-sm hidden-xs">
+                                    <span data-status-icon="" class="table-doc-icon mychecks-table-icon">
+                                      <i class="icon-Dots_View font26 confirmed" aria-hidden="true"></i>
+                                    </span>
+                                  </td>
+                                </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr class="confirmed" ofentse-doe>
+                      <td class="hidden-xs hidden-sm">
+                        <a href="perform-check.html">
+                          <i class="icon-Dots_Refresh text-black" aria-hidden="true"></i>
+                        </a>
+                      </td>
+                      <td class="hidden-xs hidden-sm">2078</td>
+                      <td class="hidden-xs hidden-sm">892567768878</td>
+                      <td>Jane Doe</td>
+                      <td class="hidden-xs hidden-sm">15 Jan 2019
+                      </td>
+                      <td class="number-of-checks hidden-xs hidden-sm">
+                        <span class="">
+                          5
+                        </span>
+                      </td>
+                      <td class="prgoress-of-checks" data-check-user='ofentse-doe'>
+                        <div class="progress-wrap progress-wrap--btn success" data-candidate-progress="ofentse"
+                          data-check-status="error">
+                          <span class="current-percentage" data-percentage="ofentse">
+                            0%
+                          </span>
+                          <div class="progress progress-bar--in-btn progress-bar-track" id="ofentse">
+                            <div class="progress-bar progress-bar-striped progress-line-success  active"
+                              data-progress="ofentse" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="hidden-xs hidden-sm text-center">
+                        R56.00
+                      </td>
+                      <td class="hidden-sm hidden-xs">
+                        <span data-status-icon="" class="table-doc-icon mychecks-table-icon">
+                          <i class="icon-Dots_View font26 confirmed" aria-hidden="true"></i>
+                        </span>
+                        <i class="icon-Dots_Add plus-sign" data-check-user='ofentse-doe'></i>
+                      </td>
+                    </tr>
+                    <tr class="data-table sub-table hidden confirmed" data-sub-ofentse-doe>
+                      <td colspan="12" class="table--border-active">
+                        <table class="table mobi-table sub" data-sub-parent="ofentse-doe">
+                          <tr class="confirmed">
+                            <td class="hidden-xs hidden-sm">
+                              <a href="perform-check.html">
+                                <i class="icon-Dots_Refresh text-black" aria-hidden="true"></i>
+                              </a>
+                            </td>
+                            <td class="hidden-xs hidden-sm">2078</td>
+                            <td class="hidden-xs hidden-sm">892567768878</td>
+                            <td>Jane Doe</td>
+                            <td class="hidden-xs hidden-sm">15 Jan 2019
+                            </td>
+                            <td class="number-of-checks hidden-xs hidden-sm">
+                              <span class="">
+                                5
+                              </span>
+                            </td>
+                            <td class="prgoress-of-checks" data-check-user='ofentse-doe'>
+                              <div class="progress-wrap progress-wrap--btn success" data-candidate-progress="ofentse"
+                                data-check-status="error">
+                                <span class="current-percentage" data-percentage="ofentse">
+                                  0%
+                                </span>
+                                <div class="progress progress-bar--in-btn progress-bar-track" id="ofentse">
+                                  <div class="progress-bar progress-bar-striped progress-line-success  active"
+                                    data-progress="ofentse" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                  </div>
+                                </div>
+                              </div>
+                            </td>
+                            <td class="hidden-xs hidden-sm text-center">
+                              R56.00
+                            </td>
+                            <td class="hidden-sm hidden-xs">
+                              <span data-status-icon="" class="table-doc-icon mychecks-table-icon">
+                                <i class="icon-Dots_View font26 confirmed" aria-hidden="true"></i>
+                              </span>
+                              <i class="icon-Dots_Remove plus-sign" data-close-check="ofentse-doe"></i>
+                            </td>
+                          </tr>
+                        </table>
+                        <table class="table confirmed" sub-table-data>
+                          <thead>
+                            <tr>
+                              <td class="hidden-xs hidden-sm"></td>
+                              <td class="hidden-xs hidden-sm">
+                                RC
+                              </td>
+                              <td>
+                                Candidate
+                              </td>
+                              <td class="hidden-xs hidden-sm">
+                                Enquired
+                              </td>
+                              <td>Status
+
+                              </td>
+                              <td class="hidden-xs hidden-sm">Completed
+                              </td>
+                              <td class="hidden-xs hidden-sm"></td>
+                              <td class="hidden-xs hidden-sm">Expires
+                              </td>
+                              <td class="hidden-xs hidden-sm">Amount</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="background-white">
+                              <td class="hidden-xs hidden-sm">
+                                <i class="icon-Dots_Refresh text-black" aria-hidden="true"></i>
+                              </td>
+                              <td class="hidden-xs hidden-sm">2078</td>
+                              <td>John John</td>
+                              <td class="hidden-xs hidden-sm">15 Sept</td>
+                              <td>
+                                <span class="label label-pending">
+                                  Unconfirmed
+                                </span>
+                              </td>
+                              <td class="hidden-xs hidden-sm">15 Sept</td>
+                              <td class="prgoress-of-checks hidden-sm hidden-xs" data-check-user='ofentse-doe'>
+                                <div class="progress-wrap progress-wrap--btn success" data-candidate-progress="ofentse"
+                                  data-check-status="error">
+                                  <span class="current-percentage" data-percentage="ofentse">
+                                    0%
+                                  </span>
+                                  <div class="progress progress-bar--in-btn progress-bar-track" id="ofentse">
+                                    <div class="progress-bar progress-bar-striped progress-line-success  active"
+                                      data-progress="ofentse" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="hidden-xs hidden-sm">15 Sept</td>
+                              <td class="hidden-xs hidden-sm">R400</td>
+                              <td class="hidden-sm hidden-xs">
+                                <span data-status-icon="" class="table-doc-icon mychecks-table-icon">
+                                  <i class="icon-Dots_View font26 unconfimed" aria-hidden="true"></i>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr class="background-white">
+                                <td class="hidden-xs hidden-sm">
+                                  <i class="icon-Dots_Refresh text-black" aria-hidden="true"></i>
+                                </td>
+                                <td class="hidden-xs hidden-sm">2078</td>
+                                <td>John John</td>
+                                <td class="hidden-xs hidden-sm">15 Sept</td>
+                                <td>
+                                  <span class="label label-pending">
+                                    Unconfirmed
+                                  </span>
+                                </td>
+                                <td class="hidden-xs hidden-sm">15 Sept</td>
+                                <td class="prgoress-of-checks hidden-sm hidden-xs" data-check-user='ofentse-doe'>
+                                  <div class="progress-wrap progress-wrap--btn success" data-candidate-progress="ofentse"
+                                    data-check-status="error">
+                                    <span class="current-percentage" data-percentage="ofentse">
+                                      0%
+                                    </span>
+                                    <div class="progress progress-bar--in-btn progress-bar-track" id="ofentse">
+                                      <div class="progress-bar progress-bar-striped progress-line-success  active"
+                                        data-progress="ofentse" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="hidden-xs hidden-sm">15 Sept</td>
+                                <td class="hidden-xs hidden-sm">R400</td>
+                                <td class="hidden-sm hidden-xs">
+                                  <span data-status-icon="" class="table-doc-icon mychecks-table-icon">
+                                    <i class="icon-Dots_View font26 unconfimed" aria-hidden="true"></i>
+                                  </span>
+                                </td>
+                              </tr>
+                              <tr class="background-white">
+                                  <td class="hidden-xs hidden-sm">
+                                    <i class="icon-Dots_Refresh text-black" aria-hidden="true"></i>
+                                  </td>
+                                  <td class="hidden-xs hidden-sm">2078</td>
+                                  <td>John John</td>
+                                  <td class="hidden-xs hidden-sm">15 Sept</td>
+                                  <td>
+                                    <span class="label label-pending">
+                                      Unconfirmed
+                                    </span>
+                                  </td>
+                                  <td class="hidden-xs hidden-sm">15 Sept</td>
+                                  <td class="prgoress-of-checks hidden-sm hidden-xs" data-check-user='ofentse-doe'>
+                                    <div class="progress-wrap progress-wrap--btn success" data-candidate-progress="ofentse"
+                                      data-check-status="error">
+                                      <span class="current-percentage" data-percentage="ofentse">
+                                        0%
+                                      </span>
+                                      <div class="progress progress-bar--in-btn progress-bar-track" id="ofentse">
+                                        <div class="progress-bar progress-bar-striped progress-line-success  active"
+                                          data-progress="ofentse" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td class="hidden-xs hidden-sm">15 Sept</td>
+                                  <td class="hidden-xs hidden-sm">R400</td>
+                                  <td class="hidden-sm hidden-xs">
+                                    <span data-status-icon="" class="table-doc-icon mychecks-table-icon">
+                                      <i class="icon-Dots_View font26 unconfimed" aria-hidden="true"></i>
+                                    </span>
+                                  </td>
+                                </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr class="confirmed" kwazi-doe>
+                      <td class="hidden-xs hidden-sm">
+                        <a href="perform-check.html">
+                          <i class="icon-Dots_Refresh text-black" aria-hidden="true"></i>
+                        </a>
+                      </td>
+                      <td class="hidden-xs hidden-sm">2078</td>
+                      <td class="hidden-xs hidden-sm">892567768878</td>
+                      <td>Jane Doe</td>
+                      <td class="hidden-xs hidden-sm">15 Jan 2019
+                      </td>
+                      <td class="number-of-checks hidden-xs hidden-sm">
+                        <span class="">
+                          5
+                        </span>
+                      </td>
+                      <td class="prgoress-of-checks" data-check-user='kwazi-doe'>
+                        <div class="progress-wrap progress-wrap--btn success" data-candidate-progress="ofentse"
+                          data-check-status="error">
+                          <span class="current-percentage" data-percentage="ofentse">
+                            0%
+                          </span>
+                          <div class="progress progress-bar--in-btn progress-bar-track" id="ofentse">
+                            <div class="progress-bar progress-bar-striped progress-line-success  active"
+                              data-progress="ofentse" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="hidden-xs hidden-sm text-center">
+                        R56.00
+                      </td>
+                      <td class="hidden-sm hidden-xs">
+                        <sp class="hidden-sm hidden-xs"an data-status-icon>
+                          <span data-status-icon="" class="table-doc-icon mychecks-table-icon">
+                            <i class="icon-Dots_View font26 confirmed" aria-hidden="true"></i>
+                          </span>
+                        </span>
+                        <i class="icon-Dots_Add plus-sign" data-check-user='kwazi-doe'></i>
+                      </td>
+                    </tr>
+                    <tr class="data-table sub-table hidden confirmed" data-sub-kwazi-doe>
+                      <td colspan="12" class="table--border-active">
+                        <table class="table mobi-table sub" data-sub-parent="kwazi-doe">
+                          <tr class="confirmed">
+                            <td class="hidden-xs hidden-sm">
+                              <a href="perform-check.html">
+                                <i class="icon-Dots_Refresh text-black" aria-hidden="true"></i>
+                              </a>
+                            </td>
+                            <td class="hidden-xs hidden-sm">2078</td>
+                            <td class="hidden-xs hidden-sm">892567768878</td>
+                            <td>Jane Doe</td>
+                            <td class="hidden-xs hidden-sm">15 Jan 2019
+                            </td>
+                            <td class="number-of-checks hidden-xs hidden-sm">
+                              <span class="">
+                                5
+                              </span>
+                            </td>
+                            <td class="prgoress-of-checks" data-check-user='kwazi-doe'>
+                              <div class="progress-wrap progress-wrap--btn success" data-candidate-progress="ofentse"
+                                data-check-status="error">
+                                <span class="current-percentage" data-percentage="ofentse">
+                                  0%
+                                </span>
+                                <div class="progress progress-bar--in-btn progress-bar-track" id="ofentse">
+                                  <div class="progress-bar progress-bar-striped progress-line-success  active"
+                                    data-progress="ofentse" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                  </div>
+                                </div>
+                              </div>
+                            </td>
+                            <td class="hidden-xs hidden-sm text-center">
+                              R56.00
+                            </td>
+                            <td class="hidden-sm hidden-xs">
+                              <span data-status-icon="" class="table-doc-icon mychecks-table-icon">
+                                <i class="icon-Dots_View font26 confirmed" aria-hidden="true"></i>
+                              </span>
+                              <i class="icon-Dots_Remove plus-sign" data-close-check="kwazi-doe"></i>
+                            </td>
+                          </tr>
+                        </table>
+                        <table class="table confirmed" sub-table-data>
+                          <thead>
+                            <tr>
+                              <td class="hidden-xs hidden-sm"></td>
+                              <td class="hidden-xs hidden-sm">
+                                RC
+                              </td>
+                              <td>
+                                Candidate
+                              </td>
+                              <td class="hidden-xs hidden-sm">
+                                Enquired
+                              </td>
+                              <td>Status
+
+                              </td>
+                              <td class="hidden-xs hidden-sm">Completed
+                              </td>
+                              <td class="hidden-xs hidden-sm"></td>
+                              <td class="hidden-xs hidden-sm">Expires
+                              </td>
+                              <td class="hidden-xs hidden-sm">Amount</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="background-white">
+                              <td class="hidden-xs hidden-sm">
+                                <i class="icon-Dots_Refresh text-black" aria-hidden="true"></i>
+                              </td>
+                              <td class="hidden-xs hidden-sm">2078</td>
+                              <td>John John</td>
+                              <td class="hidden-xs hidden-sm">15 Sept</td>
+                              <td>
+                                <span class="label label-pending">
+                                  Unconfirmed
+                                </span>
+                              </td>
+                              <td class="hidden-xs hidden-sm">15 Sept</td>
+                              <td class="prgoress-of-checks hidden-sm hidden-xs">
+                                <div class="progress-wrap progress-wrap--btn success" data-candidate-progress="ofentse"
+                                  data-check-status="error">
+                                  <span class="current-percentage" data-percentage="ofentse">
+                                    0%
+                                  </span>
+                                  <div class="progress progress-bar--in-btn progress-bar-track" id="ofentse">
+                                    <div class="progress-bar progress-bar-striped progress-line-success  active"
+                                      data-progress="ofentse" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="hidden-xs hidden-sm">15 Sept</td>
+                              <td class="hidden-xs hidden-sm">R400</td>
+                              <td class="hidden-sm hidden-xs">
+                                <span data-status-icon="" class="table-doc-icon mychecks-table-icon">
+                                  <i class="icon-Dots_View font26 confirmed" aria-hidden="true"></i>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr class="background-white">
+                                <td class="hidden-xs hidden-sm">
+                                  <i class="icon-Dots_Refresh text-black" aria-hidden="true"></i>
+                                </td>
+                                <td class="hidden-xs hidden-sm">2078</td>
+                                <td>John John</td>
+                                <td class="hidden-xs hidden-sm">15 Sept</td>
+                                <td>
+                                  <span class="label label-pending">
+                                    Unconfirmed
+                                  </span>
+                                </td>
+                                <td class="hidden-xs hidden-sm">15 Sept</td>
+                                <td class="prgoress-of-checks hidden-sm hidden-xs">
+                                  <div class="progress-wrap progress-wrap--btn success" data-candidate-progress="ofentse"
+                                    data-check-status="error">
+                                    <span class="current-percentage" data-percentage="ofentse">
+                                      0%
+                                    </span>
+                                    <div class="progress progress-bar--in-btn progress-bar-track" id="ofentse">
+                                      <div class="progress-bar progress-bar-striped progress-line-success  active"
+                                        data-progress="ofentse" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="hidden-xs hidden-sm">15 Sept</td>
+                                <td class="hidden-xs hidden-sm">R400</td>
+                                <td class="hidden-sm hidden-xs">
+                                  <span data-status-icon="" class="table-doc-icon mychecks-table-icon">
+                                    <i class="icon-Dots_View font26 confirmed" aria-hidden="true"></i>
+                                  </span>
+                                </td>
+                              </tr>
+                              <tr class="background-white">
+                                  <td class="hidden-xs hidden-sm">
+                                    <i class="icon-Dots_Refresh text-black" aria-hidden="true"></i>
+                                  </td>
+                                  <td class="hidden-xs hidden-sm">2078</td>
+                                  <td>John John</td>
+                                  <td class="hidden-xs hidden-sm">15 Sept</td>
+                                  <td>
+                                    <span class="label label-pending">
+                                      Unconfirmed
+                                    </span>
+                                  </td>
+                                  <td class="hidden-xs hidden-sm">15 Sept</td>
+                                  <td class="prgoress-of-checks hidden-sm hidden-xs">
+                                    <div class="progress-wrap progress-wrap--btn success" data-candidate-progress="ofentse"
+                                      data-check-status="error">
+                                      <span class="current-percentage" data-percentage="ofentse">
+                                        0%
+                                      </span>
+                                      <div class="progress progress-bar--in-btn progress-bar-track" id="ofentse">
+                                        <div class="progress-bar progress-bar-striped progress-line-success  active"
+                                          data-progress="ofentse" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td class="hidden-xs hidden-sm">15 Sept</td>
+                                  <td class="hidden-xs hidden-sm">R400</td>
+                                  <td class="hidden-sm hidden-xs">
+                                    <span data-status-icon="" class="table-doc-icon mychecks-table-icon">
+                                      <i class="icon-Dots_View font26 confirmed" aria-hidden="true"></i>
+                                    </span>
+                                  </td>
+                                </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="col-md-6 col-xs-12">
+              <ul class="pagination pagination-info mycandidate-pagination-pad">
+                <li>
+                  <a href="javascript:void(0);">
+                    <i class="icon-Dots_Left-1" aria-hidden="true"></i>&nbsp; prev</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);">1</a>
+                </li>
+                <li class="active ">
+                  <a href="javascript:void(0);">2</a>
+                </li>
+                <li class="hidden-xs">
+                  <a href="javascript:void(0);">3</a>
+                </li>
+                <li class="hidden-xs">
+                  <a href="javascript:void(0);">4</a>
+                </li>
+                <li class="hidden-xs">
+                  <a href="javascript:void(0);">5</a>
+                </li>
+                <li class="">
+                  <a href="javascript:void(0);">next &nbsp;
+                    <i class="icon-Dots_Right-1" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="modal fade" id="reportView" tabindex="-1" role="dialog" aria-labelledby="reportView" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+              <div class="row">
+                    <div class="">
+            
+                      <div class="row">
+                        <div class="col-md-6 col-xs-6 col-sm-6 picture-pad">
+                          <div class="profile-pic-placheloder">
+            
+                          </div>
+                        </div>
+                        <div class="col-md-6 col-xs-6 col-sm-6 side-picture-pad ">
+                          <div class="check-check-status">
+                              <h5>ACA [SA Qualification]</h5>
+
+                              <span class="label label-pending">
+                                  Unconfirmed
+                                </span>
+                          </div>
+                        </div>
+
+                      </div>
+            
+                    <div class="candidate-top-info">
+                        <div class="col-md-6 col-xs-6 text-align-right">
+                            <p class="result-titles">
+                              First Name:
+                            </p>
+                            <p class="result-titles">
+                              Surname:
+                            </p>
+                            <p class="result-titles">
+                              Maiden Name:
+                            </p>
+                            <p class="result-titles">
+                              ID Number:
+                            </p>
+                            <p class="result-titles">
+                              Date Of Birth:
+                            </p>
+            
+                          </div>
+                          <div class="col-md-6 col-xs-6 text-align-left">
+                            <p class="results-info text-black">
+                              Gary
+                            </p>
+                            <p class="results-info text-black">
+                              Smith
+                            </p>
+                            <p class="results-info text-black">
+                              Legary
+                            </p>
+                            <p class="results-info text-black">
+                              7009243512089
+                            </p>
+                            <p class="results-info text-black">
+                              1970/09/24
+                            </p>
+            
+                          </div>
+                    </div>  
+                    <hr style="margin-bottom: 0px;" class="candidateInfo-card-line">  
+                   
+                      <div class="candidate-bottom-info">
+                          <div class="col-md-6 col-xs-6 text-align-right">
+                              <p class="result-titles">
+                                  RC: 
+                              </p>
+                              <p class="result-titles">
+                                  Enquired:
+                              </p>
+                              <p class="result-titles">
+                                  Completed: 
+                              </p>
+                              <p class="result-titles">
+                                  Expires:
+                              </p>
+              
+                            </div>
+                            <div class="col-md-6 col-xs-6 text-align-left">
+                              <p class="results-info text-black">
+                                  2078 
+                              </p>
+                              <p class="results-info text-black">
+                                  15h23 
+                              </p>
+                              <p class="results-info text-black">
+                                  15 Sep 15h23 
+                              </p>
+                              <p class="results-info text-black">
+                                  15 Oct 15h30
+                              </p>
+              
+                            </div> 
+                         <a href="360-report.html" class="float-r">
+                            <span data-status-icon="" class="table-doc-icon mychecks-table-icon">
+                                <i class="icon-Dots_View font26 confirmed" aria-hidden="true"></i>
+                              </span>
+                         </a>
+                      </div>
+                    </div>
+              </div>
+          </div>
+          <div class="modal-footer">
+            
+            <button type="button" class="btn btn-simple" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  <div id="logged-in-panel" class="card side-menu-card hidden">
+
+    <div class="side-menu-header">
+
+      <div class="row">
+        <div class="col-md-2">
+          <div class="active-users">
+            <div class="circlce-no-icon"><img src="dist/assets/img/random_users/54.jpg" alt=""></div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <h6>Philisande</h6>
+          <p>pila@dots.africa</p>
+        </div>
+
+        <div class="col-md-5">
+          <button class="btn btn-secondary btn-square text-black ">Logout<div class="ripple-container"></div></button>
+        </div>
+      </div>
+
+      <hr>
+      <div class="side-menu-list text-rubik-regular">
+        <ul class="text-gray">
+          <li>My Profile</li>
+          <li>My Company</li>
+          <li>Change Password</li>
+        </ul>
+      </div>
+      <hr>
+      <div class="side-menu-contacts">
+        <h6>Contacts</h6>
+        <ul class="text-rubik-regular text-gray">
+          <li>General feedback</li>
+          <li>About Dots 360</li>
+        </ul>
+      </div>
+      <hr>
+      <div class="side-menu-joinCommunity">
+        <h6>Join the community</h6>
+        <button class="btn btn-just-icon btn-twitter">
+          <i class="fa fa-twitter"></i>
+        </button>
+        <button class="btn btn-just-icon  btn-facebook">
+          <i class="fa fa-facebook"> </i>
+        </button>
+        <button class="btn btn-just-icon  btn-google">
+          <i class="fa fa-google"> </i>
+        </button>
+        <button class="btn btn-just-icon  btn-linkedin">
+          <i class="fa fa-linkedin"></i>
+        </button>
+      </div>
+      <hr>
+      <div class="side-menu-assist">
+        <ul class="text-rubik-regular text-gray">
+          <li>Settings</li>
+          <li>Help</li>
+        </ul>
+      </div>
+
+      <div class="btn-logIn-as">
+        <button class="btn btn-secondary btn-square text-black ">Log in as<div class="ripple-container"></div></button>
+      </div>
+
+      <div class="version">
+        <p>V2.0</p>
+      </div>
+    </div>
+  </div>
+  <div class="spacer"></div>
+  <footer class="container-fluid">
+    <div class="footer animatedParent">
+      <div class="container text-center animated bounceIn delay-150">
+        <div class="col-md-3 col-xs-4 hidden-xs hidden-sm">
+          <div class="dropup table-dropdown">
+            <button href="#pablo" class="dropdown-toggle btn btn-rose btn-round btn-block text-gray text-rubik-regular"
+              data-toggle="dropdown">More Dots Recruit
+              <b class="caret"></b>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-right">
+              <li>
+                <a href="#pablo">Lorem</a>
+              </li>
+              <li>
+                <a href="#pablo">Lorem</a>
+              </li>
+              <li>
+                <a href="#pablo">Lorem</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 text-align-left col-xs-12 col-sm-12">
+          <div class="user-footer-links text-center">
+            <span class="text-gray text-rubik-regular">
+              Dots Africa 2018 -2019 All rights reserved.
+            </span>
+          </div>
+        </div>
+        <div class="col-md-3 hidden-xs hidden-sm">
+          <div class="user-footer-links">
+            <span class="text-gray text-rubik-regular">
+              <a href="#" class="text-gray terms-condition-text">Terms of Use</a> and <a href="#"
+                class="text-gray terms-condition-text">Privacy Policy</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+<!--   Core JS Files   -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCx0PjbVTxih2QgBX-ovhYSaU2uuArm5OE&libraries=places">
+</script>
+<script src="dist/assets/js/jquery.dot360.min.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+  $('[data-mobi-search-input]').click(function () {
+    var inputsearch = $(this).attr('data-mobi-search');
+    var inputsearchShow = $(this).attr('data-mobi-search-input');
+    $(this).toggleClass('hidden');
+    $(inputsearch).toggleClass('hidden');
+    $(inputsearchShow).toggleClass('hidden');
+    if ($('.my-checks-search').hasClass('col-xs-2')) {
+      $('.my-checks-search').removeClass('col-xs-2');
+      $('.my-checks-search').addClass('col-xs-12');
+      $('#mobi-search-filter').toggleClass('hidden')
+      $('[data-cancel]').toggleClass('hidden')
+    } else {
+      $('.my-checks-search').removeClass('col-xs-12');
+      $('.my-checks-search').addClass('col-xs-2');
+      $('#mobi-search-filter').toggleClass('hidden')
+      $('[data-cancel]').toggleClass('hidden')
+
+    }
+  })
+  $('[data-cancel]').click(function () {
+    $(this).addClass('hidden')
+    $('.my-checks-search').removeClass('col-xs-12');
+    $('.my-checks-search').addClass('col-xs-2');
+    $('#mobi-search').removeClass('hidden');
+    $('#mobi-search-input').toggleClass('hidden');
+    $('#mobi-search-filter').removeClass('hidden');
+    $('[data-mobi-search-input]').toggleClass('hidden');
+
+  })
+</script>
+
+</html>

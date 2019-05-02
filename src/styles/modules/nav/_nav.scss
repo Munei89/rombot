@@ -1,0 +1,118 @@
+nav {
+  a {
+    transition: all 0.5s ease;
+  }
+  .navbar-brand {
+    img {
+      transition: all 0.5s ease;
+      // position: absolute;
+      // margin-left: -45px;
+    }
+  }
+  .nav-links {
+    transition: all 0.5s ease;
+    margin-top: -10px;
+  }
+  &.navbar {
+
+
+    &.sticky-scroll {
+      height: 80px;
+      padding-top: 5px;
+      padding-bottom: 0px; 
+      background-color: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 0 4px rgba(0, 0, 0, 0.18), 0 4px 11px rgba(0, 0, 0, 0.36);
+     
+      i.fa.fa-user-circle{
+        font-size: 35px;
+        padding: 10px 20px;
+      }
+      .nav-links {
+        margin-top: 0px;
+      }
+      a {
+        color: #999;
+        font-size: 14px;
+        padding-top: 22px;
+        &.active{
+          padding: 18px 0px;
+        }
+        &:hover {
+          color: #333;
+        }
+      }
+      .navbar-brand {
+        padding: 0px;
+        margin: 12px 0px;
+        // img {
+        //   width:70%;
+        // }
+      }
+      &.logged--in-user {
+        .navbar-brand {
+          padding-top: 5px;
+        }
+      }
+      .nav-links {
+        // display: none;
+        color:#e91e63 ;
+      }
+      .btn {
+        &--register {
+          color: #fff;
+          padding-top: 12px;
+          width: 105px;
+          height: 40px;
+          margin-top: 10px;
+          font-size: 12px;
+          background: $gradient-background-magenta-webkit-gradient;
+          background: $gradient-background-magenta-webkit-linear-gradient;
+          background: $gradient-background-magenta-moz-linear-gradient;
+          background: $gradient-background-magenta-o-linear-gradient;
+          background: $gradient-background-magenta-linear-gradient;
+        }
+
+        &-get-started{
+          height: 40px;
+          width: 160px;
+          font-size: 12px;
+          padding-top: 12px;
+          margin-top: 11px;
+
+          i{
+            font-size: 20px;
+            top: 8px;
+          }
+        }
+        &--login{
+          color: #e91e63;
+          width: 100px;
+          font-size: 12px;
+          height: 40px;
+          padding-top: 10px;
+          margin-top: 11px;
+
+          &:hover {
+            color:#fff;
+            padding-top: 11px;
+          }
+        }
+      }
+    }
+
+    .navbar-toggle {
+      margin: 5px 10px 8px 0;
+       padding: 4px 5px;
+     }
+
+  }
+  .navbar-nav {
+    margin-left: 75px;
+  }
+    
+  
+  > li > a {
+    padding-top: 25px;
+    padding-bottom: 30px;
+  }
+}

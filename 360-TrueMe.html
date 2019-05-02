@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en" class="background-light-grey">
+
+<head>
+  <!-- App Icons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="dist/assets/img/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="dist/assets/img/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="dist/assets/img/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="dist/assets/img/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="dist/assets/img/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="dist/assets/img/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="dist/assets/img/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="dist/assets/img/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="dist/assets/img/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="dist/assets/img/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="dist/assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="dist/assets/img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="dist/assets/img/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" href="favicon.ico">
+  <meta name="msapplication-TileColor" content="#f2f2f2">
+  <meta name="msapplication-TileImage" content="dist/assets/img/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#d4145a">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+  <title>dot360 - Report</title>
+
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+
+  <!-- CSS Files -->
+  <link href="dist/assets/css/dot360.css" rel="stylesheet" />
+</head>
+
+<body class="background-light-grey">
+  <div id="loader-wrapper">
+    <!-- <div id="loader"></div> -->
+    <div class="loading-wrapper text-center">
+      <img src="dist/assets/img/loading-logo.svg" width="300px" height="46px" alt="">
+      <div class="dots-loading-logo">
+        <div id="percentage">
+          <span class="total"></span>
+        </div>
+      </div>
+      <div class="loading-slogan">
+        <p>Streamlined Offering, Improved Operations</p>
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-transparent border-bottom-solid logged--in-user navbar-fixed-top">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div>
+        <ul class="nav navbar-nav">
+          <li class="true-me-logo">
+              <img src="dist/assets/img/360-logo-fill.png" alt="">
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+              <span class="btn btn-lg btn-border btn-round upload-btn true-create-account">
+                 Create Free Account
+              </span>
+          </li>
+          <li class="true-me-user-ico">
+              <img src="dist/assets/img/user-icon.png" width="27" alt="GN">
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="spacer"></div>
+  <div class="container dashboard-spacer">
+    <div class="col-md-3 true-me-pro-card">
+        <div class="card raised padding-md-spacer true-me-profile-card" data-card>
+            <h3 class="font18">
+              Welcome, Nokwazi
+            </h3>
+            <div class="true-me-profile-img">
+              <i class="icon--camera-solid icon icon--sm"></i>
+            </div>
+            <div class="true-me-profile-content">
+                <div class="progress-container round-xlarge">
+                  <div class="progressbar round-xlarge" style="width:50%"></div><span class="progressbar-percentage">50%</span>
+                </div>
+            </div>
+            <p class="true-me-profile-upload-txt">
+                Please upload <a href="#">Your Selfie</a>
+              </p>
+        </div>
+        <div class="card raised padding-md-spacer true-me-profile-card documents" data-card>
+            <input type="file" name="proof of address" id="proof-of-address" data-docs style="display:none; pointer-events: all;">
+            <input type="file" name="proof of address" id="id-copy" data-docs style="display:none; pointer-events: all;">
+            <div class="doc-upload-poa doc-upload">
+                <i class="fa fa-plus"></i> <span>Attach Proof of Address</span>
+            </div>
+            <div class="doc-upload-id doc-upload">
+                <i class="fa fa-plus"></i> <span>Attach ID Copy</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-5 true-me-profile-results">
+      <div class="card raised padding-md-spacer true-me-profile-results" data-card>
+        <h3 class="text-black font18">Requested by:</h3>
+        <p class="sub-heading">
+          The following FICA information was requested by the following Dots360 user:
+        </p>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="true-me-profile-avi">
+                <i class="fa fa-user" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="col-md-4">
+              <div class="true-label-status">
+                  Status of User: Active
+              </div>
+          </div>
+          <div class="col-md-4 text-align-right">
+              <span class="flag-icon flag-icon-za"></span>
+          </div>
+        </div>
+        <div class="md-spacer"></div>
+        <div class="col-md-4 col-xs-4 text-align-left">
+          <p class="results-info text-black">
+            First Name:
+          </p>
+          <p class="results-info text-black">
+            Surname:
+          </p>
+          <p class="results-info text-black">
+            Company:
+          </p>
+          <p class="results-info text-black">
+            Time stamp:
+          </p>
+        </div>
+        <div class="col-md-8 col-xs-8 text-align-left">
+          <p class="results-info text-black">
+            Philsande
+          </p>
+          <p class="results-info text-black">
+            Zulu
+          </p>
+          <p class="results-info text-black">
+            Zoia Consulting
+          </p>
+          <p class="results-info text-black">
+            Wed Mar 28 2018 15:15:40 GMT +200 <br/> Active
+          </p>
+        </div>
+      </div>
+      <div class="card raised padding-md-spacer true-me-profile-results" data-card="personal-details">
+          <h3 class="font18">Your Personal Details</h3>
+          <p class="sub-heading">
+            Please ensure that you validate that the information below is valid and that it is in accordance with FICA requirements
+          </p>
+          <form action="" name="personal-details">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="" placeholder="ID Number">
+                    <p class="help-block">Help text here.</p>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="" placeholder="Email Address">
+                    <p class="help-block">Help text here.</p>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="" placeholder="First Name">
+                    <p class="help-block">Help text here.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="" placeholder="Passport">
+                    <p class="help-block">Help text here.</p>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="" placeholder="Contact Number">
+                    <p class="help-block">Help text here.</p>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="" placeholder="Last Name">
+                    <p class="help-block">Help text here.</p>
+                </div>
+            </div>
+          </form>
+        </div>
+        <div class="card raised padding-md-spacer true-me-profile-results" data-card="fraud-check">
+            <h3 class="font18">Physical Address Required</h3>
+            <p class="sub-heading">
+              Please provide information to complete all your FICA requirements.
+            </p>
+            <form action="" name="fraud-check">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="" placeholder="Physical Address">
+                  <p class="help-block">Help text here.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group form-file-upload">
+                   <div class="poa-nominate">
+                      <input type="file" name="poa" id="poa" style="display:none;"/>
+                      <i class="fa fa-plus"></i> <span> Norminate a person for POA</span>
+                   </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="card raised padding-md-spacer hidden-fade true-me-profile-results" data-card="poa-nominated">
+              <h3 class="font18">Nominated Individual
+                <span>
+                  <i class="fa fa-times float-r" data-close-card="poa-nominated"></i>
+                </span>
+              </h3>
+              <p class="sub-heading">
+                Ensure that the person you nominate to provide Proof Of Address (POA) is someone you trust as they will be recognised as a valid and legal represntative.
+              </p>
+              <form action="" name="poa-nominated">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="" placeholder="First Name">
+                    <p class="help-block">Help text here.</p>
+                  </div>
+                  <div class="form-group">
+                      <input type="text" class="form-control" id="" placeholder="">
+                      <p class="help-block">Help text here.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="" placeholder="Contact Number">
+                        <p class="help-block">Help text here.</p>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="" placeholder="">
+                        <p class="help-block">Help text here.</p>
+                      </div>
+                </div>
+              </form>
+            </div>
+            <div class="card raised padding-md-spacer true-me-profile-results" data-card="poa-nominated">
+                <h3 class="font18">Banking Information Required</h3>
+                <p class="sub-heading">
+                  Please provide valid informed to complete all FICA requirements.
+                </p>
+                <form action="" name="poa-nominated">
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <select class="selectpicker" data-style="btn btn-lg btn-default btn-round select-btn--form dashboard" title="Single Select"
+                            data-size="7">
+                            <option disabled selected>Bank Name</option>
+                            <option value="2">FNB</option>
+                            <option value="3">ABSA</option>
+                            <option value="3">Standard Bank</option>
+                          </select>
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <input type="text" class="form-control" id="" placeholder="Account Number">
+                          <p class="help-block">Help text here.</p>
+                      </div>
+                  </div>
+                </form>
+              </div>
+      </div>
+      <div class="col-md-4 true-me-profile-checks">
+
+          <div class="card raised padding-md-spacer true-me-profile-checks" data-card>
+            <div class="card-header-top padding-md-spacer background-gradient-magenta">
+              <h4 class="top-header flush-m flush-p">360 TrueMe</h4>
+            </div>
+            <div class="card-contents">
+                <p class="sub-heading">Information to be verified</p>
+                <div>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" info-verified="id-number" name="id-number"> Id Number
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" info-verified="bank-account" name="bank-account"> Bank Account
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" info-verified="proof-of-address" name="proof-of-address"> Proof of Address
+      
+                    </label>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="card raised padding-md-spacer text-rose text-center true-me-profile-checks">
+              Important to keep in mind that:
+              <i class="fa fa-info-circle info-icon"></i>
+            </div>
+            <div class="important-notice true-me-profile-checks">
+              <p class="text-meduim text-center text-gray">
+                By clicking “Checkout” , I confirm I have recieved the Consent form, and I am familiar with 360 SLAs. I agree to the TOU
+                and Privacy Policies
+              </p>
+            </div>
+            <div class="xs-spacer"></div>
+            <div class="text-center true-me-profile-checks">
+              <span class="btn btn-lg btn-rose btn-round">
+                Submit
+              </span>
+            </div>
+        </div>
+    </div>
+  </div>
+  </div>
+  <div id="logged-in-panel" class="card">
+    <i class="fa fa-times close text-black"></i>
+    <div class="spacer"></div>
+    <div>
+      <span>Munei</span>
+      <span class="label label-transparent float-r">Logout</span>
+      <br />
+      <span>mail@mail.com</span>
+    </div>
+    <div class="spacer"></div>
+    <div class="user-controls">
+      <p class="text-black">
+        <strong>
+          My Profile
+        </strong>
+      </p>
+      <p class="text-black">
+        <strong>
+          Change Password
+        </strong>
+      </p>
+    </div>
+    <div class="spacer"></div>
+    <div class="user-contacts">
+      <h4>Contacts</h4>
+      <p>
+        General feedback
+      </p>
+      <p>
+        Report a bug
+      </p>
+    </div>
+    <div class="spacer"></div>
+    <div class="user-socials">
+      <h4>
+        Join the community
+      </h4>
+      <button class="btn btn-just-icon btn-twitter">
+        <i class="fa fa-twitter"></i>
+      </button>
+      <button class="btn btn-just-icon  btn-facebook">
+        <i class="fa fa-facebook"> </i>
+      </button>
+      <button class="btn btn-just-icon  btn-google">
+        <i class="fa fa-google"> </i>
+      </button>
+      <button class="btn btn-just-icon  btn-linkedin">
+        <i class="fa fa-linkedin"></i>
+      </button>
+    </div>
+    <div class="spacer"></div>
+    <div class="user-settings">
+      <h5>
+        Settings
+      </h5>
+      <h5>
+        Help
+      </h5>
+    </div>
+  </div>
+  <div class="spacer"></div>
+  <div class="container-fluid background-white">
+    <footer class="footer animatedParent">
+      <div class="container text-center animated bounceIn delay-150">
+        <div class="col-md-2 col-xs-4 hidden-xs hidden-sm">
+          <div class="dropup table-dropdown">
+            <button href="#pablo" class="dropdown-toggle btn btn-rose btn-round btn-block" data-toggle="dropdown">More Dots Recruit
+              <b class="caret"></b>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-right">
+              <li>
+                <a href="#pablo">Lorem</a>
+              </li>
+              <li>
+                <a href="#pablo">Lorem</a>
+              </li>
+              <li>
+                <a href="#pablo">Lorem</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-8 text-align-left col-xs-12 col-sm-12">
+          <div class="user-footer-links">
+            <span class="hidden-xs hidden-sm">|</span>
+            <span>TOU</span>
+            <span>Privacy</span>
+            <span>Community</span>
+            <span>FAQs</span>
+            <span class="hidden-xs hidden-sm">|</span>
+            <span class="hidden-xs hidden-sm">Follow</span>
+          </div>
+        </div>
+        <div class="col-md-2 hidden-xs hidden-sm">
+          <div class="user-footer-links">
+            <span>
+              Help
+            </span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+<!--   Core JS Files   -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCx0PjbVTxih2QgBX-ovhYSaU2uuArm5OE&libraries=places"></script>
+<script src="dist/assets/js/jquery.dot360.min.js" type="text/javascript"></script>
+
+</html>

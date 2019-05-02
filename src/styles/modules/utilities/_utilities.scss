@@ -1,0 +1,348 @@
+// position layout helpers
+.pos {
+  &--rel {
+    position: relative;
+  }
+  &--abs {
+    position: absolute;
+  }
+  &--fixed {
+    position: fixed;
+  }
+
+  //direction modifiers - add other offsets as needed
+  &--top {
+    top: 0;
+    &-sml {
+      top: $grid-gutter-width / 2;
+    }
+    &-med {
+      top: $grid-gutter-width;
+    }
+  }
+  &--right {
+    right: 0;
+    &-sml {
+      right: $grid-gutter-width / 2;
+    }
+    &-med {
+      right: $grid-gutter-width;
+    }
+  }
+  &--bottom {
+    bottom: 0;
+    &-sml {
+      bottom: $grid-gutter-width / 2;
+    }
+    &-med {
+      bottom: $grid-gutter-width;
+    }
+  }
+  &--left {
+    left: 0;
+    &-sml {
+      left: $grid-gutter-width / 2;
+    }
+    &-med {
+      left: $grid-gutter-width;
+    }
+  }
+}
+
+.float-r {
+  float: right;
+  & i {
+    :after {
+      clear: right;
+    }
+  }
+
+  &--small {
+    @media (min-width: $screen-sm) {
+      float: right;
+    }
+  }
+  &--medium {
+    @media (min-width: $screen-md) {
+      float: right;
+    }
+  }
+  &--large {
+    @media (min-width: $screen-lg) {
+      float: right;
+    }
+  }
+}
+.flush-p {
+  padding: 0px;
+}
+.float-l {
+  float: left;
+}
+.background-black {
+  background: #000;
+}
+.background-gradient-magenta {
+  background: $gradient-background-magenta-webkit-gradient;
+  background: $gradient-background-magenta-webkit-linear-gradient;
+  background: $gradient-background-magenta-moz-linear-gradient;
+  background: $gradient-background-magenta-o-linear-gradient;
+  background: $gradient-background-magenta-linear-gradient;
+}
+.background-light-grey {
+  background-color: #f3f3f3;
+}
+.background-soft-grey{
+  background-color: #f7f7f7;
+}
+.background-grey {
+  background-color: $background-light-grey;
+}
+.background-dark-grey {
+  background-color: #333333;
+}
+.background-white {
+  background-color: $white;
+}
+.background-light-pink {
+  background-color: #fdf6f8;
+}
+.background-lighter-grey {
+  background-color: #f2f2f2;
+}
+.background-very-lightGrey {
+  background-color: #f8f8f8 !important;
+}
+.spacer {
+  margin-top: 5vh;
+}
+.xs-spacer {
+  margin-top: 1.5vh;
+}
+.lg-spacer {
+  margin-top: 3.2vh;
+}
+.md-spacer {
+  margin-top: 2.5vh;
+}
+.dashboard-spacer {
+  margin-top: 97px;
+  margin-bottom: 0px;
+}
+.padding-spacer {
+  padding: 10vh;
+}
+.padding-xs-spacer {
+  padding: 1vh;
+}
+.padding-md-spacer {
+  padding: 2vh;
+}
+.padding-lg-spacer {
+  padding: 4vh;
+}
+.no-shadow {
+  box-shadow: none;
+}
+.show-more {
+  padding: 2vh 0;
+  position: relative;
+  cursor: pointer;
+  i {
+    border-radius: 30px;
+    border: solid 1.5px;
+    padding: 9px 0px;
+    height: 30px;
+    width: 30px;
+    font-size: 12px;
+  }
+  h4 {
+    font-size: 1em;
+    font-family: $font-family-rubikregular;
+  }
+}
+.detail-sub-heading {
+  .text-overlay {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    height: 15em;
+    width: 100%;
+    background: -webkit-linear-gradient(
+      rgba(243, 243, 243, 0) 0%,
+      rgba(243, 243, 243, 1) 100%
+    );
+    background-image: -moz-linear-gradient(
+      rgba(243, 243, 243, 0) 0%,
+      rgba(243, 243, 243, 1) 100%
+    );
+    background-image: -o-linear-gradient(
+      rgba(243, 243, 243, 0) 0%,
+      rgba(243, 243, 243, 1) 100%
+    );
+    background-image: linear-gradient(
+      rgba(243, 243, 243, 0) 0%,
+      rgba(243, 243, 243, 1) 100%
+    );
+    background-image: -ms-linear-gradient(
+      rgba(243, 243, 243, 0) 0%,
+      rgba(243, 243, 243, 1) 100%
+    );
+  }
+}
+.flush-m {
+  margin: 0;
+
+  --top {
+    margin-top: 0;
+  }
+}
+.all-checks-tab {
+  padding: 50px 0px 0px;
+
+  span {
+    margin-right: 5px;
+  }
+}
+.border-bottom-dot {
+  border-bottom: dotted #f2f2f2;
+}
+.border-bottom-solid {
+  border-bottom: 1px solid #e6e6e6;
+}
+.raised {
+  box-shadow: none;
+  border: 1px solid #e5e5e5;
+}
+.hidden-fade {
+  display: none;
+}
+.dotted-line {
+  border-bottom: 2px dotted #eaeaea;
+  margin: 2vh 0;
+}
+.border-radius10 {
+  border-radius: 10px;
+}
+.margin--left10px {
+  margin-right: 10px;
+}
+.font26 {
+  font-size: 15px;
+}
+.font30 {
+  font-size: 30px;
+}
+.font18 {
+  font-size: $font-paragraph-lg !important;
+}
+.font16 {
+  font-size: $font-paragraph-md;
+}
+.font12 {
+  font-size: $font-size-small;
+}
+.font11 {
+  font-size: 11px;
+}
+.font14 {
+  font-size:14px;
+}
+.z-index99 {
+  z-index: 99;
+}
+.text-v--align-middle {
+  vertical-align: middle;
+}
+li.link-silent {
+  a {
+    padding: 0px !important;
+
+    &:hover,
+    &:focus,
+    &:active {
+      border: none !important;
+    }
+  }
+}
+a {
+  .fa {
+    color: initial;
+  }
+}
+.text-white {
+  color: #fff;
+}
+.slider--socials {
+  cursor: pointer;
+  &.twitter:hover {
+    @include social-buttons-color($social-twitter);
+    border: 2px solid $social-twitter;
+  }
+  &.facebook:hover {
+    @include social-buttons-color($social-facebook);
+    border: 2px solid $social-facebook;
+
+    i {
+      color: #fff;
+    }
+  }
+  &.google-plus:hover {
+    @include social-buttons-color($social-google);
+    border: 2px solid $social-google;
+  }
+  &.linkedin:hover {
+    @include social-buttons-color($social-linkedin);
+    border: 2px solid $social-linkedin;
+  }
+}
+.fa-long-arrow-right {
+  &.text-white {
+    color: #fff;
+  }
+}
+.margin--right-10 {
+  margin-right: -10px;
+}
+[disabled] {
+  opacity: 0.65; 
+  cursor: not-allowed;
+}
+.no-overflow {
+  overflow: hidden !important;
+  @media screen and (max-width:768px) {
+    overflow: auto !important;
+  }
+}
+
+.report-container{
+  margin-top: 130px;
+}
+
+.candidateInfo-card-line{
+  width: 127%;
+  margin-left: -37px;
+  height: 0px;
+}
+.academic-card-line{
+  width: 116%;
+  margin-left: -37px;
+  height:0px;
+
+}
+.collaboration-padding{
+  padding: 22px 25px 20px 25px;
+  hr{
+    height: 0px;
+  }
+}
+.text-green {
+  color: green;
+}
+.text-align-center {
+  text-align: center;
+}
+
+.spacer-4{
+  margin-top:4vh;
+}

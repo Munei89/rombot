@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="en" class="background-light-grey">
+
+<head>
+  <!-- App Icons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="dist/assets/img/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="dist/assets/img/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="dist/assets/img/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="dist/assets/img/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="dist/assets/img/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="dist/assets/img/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="dist/assets/img/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="dist/assets/img/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="dist/assets/img/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="dist/assets/img/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="dist/assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="dist/assets/img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="dist/assets/img/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" href="favicon.ico">
+  <meta name="msapplication-TileColor" content="#f2f2f2">
+  <meta name="msapplication-TileImage" content="dist/assets/img/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#d4145a">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+  <title>dot360 - Report</title>
+
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+
+  <!-- CSS Files -->
+  <link href="dist/assets/css/dot360.css" rel="stylesheet" />
+</head>
+
+<body class="background-light-grey">
+  <div id="loader-wrapper">
+    <!-- <div id="loader"></div> -->
+    <div class="loading-wrapper text-center">
+      <img src="dist/assets/img/loading-logo.svg" width="300px" height="46px" alt="">
+      <div class="dots-loading-logo">
+        <div id="percentage">
+          <span class="total"></span>
+        </div>
+      </div>
+      <div class="loading-slogan">
+        <p>Streamlined Offering, Improved Operations</p>
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-transparent border-bottom-solid logged--in-user navbar-fixed-top">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="hidden-xs hidden-sm">
+        <ul class="nav navbar-nav">
+          <li class="user-details">
+            <span class="text-black">
+              <div class="report-heading">
+                <p class="text-black">360 REPORT #RC-7155</p>
+              </div>
+            </span>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="user-header-controls">
+           <a href="dist/docs/dummy-doc.pdf" target="_blank"><i class="icon-Dots_Download text-black" aria-hidden="true"></i></a> 
+          </li>
+          <li class="user-header-controls">
+            <i class="icon-Dots_Print font30 text-black" id="" aria-hidden="true" onclick="printJS('dist/docs/dummy-doc.pdf')"></i>
+          </li>
+
+          <li class="report-close">
+            <span class="v-line">&nbsp;&nbsp;</span>
+            <i class="fa fa-times no-border"></i>
+            <br />
+            Esc
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <div class="spacer"></div>
+  <div class="container dashboard-spacer report-container printingArea" id="">
+    <div class="container card raised padding-md-spacer" data-card>
+      <div class="row">
+        <div class="col-md-4 text-align-center">
+            <img src="dist/assets/img/d.png" height="50px" width="50px" style="width:50px !important; height:50px !important;" alt="" class="img-responsive">
+        </div>
+        <div class="col-md-8 text-align-right ">
+          <span class="font12 text-rubik-light text-weight-light" >
+            (Independtly verified by Dots360 Risk Management)
+          </span>
+          <br />
+          <strong>
+            RC-7155
+          </strong>
+        </div>
+      </div>
+      <div class="spacer"></div>
+      <div class="">
+        <div class="print-enquirer card raised padding-md-spacer" data-card>
+          <div class="col-md-12">
+            <h6 class="flush-m--top candidate-header">Enquirer</h6>
+          </div>
+        
+          <hr style="margin-bottom: 0px; width:109%" class="candidateInfo-card-line">
+          <div class="">
+            <div class="row">
+              <div class="col-md-5 verification-account-type">
+                <div class="col-md-4 col-xs-6 text-align-right font12">
+                  <p class="result-titles">
+                    Full Name:
+                  </p>
+                  <p class="result-titles">
+                    Company:
+                  </p>
+                  <p class="result-titles">
+                    Status of Application:
+                  </p>
+
+                </div>
+                <div class="col-md-8 col-xs-6 text-align-left font12">
+                  <p class="results-info text-black">
+                    Kwazi
+                  </p>
+                  <p class="results-info text-black">
+                    Zoia
+                  </p>
+                  <p class="results-info text-black">
+                    Issued
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-7 verification-account-type">
+                <div class="col-md-4 col-xs-6 text-align-right font12">
+                  <p class="result-titles">
+                    Date and Time of report:
+                  </p>
+                  <p class="result-titles">
+                    Completion date:
+                  </p>
+
+                </div>
+                <div class="col-md-8 col-xs-6 text-align-left font12">
+                  <p class="results-info text-black">
+                    Fri Mar 23 2019 14:15:40
+                  </p>
+                  <p class="results-info text-black">
+                    Wed Mar 28 2019 15:15
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="spacer"></div>
+
+        <div class="">
+          <div class="print-enquirer card raised padding-md-spacer" data-card>
+            <div class="col-md-6">
+              <h6 class="flush-m--top candidate-header">Id Verification plus</h6>
+            </div>
+            <div class="col-md-6 text-align-right font12 ">
+              <div class="col-md-6">
+                <div style="font-size: 10px">
+                  RC-7155
+                </div>
+                <div style="font-size: 10px">
+                  <a> Valid until: 2019/08/10</a>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <span class="btn btn-squared btn-result btn-result--confirmed font12 ">
+                  Resulsts: Confirmed
+                </span>
+              </div>
+              <div class="col-md-1">
+                <span class="btn btn-squared btn-result btn-result--confirmed btn-small font12 ">
+                  5
+                </span>
+              </div>
+            </div>
+
+            <hr style="margin-bottom: 0px; margin-top: 0px; width:109%" class="candidateInfo-card-line">
+            <div class="">
+              <div class="row">
+                <div class="col-md-2">
+                  <div class="col-md-6 picture-pad">
+                    <div class="profile-pic-placheloder">
+
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-10">
+                  <div class="umalusi-img text-align-right float-r">
+                    <br />
+                    <img src="dist/assets/img/company-logos/HomeAffairs.png" style="height:45px;width:180px" alt="">
+                  </div>
+                  <div class="verification-account-type">
+                    <div class="col-md-2 col-xs-6 text-align-left font12">
+                      <p class="result-titles">
+                        Full Name:
+                      </p>
+                      <p class="result-titles">
+                        Surname:
+                      </p>
+                      <p class="result-titles">
+                        Maiden:
+                      </p>
+                      <p class="result-titles">
+                        Date of Birth:
+                      </p>
+                      <p class="result-titles">
+                        Id number:
+                      </p>
+                      <p class="result-titles">
+                        Summary:
+                      </p>
+                    </div>
+                    <div class="col-md-10 col-xs-6 text-align-left font12">
+                      <p class="results-info text-black">
+                        <span class="text-black">Kwazi</span>
+                      </p>
+                      <p class="results-info text-black">
+                        <span class="text-black">Smit</span>
+                      </p>
+                      <p class="results-info text-black">
+                        <span class="text-black">Legary</span>
+                      </p>
+                      <p class="results-info text-black">
+                        <span class="text-black">1970/09/24</span>
+                      </p>
+                      <p class="results-info text-black">
+                        <span class="text-green">0009000000000</span>
+                      </p>
+                      <p class="results-info text-black">
+                        <span class="text-black">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam libero
+                          ex excepturi laboriosam dignissimos corrupti unde ullam nisi odit, voluptas eveniet, dolorem
+                          molestiae quisquam quasi provident sunt impedit, id vero.</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <hr style="margin-bottom: 0px; margin-top: 0px; width:109%" class="candidateInfo-card-line">
+            <div class="">
+              <div class="col-md-6">
+                <h6 class="flush-m--top candidate-header">Academic Qualification: Matric Post 1992 Umalusi</h6>
+              </div>
+              <div class="col-md-6 text-align-right font12 ">
+                <div class="col-md-6">
+                  <div style="font-size: 10px">
+                    RC-7155
+                  </div>
+                  <div style="font-size: 10px">
+                    <a> Valid until: 2019/08/10</a>
+                  </div>
+                </div>
+                <div class="col-md-5">
+                  <span class="btn btn-squared btn-result btn-result--error font12 ">
+                    Resulsts: Negative
+                  </span>
+                </div>
+                <div class="col-md-1">
+                  <span class="btn btn-squared btn-result btn-result--error btn-small font12 ">
+                    5
+                  </span>
+                </div>
+              </div>
+            </div>
+            <hr style="margin-bottom: 0px; width:109%" class="candidateInfo-card-line">
+            <div class="report-outcome">
+              <div class="">
+                <div class="col-md-8">
+                  <h5 class="font16">
+                    Qualification
+                  </h5>
+                  <p class="text-black font12">
+                    Matric Fomr hoerskoel Overvaal
+                  </p>
+                </div>
+                <div class="col-md-4 umalusi-img text-align-right">
+                  
+                    <img src="dist/assets/img/company-logos/Umalusi logo.png" style="height:45px;width:180px" alt="">
+
+                </div>
+              </div>
+              <div class="">
+                <div class="col-md-10">
+                  <h5 class="font16">
+                    Outcome
+                  </h5>
+                  <p class="text-black font12">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos pariatur quos accusantium culpa porro
+                    rem laborum error, totam sed recusandae qui excepturi, iusto fugiat a! Voluptates dignissimos
+                    corporis ea incidunt?
+                  </p>
+                </div>
+                <div class="col-md-2 text-align-right">
+                  <p class="font12">
+                    For Enquiries or Disputes
+                  </p>
+                  <p class="text-black font12">
+                    (011) 345 0933
+                  </p>
+                  <p class="font12">
+                    info@umlalusi.co.za
+                  </p>
+                </div>
+              </div>
+            </div>
+            <hr style="margin-bottom: 0px; width:109%" class="candidateInfo-card-line">
+            <div class="">
+              <div class="col-md-6">
+                <h6 class="flush-m--top candidate-header">Transunion Comprehensive</h6>
+              </div>
+              <div class="col-md-6 text-align-right font12 ">
+                <div class="col-md-6">
+                  <div style="font-size: 10px">
+                    RC-7155
+                  </div>
+                  <div style="font-size: 10px">
+                    <a> Valid until: 2019/08/10</a>
+                  </div>
+                </div>
+                <div class="col-md-5">
+                  <span class="btn btn-squared btn-result btn-result--error font12 ">
+                    Resulsts: Negative
+                  </span>
+                </div>
+                <div class="col-md-1">
+                  <span class="btn btn-squared btn-result btn-result--error btn-small font12 ">
+                    5
+                  </span>
+                </div>
+              </div>
+            </div>
+            <hr style="margin-bottom: 0px; width:109%" class="candidateInfo-card-line">
+            <div class="report-outcome">
+              <!-- <div class="col-md-6">
+
+                        
+                      </div> -->
+              <div class="">
+                <div class="col-md-8">
+                  <div class="verification-account-type">
+                    <div class="col-md-4 col-xs-6 text-align-right font12">
+                      <p class="result-titles">
+                        Credit Standing:
+                      </p>
+                      <p class="result-titles">
+                        Negative Result:
+                      </p>
+                      <p class="result-titles">
+                        Name 1:
+                      </p>
+                      <p class="result-titles">
+                        ID verified Description:
+                      </p>
+                      <p class="result-titles">
+                        Judgements:
+                      </p>
+                      <p class="result-titles">
+                        Notices:
+                      </p>
+                      <p class="result-titles">
+                        Notorial:
+                      </p>
+                      <p class="result-titles">
+                        Trace Alerts:
+                      </p>
+                      <p class="result-titles">
+                        Summary:
+                      </p>
+                    </div>
+                    <div class="col-md-8 col-xs-6 text-align-left font12">
+                      <p class="results-info text-black">
+                        <span class="text-black">Kwazi</span>
+                      </p>
+                      <p class="results-info text-black">
+                        <span class="text-black">Smit</span>
+                      </p>
+                      <p class="results-info text-black">
+                        <span class="text-black">Legary</span>
+                      </p>
+                      <p class="results-info text-black">
+                        <span class="text-black">1970/09/24</span>
+                      </p>
+                      <p class="results-info text-black">
+                        <span class="text-green">0009000000000</span>
+                      </p>
+                      <p class="results-info text-black">
+                        <span class="text-black">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam libero
+                          ex excepturi laboriosam dignissimos corrupti unde ullam nisi odit, voluptas eveniet, dolorem
+                          molestiae quisquam quasi provident sunt impedit, id vero.</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 text-align-right">
+                  <div class="umalusi-img" style="height: 160px;">
+                      <img src="dist/assets/img/company-logos/TransUnion.png" style="height:45px;width:180px" alt="">
+                  </div>
+                  <div class="enquiries">
+                      <p class="font12">
+                          For Enquiries or Disputes
+                        </p>
+                        <p class="text-black font12">
+                          (011) 345 0933
+                        </p>
+                        <p class="font12">
+                          info@umlalusi.co.za
+                        </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+          <div class="col-md-2 float-r">
+              <h3 class="total-score-header">
+                45
+                <span class="notification-alerts good">
+                    <i class="icon icon--good icon--25 good-icon-margin"></i>
+                  </span>
+              </h3>
+              <span class="btn btn-squared btn-result btn-result--confirmed btn-total-score">
+                  Total Score
+                </span>
+            </div>
+      </div>
+    </div>
+    <div id="logged-in-panel" class="card">
+      <i class="fa fa-times close text-black"></i>
+      <div class="spacer"></div>
+      <div>
+        <span>Munei</span>
+        <span class="label label-transparent float-r">Logout</span>
+        <br />
+        <span>mail@mail.com</span>
+      </div>
+      <div class="spacer"></div>
+      <div class="user-controls">
+        <p class="text-black">
+          <strong>
+            My Profile
+          </strong>
+        </p>
+        <p class="text-black">
+          <strong>
+            Change Password
+          </strong>
+        </p>
+      </div>
+      <div class="spacer"></div>
+      <div class="user-contacts">
+        <h4>Contacts</h4>
+        <p>
+          General feedback
+        </p>
+        <p>
+          Report a bug
+        </p>
+      </div>
+      <div class="spacer"></div>
+      <div class="user-socials">
+        <h4>
+          Join the community
+        </h4>
+        <button class="btn btn-just-icon btn-twitter">
+          <i class="fa fa-twitter"></i>
+        </button>
+        <button class="btn btn-just-icon  btn-facebook">
+          <i class="fa fa-facebook"> </i>
+        </button>
+        <button class="btn btn-just-icon  btn-google">
+          <i class="fa fa-google"> </i>
+        </button>
+        <button class="btn btn-just-icon  btn-linkedin">
+          <i class="fa fa-linkedin"></i>
+        </button>
+      </div>
+      <div class="spacer"></div>
+      <div class="user-settings">
+        <h5>
+          Settings
+        </h5>
+        <h5>
+          Help
+        </h5>
+      </div>
+    </div>
+    <div class="spacer"></div>
+    <div class="container-fluid">
+      <footer class="container-fluid ">
+        <div class="footer animatedParent">
+          <div class="container text-center animated bounceIn delay-150">
+            <div class="col-md-3 col-xs-4 hidden-xs hidden-sm">
+              <div class="dropup table-dropdown">
+                <button href="#pablo" class="dropdown-toggle btn btn-rose btn-round btn-block text-gray text-rubik-regular"
+                  data-toggle="dropdown">More Dots Recruit
+                  <b class="caret"></b>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <li>
+                    <a href="#pablo">Lorem</a>
+                  </li>
+                  <li>
+                    <a href="#pablo">Lorem</a>
+                  </li>
+                  <li>
+                    <a href="#pablo">Lorem</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6 text-align-left col-xs-12 col-sm-12">
+              <div class="user-footer-links text-center">
+                <span class="text-gray text-rubik-regular">
+                  Dots Africa 2018 -2019 All rights reserved.
+                </span>
+              </div>
+            </div>
+            <div class="col-md-3 hidden-xs hidden-sm">
+              <div class="user-footer-links">
+                <span class="text-gray text-rubik-regular">
+                  <a href="#" class="text-gray terms-condition-text">Terms of Use</a> and <a href="#" class="text-gray terms-condition-text">Privacy
+                    Policy</a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+</body>
+<!--   Core JS Files   -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCx0PjbVTxih2QgBX-ovhYSaU2uuArm5OE&libraries=places"></script>
+<script src="dist/assets/js/jquery.dot360.min.js" type="text/javascript"></script>
+
+</html>

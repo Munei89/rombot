@@ -1,0 +1,171 @@
+
+
+@mixin mdb-label-color-toggle-focus(){
+  // override bootstrap focus and keep all the standard color (could be multiple radios in the form group)
+  .form-group.is-focused & {
+    color: $mdb-label-color;
+
+    // on focus just darken the specific labels, do not turn them to the brand-primary
+    &:hover,
+    &:focus {
+      color: $mdb-label-color-toggle-focus;
+    }
+
+    // correct the above focus color for disabled items
+    fieldset[disabled] & {
+      color: $mdb-label-color;
+    }
+  }
+}
+
+.form-horizontal {
+
+  // Consistent vertical alignment of radios and checkboxes
+  .radio,
+  .checkbox,
+  .radio-inline,
+  .checkbox-inline {
+    padding-top: 0;
+  }
+
+  .radio {
+    margin-bottom: 10px;
+  }
+
+  label {
+    text-align: right;
+  }
+
+  label.control-label {
+    margin: 0;
+  }
+}
+
+.form-newsletter{
+    .input-group,
+    .form-group{
+        float: left;
+        width: 78%;
+        margin-right: 2%;
+        margin-top: 9px;
+    }
+
+    .btn{
+        float: left;
+        width: 20%;
+        margin: 9px 0 0;
+    }
+}
+
+.form-file-upload{
+    .input-group-btn:last-child>.btn-round{
+        border-radius: 30px;
+    }
+    .input-group{
+        width: 100%;
+    }
+}
+.ahashakeheartache {
+   -webkit-animation: kf_shake 0.4s 1 linear;
+   -moz-animation: kf_shake 0.4s 1 linear;
+   -o-animation: kf_shake 0.4s 1 linear;
+ }
+ @-webkit-keyframes kf_shake {
+   0% { -webkit-transform: translate(30px); }
+   20% { -webkit-transform: translate(-30px); }
+   40% { -webkit-transform: translate(15px); }
+   60% { -webkit-transform: translate(-15px); }
+   80% { -webkit-transform: translate(8px); }
+   100% { -webkit-transform: translate(0px); }
+ }
+ @-moz-keyframes kf_shake {
+   0% { -moz-transform: translate(30px); }
+   20% { -moz-transform: translate(-30px); }
+   40% { -moz-transform: translate(15px); }
+   60% { -moz-transform: translate(-15px); }
+   80% { -moz-transform: translate(8px); }
+   100% { -moz-transform: translate(0px); }
+ }
+ @-o-keyframes kf_shake {
+   0% { -o-transform: translate(30px); }
+   20% { -o-transform: translate(-30px); }
+   40% { -o-transform: translate(15px); }
+   60% { -o-transform: translate(-15px); }
+   80% { -o-transform: translate(8px); }
+   100% { -o-origin-transform: translate(0px); }
+ }
+ [data-subscribe-form] {
+   width: 100%;
+
+   [data-subscribe-input] {
+     text-align: left;
+   }
+ }
+ .subscribe-close {
+    width: 0;
+    overflow: hidden;
+    height: 0;
+    transition: .8s ease-out;
+
+    .btn {
+      display: none;
+      transition: .8s ease-out;
+    }
+ }
+ [data-user-sign-up] {
+
+ }
+
+ .applicant-form{
+  label{
+    padding-left: 15px;
+  } 
+  input{
+    font-size: 14px;
+    width: 244px !important;
+    margin: 8px 0px;
+    height: 42px;
+    font-family: rubikregular;
+    padding-left: 15px !important;
+
+    @media screen and (min-width: 1440px) and (max-width: 2700px){
+      width: 290px !important;
+    }
+
+   }
+   .chekbox-verify-institution{
+    width: auto !important;
+    height: auto;
+    margin: 50px 5px 0px;
+   }
+
+ }
+ .log-in-form{
+  label{
+    padding-left: 30px;
+    font-size: 16px !important;
+    font-family: rubikmedium;
+  } 
+  select{
+    font-size: 14px;
+    margin-top: 15px;
+    width: 388px !important;
+    // margin: 8px 0px;
+    height: 40px;
+    font-family: rubikregular;
+    // padding-left: 15px !important;
+   }
+
+   .btn-log-in{
+    margin-top: 30px;
+    border-radius: 5px;
+    width: 176px;
+    height: 50px;
+   }
+ }
+
+ .check-sub-heading{
+    font-size: 14px;
+ }
+
+ 

@@ -1,0 +1,1839 @@
+<!doctype html>
+<html lang="en" class="background-light-grey">
+
+<head>
+  <!-- App Icons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="dist/assets/img/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="dist/assets/img/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="dist/assets/img/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="dist/assets/img/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="dist/assets/img/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="dist/assets/img/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="dist/assets/img/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="dist/assets/img/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="dist/assets/img/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="dist/assets/img/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="dist/assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="dist/assets/img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="dist/assets/img/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" href="favicon.ico">
+  <meta name="msapplication-TileColor" content="#f2f2f2">
+  <meta name="msapplication-TileImage" content="dist/assets/img/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#d4145a">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+  <title>dot360 - Perform Checks</title>
+
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+
+  <!-- CSS Files -->
+  <link href="dist/assets/css/dot360.css" rel="stylesheet" />
+</head>
+
+<body class="background-light-grey">
+  <div id="loader-wrapper">
+    <!-- <div id="loader"></div> -->
+    <div class="loading-wrapper text-center">
+      <img src="dist/assets/img/loading-logo.svg" width="300px" height="46px" alt="">
+      <div class="dots-loading-logo">
+        <div id="percentage">
+          <span class="total"></span>
+        </div>
+      </div>
+      <div class="loading-slogan">
+        <p>Streamlined Offering, Improved Operations</p>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-transparent border-bottom-solid logged--in-user navbar-fixed-top visible-sm visible-xs">
+    <div class="navbar-header">
+      <div class="visible-xs visible-sm check-option-container">
+        <div class="row">
+          <div class="col-xs-5 col-sm-5 text-center">
+              <span class="text-black "><a href="#collab" data-toggle="tab" class="top-tabs text-gray">Collaboration</a></span>
+          </div>
+          <div class="col-xs-5 col-sm-5">
+              <span class="text-black"><a href="#check-req" data-toggle="tab" class="top-tabs text-gray">Check Required</a></span>
+          </div>
+          <div class="col-xs-2 col-sm-2 close-nav">
+              <span class="text-black text text-center float-r"><i class="icon-Dots_Close"></i></span>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+
+    <div class="navbar-header navbar-right hidden-sm hidden-xs">
+      <button type="button" class="navbar-toggle" data-toggle="collapse">
+        <a href="#" class="menu float-r">
+          <span class="sr-only">Toggle navigation</span>
+          <span style="width: 60%;margin-top: 10px;"></span>
+          <span style="width:40%"></span>
+        </a>
+      </button>
+      <a class="navbar-brand" href="#">
+        <i class="fa fa-user-circle" width="35px" height="35px"></i>
+      </a>
+    </div>
+
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+
+      <div class="collapse navbar-collapse">
+        <a href="#" class="navbar-toggle pos-rel" data-toggle="collapse" style="z-index:9999;">X</a>
+
+        <div id="logged-in-panel" class="card side-menu-card visible-sm;visible-xs">
+          <div class="side-menu-header">
+
+            <div class="row">
+              <div class="col-md-2">
+                <div class="active-users">
+                  <div class="circlce-no-icon"><img src="dist/assets/img/random_users/54.jpg" alt=""></div>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <h6>Philisande</h6>
+                <p>pila@dots.africa</p>
+              </div>
+
+              <div class="col-md-5">
+                <button class="btn btn-secondary btn-square text-black ">Logout<div class="ripple-container"></div>
+                  </button>
+              </div>
+            </div>
+
+            <hr>
+            <div class="side-menu-list text-rubik-regular">
+              <ul class="text-gray">
+                <li>My Profile</li>
+                <li>My Company</li>
+                <li>Change Password</li>
+              </ul>
+            </div>
+            <hr>
+            <div class="side-menu-contacts">
+              <h6>Contacts</h6>
+              <ul class="text-rubik-regular text-gray">
+                <li>General feedback</li>
+                <li>About Dots 360</li>
+              </ul>
+            </div>
+            <hr>
+            <div class="side-menu-joinCommunity">
+              <h6>Join the community</h6>
+              <button class="btn btn-just-icon btn-twitter">
+                <i class="fa fa-twitter"></i>
+              </button>
+              <button class="btn btn-just-icon  btn-facebook">
+                <i class="fa fa-facebook"> </i>
+              </button>
+              <button class="btn btn-just-icon  btn-google">
+                <i class="fa fa-google"> </i>
+              </button>
+              <button class="btn btn-just-icon  btn-linkedin">
+                <i class="fa fa-linkedin"></i>
+              </button>
+            </div>
+            <hr>
+            <div class="side-menu-assist">
+              <ul class="text-rubik-regular text-gray">
+                <li>Settings</li>
+                <li>Help</li>
+              </ul>
+            </div>
+
+            <div class="btn-logIn-as">
+              <button class="btn btn-secondary btn-square text-black ">Log in as<div class="ripple-container"></div>
+                </button>
+            </div>
+
+            <div class="version">
+              <p>V2.0</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <nav class="navbar navbar-transparent border-bottom-solid logged--in-user navbar-fixed-top hidden-sm hidden-xs">
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse">
+            <a href="#" class="menu float-r">
+              <span class="sr-only">Toggle navigation</span>
+              <span style="width: 60%;margin-top: 10px;"></span>
+              <span style="width:40%"></span>
+            </a>
+          </button>
+          <a class="navbar-brand" href="home.html">
+            <img src="dist/assets/img/d.png" height="50px" width="50px" alt="">
+          </a>
+        </div>
+  
+        <div class="navbar-header navbar-right">
+            <button type="button" class="navbar-toggle" data-toggle="collapse">
+              <a href="#" class="menu float-r">
+                <span class="sr-only">Toggle navigation</span>
+                <span style="width: 60%;margin-top: 10px;"></span>
+                <span style="width:40%"></span>
+              </a>
+            </button>
+            <a class="navbar-brand" href="#">
+                <i class="fa fa-user-circle" width="35px" height="35px"></i>
+            </a>
+          </div> 
+  
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active">
+            <a href="#" class="active">Background Screening</a>
+          </li>
+          <li class="">
+              <a href="#" class="">Yimi</a>
+            </li>
+            <li class="">
+                <a href="#" class="">Trace</a>
+              </li>
+          <li class="visible-xs visible-sm">
+            <div class="text-right pos--rel z-index99">
+              <span class="btn btn-lg btn-rose btn-round perform-check">
+                <i class="fa fa-plus"></i> Perform Check
+              </span>
+            </div>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="visible-xlgvisible-md">
+            <!-- <div class="text-right pos--rel z-index99">
+              <span class="btn btn-primary btn-round btn-white btn-raised perform-check">
+                <i class="fa fa-plus"></i> Bulk Upload Sheet
+              </span>
+            </div> -->
+          </li>
+          <li class="visible-xlgvisible-md">
+              <div class="text-right pos--rel z-index99" data-target="#checkList" data-toggle="modal">
+                <span class="btn btn-primary btn-round btn-magenta perform-check">
+                   Perform Check 
+                </span>
+              </div>
+            </li>
+          <li class="user-header-controls">
+            <i class="icon-Dots_Notification"></i>
+          </li>
+          <!-- <li class="user-header-controls">
+            <i class="fa fa-user-circle"></i>
+          </li> -->
+        </ul>
+  
+      </div>
+    </div>
+  </nav>
+  <div class="xs-spacer"></div>
+  <div class="container dashboard-spacer analytics-dashboard--nav hidden-sm hidden-xs">
+    <div class="row">
+      <div class="col-md-7 col-md-push-1 col-xs-push-0">
+
+        <span class="user-nav-links">
+          Dashboard
+        </span>
+        <span class="user-nav-links">
+          All Checks
+        </span>
+        <span class="user-nav-links">
+          All Candidates
+        </span>
+        <span class="user-nav-links active">
+          360 Analytics
+        </span>
+      </div>
+      <!-- <div class="col-md-4 hidden-xs hidden-sm text-align-right">
+          <span class="download"><i class="fa fa-download" aria-hidden="true"></i></span>
+          <span class="forward"><i class="fa fa-reply" aria-hidden="true"></i></span>
+        </div> -->
+    </div>
+  </div>
+  <div class="perform-check-container sub-nav-card">
+    <div class="row hidden-sm hidden-xs">
+      <div class="col-md-3">
+        <div class="card raised collaboration-padding">
+          <div class="collaboration-header-section">
+            <h6>Collaboration</h6>
+            <p class="sub-heading">Give more diversity to your checks</p>
+          </div>
+          <hr style="width: 120%;margin-left: -25px;height: 0px;">
+          <div class="tag-section">
+            <div class="row">
+              <div class="col-md-2 col-xs-2">
+                <i class="icon-Dots_Bookmark tag-icon"></i>
+              </div>
+              <div class="col-md-8 col-xs-8">
+                <h6 class="tag-header">Tag</h6>
+              </div>
+              <div class="col-md-2 col-xs-2">
+                <i class="icon-Dots_Info info-dots--icon"></i>
+              </div>
+            </div>
+            <div class="btn-tag-section">
+              <span class="btn btn-tag btn-notification btn-notification--pending">
+                HR Departme.&#46;
+                <span><a href=""><i class="icon-Dots_Close"> </i></a></span>
+              </span>
+              <span class="btn btn-tag btn-notification btn-notification--pending">
+                Gary LeGrey
+                <span><a href=""><i class="icon-Dots_Close"></i></span></a>
+              </span>
+            </div>
+          </div>
+          <div class="form-group label-floating add-reference-input">
+            <h6 class="add-ref">
+              Add reference
+            </h6>
+            <input type="text" class="form-control" placeholder="Tag a reference">
+            <span class="form-control-feedback">
+            </span>
+          </div>
+          <div class="watcher-section">
+            <div class="row">
+              <div class="col-md-2">
+                <i class="icon-Dots_Show"></i>
+              </div>
+              <div class="col-md-10">
+                <div class="watcher-header">
+                  <h6>Watcher</h6>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="active-users">
+                <div class="circlce-no-icon"><img src="dist/assets/img/random_users/54.jpg" alt=""></div>
+                <div class="circlce-no-icon"><img src="dist/assets/img/random_users/55.jpg" alt=""></div>
+                <span><i class="icon-Dots_Add" aria-hidden="true"></i></span>
+              </div>
+            </div>
+          </div>
+          <hr style="width: 120%;margin-left: -25px;height: 0px; margin-top: 0px">
+          <div class="attachment-section">
+            <div class="attachments-heading">
+
+              <h5> <span>
+                  <i class="icon-Dots_Attachment">
+
+                  </i>
+                </span>
+                Attachment
+                (<span class="comment-count">5</span>)
+                <i class="icon-Dots_Add  float-r" data-comments-expand aria-hidden="true"></i>
+              </h5>
+            </div>
+            <div class="attachments-content hidden">
+              <div class="row">
+                <table class="table-attachments">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="col-md-6 col-xs-6 col-sm-6">
+                          <p class="attachment-title text-left text-gray">
+                            Copy of ID
+                          </p>
+                        </div>
+                        <div class="col-md-6 col-xs-6 col-sm-6">
+                          <span class="btn btn-tag btn-notification btn-notification--pending attachment-file">
+                            Scan001.PDF
+                            <a href=""><i class="icon-Dots_Close"></i></a>
+                          </span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="col-md-3 col-xs-4 col-sm-4">
+                          <a href=""> <i class="icon-Dots_Download"> </i> </a>
+                        </div>
+                        <div class="col-md-9 col-xs-8 col-sm-9">
+                          <p class="text-left">Consent Form</p>
+                        </div>
+                      </td>
+
+
+                    </tr>
+                    <tr>
+
+                      <td>
+                        <div class="col-md-3 col-xs-4 col-sm-4">
+                          <a href=""> <i class="icon-Dots_Upload"> </i> </a>
+                        </div>
+                        <div class="col-md-9 col-xs-8 col-sm-9">
+                          <p class="text-left text-gray">Qualification</p>
+                        </div>
+
+                      </td>
+
+                    </tr>
+                  </tbody>
+                </table>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="col-md-6">
+        <div class="card raised padding-md-spacer applicant-container" data-card="candidate">
+          <div class="applicant-info-header">
+            <h3 class="font18">Applicant/Candidate</h3>
+            <p class="sub-heading">
+              Please ensure that the correct and relevant information is included.
+            </p>
+          </div>
+
+          <hr style="width: 120%;margin-left: -60px;height: 0px;">
+
+          <form action="" name="applicant" class="applicant-form">
+            <div class="row">
+              <div class="col-md-6 col-xs-12 col-sm-6">
+                <div class="form-group label-floating">
+                  <label for="" class="">ID / Passport Number</label>
+                  <input type="text" class="form-control" id="" placeholder="Enter valid ID number" required>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-xs-12 col-sm-6"></div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 col-xs-12 col-sm-6">
+                <div class="form-group">
+                  <label for="" class="text-gray">First Name</label>
+                  <input type="text" class="form-control" id="" placeholder="Enter first name">
+                </div>
+              </div>
+              <div class="col-md-6 col-xs-12 col-sm-6">
+                <div class="form-group">
+                  <label for="" class="text-gray">Maiden Name</label>
+                  <input type="text" class="form-control" id="" placeholder="Enter maiden name">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-xs-12 col-sm-6">
+                <div class="form-group">
+                  <label class="text-gray" for="">Surname</label>
+                  <input type="text" class="form-control" id="" placeholder="Enter last name">
+                </div>
+              </div>
+              <div class="col-md-6 col-xs-12 col-sm-6">
+                <div class="form-group">
+                  <label class="text-gray" for="">Date of Birth</label>
+                  <input type="date" class="form-control" id="" placeholder="">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-xs-12 col-sm-6">
+                <div class="form-group">
+                  <label class="text-gray" for="">Email Address</label>
+                  <input type="email" class="form-control" id="" placeholder="Enter ypur email address">
+                </div>
+              </div>
+              <div class="col-md-6 col-xs-12 col-sm-6">
+                <div class="form-group">
+                  <label class="text-gray" for="">Contact Number</label>
+                  <input type="number" class="form-control" id="" placeholder="Enter valid contact number">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 col-xs-12 col-sm-12">
+                <p class="">
+                  <div class="checkbox consent text-center">
+                    <label class="text-black" class="consent-active" data-consent-label>
+                      <input type="checkbox" name="consent"> The candidate has read the consent form and has confirmed
+                      acceptance thereof
+                    </label>
+                  </div>
+                </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-4">
+                <span class="btn btn-primary btn-round btn-white btn-raised btn-consent-type" data-toggle="dropdown">
+                  Select type of consent
+                  <span><i class="icon-Dots_Down-1"> </i></span>
+                </span>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <li>
+                    <a href="#pablo">Lorem</a>
+                  </li>
+                  <li>
+                    <a href="#pablo">Lorem</a>
+                  </li>
+                  <li>
+                    <a href="#pablo">Lorem</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+
+
+          </form>
+        </div>
+        <div class="card raised padding-md-spacer hidden-fade top-space" data-card="academic-check">
+          <h3 class="font18">South African Qualification
+            <span>
+              <i class="fa fa-times float-r" data-close-card="transunion-check"></i>
+            </span>
+          </h3>
+          <p class="sub-heading check-sub-heading">
+            Results of this check can take up to 24 hours. You will be notified by EMAIL once the results are available.
+          </p>
+          <div data-applicant-1>
+            <form action="" name="academic-check" class="academic-check applicant-form">
+              <div class="row">
+                <div class="col-md-6 col-xs-12 col-sm-6">
+                  <div class="form-group">
+                    <label class="text-gray" for="">First Name (As on Certificate)</label>
+                    <input type="text" class="form-control" id="" placeholder="Enter first name">
+                  </div>
+                </div>
+                <div class="col-md-6 col-xs-12 col-sm-6">
+                  <div class="form-group">
+                    <label class="text-gray" for="">Student Number</label>
+                    <input type="text" class="form-control" id="" placeholder="Enter valid student number">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 col-xs-12 col-sm-6">
+                  <div class="form-group">
+                    <label class="text-gray" for="">Last Name (As on Certificate)</label>
+                    <input type="text" class="form-control" id="" placeholder="Enter last name">
+                  </div>
+                </div>
+                <div class="col-md-6 col-xs-12 col-sm-6">
+                  <div class="form-group">
+                    <label class="text-gray" for="">Province</label>
+                    <input type="text" class="form-control" id="" placeholder="Enter Province">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 col-xs-12 col-sm-6">
+                  <div class="form-group">
+                    <label class="text-gray" for="">Qualification Country</label>
+                    <input type="dropdown" class="form-control" id="" placeholder="Enter Qualification Type">
+                  </div>
+                </div>
+                <div class="col-md-6 col-xs-12 col-sm-6">
+                  <div class="form-group">
+                    <label class="text-gray" for="">Doctype Code</label>
+                    <input type="dropdown" class="form-control" id="" placeholder="Select valid doctype code">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 col-xs-12 col-sm-6">
+                  <div class="form-group">
+                    <label class="text-gray" for="">Qualification Year</label>
+                    <input type="date" class="form-control" id="" placeholder="">
+                  </div>
+                </div>
+                <div class="col-md-6 col-xs-12 col-sm-6">
+                  <div class="form-group">
+                    <label class="text-gray" for="">Certificate Number</label>
+                    <input type="dropdown" class="form-control" id="" placeholder="Enter Certificate Number">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 col-xs-12 col-sm-6">
+                  <div class="form-group">
+                    <label class="text-gray" for="">Name of Institution</label>
+                    <input type="text" class="form-control" id="" placeholder="Enter Name of Institution">
+                  </div>
+                </div>
+                <div class="col-md-6 col-xs-12 col-sm-6">
+                  <div class="form-group">
+                    <label class="text-black" class="consent-active" data-consent-label>
+                      <input class="chekbox-verify-institution" type="checkbox" name="consent">I want to verify the
+                      institutlion
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <hr style="margin-left: -37px;width: 115%;height: 0px;">
+              <div class="row">
+                <div class="col-md-4">
+                  <span class="number-of-entries">
+                    Submit Check
+                  </span>
+                </div>
+                <div class="col-md-4">
+                  <span class="number-of-entries" data-close-card="transunion-check">
+                    Cancel
+                  </span>
+                </div>
+                <div class="col-md-4">
+                  <a href="#">
+                    <p class="text-left text-gray">360 SLA and TOU</p>
+                  </a>
+                </div>
+              </div>
+            </form>
+
+          </div>
+        </div>
+        <div class="card raised padding-md-spacer hidden-fade top-space" data-card="fraud-check">
+          <h3 class="font18">Identity Checks
+            <span>
+              <i class="fa fa-times float-r" data-close-card="fraud-check"></i>
+            </span>
+          </h3>
+          <p class="sub-heading check-sub-heading">
+            Results of this check can take up to 24 hours. You will be notified by EMAIL once the results are available.
+          </p>
+          <form action="" name="fraud-check" class="applicant-form">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group label-floating">
+                  <!-- <label for="" class="">ID / Passport Number</label> -->
+                  <input type="text" class="form-control" id="" placeholder="Enter valid ID number" required>
+                </div>
+              </div>
+
+              <div class="col-md-6"></div>
+            </div>
+            <hr style="margin-left: -37px;width: 115%; height: 0px">
+            <div class="row">
+              <div class="col-md-4">
+                <span class="number-of-entries">
+                  Submit Check
+                </span>
+              </div>
+              <div class="col-md-4">
+                <span class="number-of-entries" data-close-card="fraud-check">
+                  Cancel
+                </span>
+              </div>
+              <div class="col-md-4"></div>
+            </div>
+
+          </form>
+        </div>
+        <div class="card raised padding-md-spacer hidden-fade top-space" data-card="transunion-check">
+          <h3 class="font18">Transunion Credit Report
+            <span>
+              <i class="fa fa-times float-r" data-close-card="transunion-check"></i>
+            </span>
+          </h3>
+          <p class="check-sub-heading">
+            The results of this check can take up to 1 hour. You will be notified by EMAIL once the results are
+            available.
+          </p>
+          <form action="" name="transunion-check">
+            <div class="col-md-6">
+              <div class="form-group">
+                <select class="selectpicker" data-style="btn btn-lg btn-default btn-round select-btn--form dashboard"
+                  title="Single Select" data-size="7">
+                  <option disabled selected>Enquiry Reason code</option>
+                  <option value="2">Lorem</option>
+                  <option value="3">Lorem</option>
+                </select>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card raised padding-md-spacer checks-container" data-card>
+
+          <div class="required-checks-header">
+            <div class="row">
+              <div class="col-md-10">
+                <h3 class="font18">Check Required <span
+                    class="badge badge-magenta checkout checkout-top btn-raised hidden"></span></h3>
+
+                <p>Select the check type to perform.</p>
+              </div>
+              <div class="col-md-2">
+                <span class="dropdown float-r" data-dropdown>
+                  <div class="notification-user" data-toggle="dropdown">
+                    <i class="fa fa-circle" aria-hidden="true"></i>
+                    <i class="fa fa-circle" aria-hidden="true"></i>
+                    <i class="fa fa-circle" aria-hidden="true"></i>
+                  </div>
+                  <ul class="dropdown-menu notification-dropdown">
+                    <li>
+                      Email PDF Report
+                    </li>
+                    <li>
+                      Share Report
+                    </li>
+                    <li>
+                      Download Report
+                    </li>
+
+                  </ul>
+                </span>
+
+              </div>
+            </div>
+
+
+          </div>
+          <hr style="width: 125%;margin-left: -30px;height: 0px; margin-top: 10px;">
+          <div class="required-checks">
+            <div class="required-checks-selection">
+              <div class="identity-checks-heading">
+                <h5 class="check-heading">
+                  Identity Checks
+                  <span class="badge badge-magenta checkout check-count btn-raised hidden"
+                    data-identity-checks-count></span>
+                  <i class="icon-Dots_Add  float-r" data-identity-expand aria-hidden="true"></i>
+                </h5>
+                <div class="content identity-checks-content">
+                  <div class="row">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox" data-run-checkbox="academic-check" name="academic-check"> ID Verification
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox" data-run-checkbox="fraud-check" name="fraud-check"> Driver's Licence
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox" data-run-checkbox="transunion-check" name="transunion-check"> Citizenship
+                        Verification
+
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <hr>
+            <div class="required-checks-selection">
+              <div class="academic-qualifications-heading">
+                <h5 class="check-heading">
+                  Academic Qualifications
+                  <span class="badge badge-magenta checkout check-count btn-raised hidden"
+                    data-academic-checks-count></span>
+                  <i class="icon-Dots_Add  float-r" data-academic-expand aria-hidden="true"></i>
+                </h5>
+                <div class="content academic-qualifications-content">
+                  <div class="row">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox" data-run-checkbox="academic-check" name="academic-check"> South African
+                        Qualifications
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox" data-run-checkbox="fraud-check" name="fraud-check"> Global Qualifications
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox" data-run-checkbox="transunion-check" name="transunion-check"> Matric Post
+                        92
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox" data-run-checkbox="transunion-check" name="transunion-check"> Matric Pre
+                        92
+
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="required-checks-selection">
+              <div class="credit-checks-heading">
+                <h5 class="check-heading">
+                  Credit Checks
+                  <span class="badge badge-magenta checkout check-count btn-raised hidden"
+                    data-credit-checks-count></span>
+                  <i class="icon-Dots_Add  float-r" data-credit-expand aria-hidden="true"></i>
+                </h5>
+                <div class="content credit-checks-content">
+                  <div class="row">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox" data-run-checkbox="academic-check" name="academic-check"> South African
+                        Qualification
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox" data-run-checkbox="fraud-check" name="fraud-check"> Transunion Credit
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox" data-run-checkbox="transunion-check" name="transunion-check"> Compuscan
+                        Credit
+
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="required-checks-selection">
+              <div class="criminal-checks-heading ">
+                <h5 class="check-heading">
+                  Criminal Checks
+                  <span class="badge badge-magenta checkout check-count btn-raised hidden"
+                    data-criminal-checks-count></span>
+                  <i class="icon-Dots_Add  float-r" data-criminal-expand aria-hidden="true"></i>
+                </h5>
+                <div class="content criminal-checks-content">
+                  <div class="row">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox" data-run-checkbox="academic-check" name="academic-check"> South African
+                        Qualification
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox" data-run-checkbox="fraud-check" name="fraud-check"> Transunion Credit
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox" data-run-checkbox="transunion-check" name="transunion-check"> Compuscan
+                        Credit
+
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <hr>
+            <div class="required-checks-selection">
+              <div class="employment-checks-heading">
+                <h5 class="check-heading">
+                  Employment Checks
+                  <span class="badge badge-magenta checkout check-count btn-raised hidden" data-emp-checks-count></span>
+                  <i class="icon-Dots_Add  float-r" data-employment-expand aria-hidden="true"></i>
+                </h5>
+                <div class="content employment-checks-content">
+                  <div class="row">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox" data-run-checkbox="academic-check" name="academic-check"> South African
+                        Qualification
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox" data-run-checkbox="fraud-check" name="fraud-check"> Transunion Credit
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox" data-run-checkbox="transunion-check" name="transunion-check"> Compuscan
+                        Credit
+
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <hr>
+            <div class="required-checks-selection">
+              <div class="enatis-checks-heading">
+                <h5 class="check-heading">
+                  Enatis Checks
+                  <span class="badge badge-magenta checkout check-count btn-raised hidden"
+                    data-enatis-checks-count></span>
+                  <i class="icon-Dots_Add  float-r" data-enatis-expand aria-hidden="true"></i>
+                </h5>
+                <div class="content enatis-checks-content">
+                  <div class="row">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox" data-run-checkbox="academic-check" name="academic-check"> South African
+                        Qualification
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox" data-run-checkbox="fraud-check" name="fraud-check"> Transunion Credit
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox" data-run-checkbox="transunion-check" name="transunion-check"> Compuscan
+                        Credit
+
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+          <div class="xs-spacer"></div>
+        </div>
+      </div>
+
+
+
+
+    </div>
+    <div class="row visible-xs visible-sm mobi-body">
+      <div class="tab-content" style=" margin: 0 15px;">
+        <div class="tab-pane fade" id="collab">
+          <div class="card raised collaboration-padding" >
+              <div class="collaboration-header-section">
+                <h6>Collaboration</h6>
+                <p class="sub-heading">Give more diversity to your checks</p>
+              </div>
+              <hr style="width: 120%;margin-left: -25px;height: 0px;">
+              <div class="tag-section">
+                <div class="row">
+                  <div class="col-md-2 col-xs-2">
+                    <i class="icon-Dots_Bookmark tag-icon"></i>
+                  </div>
+                  <div class="col-md-8 col-xs-8">
+                    <h6 class="tag-header">Tag</h6>
+                  </div>
+                  <div class="col-md-2 col-xs-2">
+                    <i class="icon-Dots_Info info-dots--icon"></i>
+                  </div>
+                </div>
+                <div class="btn-tag-section">
+                  <span class="btn btn-tag btn-notification btn-notification--pending">
+                    HR Departme.&#46;
+                    <span><a href=""><i class="icon-Dots_Close"> </i></a></span>
+                  </span>
+                  <span class="btn btn-tag btn-notification btn-notification--pending">
+                    Gary LeGrey
+                    <span><a href=""><i class="icon-Dots_Close"></i></span></a>
+                  </span>
+                </div>
+              </div>
+              <div class="form-group label-floating add-reference-input">
+                <h6 class="add-ref">
+                  Add reference
+                </h6>
+                <input type="text" class="form-control" placeholder="Tag a reference">
+                <span class="form-control-feedback">
+                </span>
+              </div>
+              <div class="watcher-section">
+                <div class="row">
+                  <div class="col-md-2 col-xs-2">
+                    <i class="icon-Dots_Show"></i>
+                  </div>
+                  <div class="col-md-10 col-xs-10">
+                    <div class="watcher-header">
+                      <h6>Watcher</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="active-users">
+                    <div class="circlce-no-icon"><img src="dist/assets/img/random_users/54.jpg" alt=""></div>
+                    <div class="circlce-no-icon"><img src="dist/assets/img/random_users/55.jpg" alt=""></div>
+                    <span><i class="icon-Dots_Add" aria-hidden="true"></i></span>
+                  </div>
+                </div>
+              </div>
+              <hr style="width: 120%;margin-left: -25px;height: 0px; margin-top: 0px">
+              <div class="attachment-section">
+                <div class="attachments-heading">
+    
+                  <h5> <span>
+                      <i class="icon-Dots_Attachment">
+    
+                      </i>
+                    </span>
+                    Attachment
+                    (<span class="comment-count">5</span>)
+                    <i class="icon-Dots_Add  float-r" data-comments-expand aria-hidden="true"></i>
+                  </h5>
+                </div>
+                <div class="attachments-content hidden">
+                  <div class="row">
+                    <table class="table-attachments">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="col-md-6 col-xs-6 col-sm-6">
+                              <p class="attachment-title text-left text-gray">
+                                Copy of ID
+                              </p>
+                            </div>
+                            <div class="col-md-6 col-xs-6 col-sm-6">
+                              <span class="btn btn-tag btn-notification btn-notification--pending attachment-file">
+                                Scan001.PDF
+                                <a href=""><i class="icon-Dots_Close"></i></a>
+                              </span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="col-md-3 col-xs-4 col-sm-4">
+                              <a href=""> <i class="icon-Dots_Download"> </i> </a>
+                            </div>
+                            <div class="col-md-9 col-xs-8 col-sm-9">
+                              <p class="text-left">Consent Form</p>
+                            </div>
+                          </td>
+    
+    
+                        </tr>
+                        <tr>
+    
+                          <td>
+                            <div class="col-md-3 col-xs-4 col-sm-4">
+                              <a href=""> <i class="icon-Dots_Upload"> </i> </a>
+                            </div>
+                            <div class="ccol-md-9 col-xs-8 col-sm-9">
+                              <p class="text-left text-gray">Qualification</p>
+                            </div>
+    
+                          </td>
+    
+                        </tr>
+                      </tbody>
+                    </table>
+    
+                  </div>
+    
+                </div>
+              </div>
+    
+            </div>
+          </div>
+          <div class="tab-pane fade" id="check-req">
+              <div class="card raised padding-md-spacer checks-container" data-card>
+
+                  <div class="required-checks-header">
+                    <div class="row">
+                      <div class="col-md-10 col-xs-10">
+                        <h3 class="font18">Check Required <span
+                            class="badge badge-magenta checkout checkout-top btn-raised hidden"></span></h3>
+        
+                        <p>Select the check type to perform.</p>
+                      </div>
+                      <div class="col-md-2 col-xs-2">
+                        <span class="dropdown float-r" data-dropdown>
+                          <div class="notification-user" data-toggle="dropdown">
+                            <i class="fa fa-circle" aria-hidden="true"></i>
+                            <i class="fa fa-circle" aria-hidden="true"></i>
+                            <i class="fa fa-circle" aria-hidden="true"></i>
+                          </div>
+                          <ul class="dropdown-menu notification-dropdown">
+                            <li>
+                              Email PDF Report
+                            </li>
+                            <li>
+                              Share Report
+                            </li>
+                            <li>
+                              Download Report
+                            </li>
+        
+                          </ul>
+                        </span>
+        
+                      </div>
+                    </div>
+        
+        
+                  </div>
+                  <hr style="width: 125%;margin-left: -30px;height: 0px; margin-top: 10px;">
+                  <div class="required-checks">
+                    <div class="required-checks-selection">
+                      <div class="identity-checks-heading">
+                        <h5 class="check-heading">
+                          Identity Checks
+                          <span class="badge badge-magenta checkout check-count btn-raised hidden"
+                            data-identity-checks-count></span>
+                          <i class="icon-Dots_Add  float-r" data-identity-expand aria-hidden="true"></i>
+                        </h5>
+                        <div class="content identity-checks-content">
+                          <div class="row">
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox" data-run-checkbox="academic-check" name="academic-check"> ID Verification
+                              </label>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox" data-run-checkbox="fraud-check" name="fraud-check"> Driver's Licence
+                              </label>
+                            </div>
+                            <div class="padding-md-spacer hidden-fade top-space" data-card="fraud-check">
+                                <h3 class="font18">Identity Checks
+                                  <span>
+                                    <i class="fa fa-times float-r" data-close-card="fraud-check"></i>
+                                  </span>
+                                </h3>
+                                <p class="sub-heading check-sub-heading">
+                                  Results of this check can take up to 24 hours. You will be notified by EMAIL once the results are available.
+                                </p>
+                                <form action="" name="fraud-check" class="applicant-form">
+                                  <div class="row">
+                                    <div class="col-md-6">
+                                      <div class="form-group label-floating">
+                                        <!-- <label for="" class="">ID / Passport Number</label> -->
+                                        <input type="text" class="form-control" id="" placeholder="Enter valid ID number" required>
+                                      </div>
+                                    </div>
+                      
+                                    <div class="col-md-6"></div>
+                                  </div>
+                                  <hr style="margin-left: -37px;width: 115%; height: 0px">
+                                  <div class="row">
+                                    <div class="col-xs-7 col-sm-7">
+                                      <span class="number-of-entries">
+                                        Submit Check
+                                      </span>
+                                    </div>
+                                    <div class="col-xs-3 col-sm-3">
+                                        Cancel
+                                    </div>
+                                    <div class="col-xs-1 col-sm-1">
+                                      <i class="icon-Dots_Info info-dots--icon"></i>
+                                    </div>
+                                  </div>
+                      
+                                </form> 
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox" data-run-checkbox="transunion-check" name="transunion-check"> Citizenship
+                                Verification
+        
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+        
+                    </div>
+                    <hr>
+                    <div class="required-checks-selection">
+                      <div class="academic-qualifications-heading">
+                        <h5 class="check-heading">
+                          Academic Qualifications
+                          <span class="badge badge-magenta checkout check-count btn-raised hidden"
+                            data-academic-checks-count></span>
+                          <i class="icon-Dots_Add  float-r" data-academic-expand aria-hidden="true"></i>
+                        </h5>
+                        <div class="content academic-qualifications-content">
+                          <div class="row">
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox" data-run-checkbox="academic-check" name="academic-check"> South African
+                                Qualifications
+                              </label>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox" data-run-checkbox="fraud-check" name="fraud-check"> Global Qualifications
+                              </label>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox" data-run-checkbox="transunion-check" name="transunion-check"> Matric Post
+                                92
+                              </label>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox" data-run-checkbox="transunion-check" name="transunion-check"> Matric Pre
+                                92
+        
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="required-checks-selection">
+                      <div class="credit-checks-heading">
+                        <h5 class="check-heading">
+                          Credit Checks
+                          <span class="badge badge-magenta checkout check-count btn-raised hidden"
+                            data-credit-checks-count></span>
+                          <i class="icon-Dots_Add  float-r" data-credit-expand aria-hidden="true"></i>
+                        </h5>
+                        <div class="content credit-checks-content">
+                          <div class="row">
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox" data-run-checkbox="academic-check" name="academic-check"> South African
+                                Qualification
+                              </label>
+                            </div>
+                          </div>
+        
+                          <div class="row">
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox" data-run-checkbox="fraud-check" name="fraud-check"> Transunion Credit
+                              </label>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox" data-run-checkbox="transunion-check" name="transunion-check"> Compuscan
+                                Credit
+        
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="required-checks-selection">
+                      <div class="criminal-checks-heading ">
+                        <h5 class="check-heading">
+                          Criminal Checks
+                          <span class="badge badge-magenta checkout check-count btn-raised hidden"
+                            data-criminal-checks-count></span>
+                          <i class="icon-Dots_Add  float-r" data-criminal-expand aria-hidden="true"></i>
+                        </h5>
+                        <div class="content criminal-checks-content">
+                          <div class="row">
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox" data-run-checkbox="academic-check" name="academic-check"> South African
+                                Qualification
+                              </label>
+                            </div>
+                          </div>
+        
+                          <div class="row">
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox" data-run-checkbox="fraud-check" name="fraud-check"> Transunion Credit
+                              </label>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox" data-run-checkbox="transunion-check" name="transunion-check"> Compuscan
+                                Credit
+        
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+        
+                    </div>
+                    <hr>
+                    <div class="required-checks-selection">
+                      <div class="employment-checks-heading">
+                        <h5 class="check-heading">
+                          Employment Checks
+                          <span class="badge badge-magenta checkout check-count btn-raised hidden" data-emp-checks-count></span>
+                          <i class="icon-Dots_Add  float-r" data-employment-expand aria-hidden="true"></i>
+                        </h5>
+                        <div class="content employment-checks-content">
+                          <div class="row">
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox" data-run-checkbox="academic-check" name="academic-check"> South African
+                                Qualification
+                              </label>
+                            </div>
+                          </div>
+        
+                          <div class="row">
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox" data-run-checkbox="fraud-check" name="fraud-check"> Transunion Credit
+                              </label>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox" data-run-checkbox="transunion-check" name="transunion-check"> Compuscan
+                                Credit
+        
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+        
+                    </div>
+                    <hr>
+                    <div class="required-checks-selection">
+                      <div class="enatis-checks-heading">
+                        <h5 class="check-heading">
+                          Enatis Checks
+                          <span class="badge badge-magenta checkout check-count btn-raised hidden"
+                            data-enatis-checks-count></span>
+                          <i class="icon-Dots_Add  float-r" data-enatis-expand aria-hidden="true"></i>
+                        </h5>
+                        <div class="content enatis-checks-content">
+                          <div class="row">
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox" data-run-checkbox="academic-check" name="academic-check"> South African
+                                Qualification
+                              </label>
+                            </div>
+                          </div>
+        
+                          <div class="row">
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox" data-run-checkbox="fraud-check" name="fraud-check"> Transunion Credit
+                              </label>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox" data-run-checkbox="transunion-check" name="transunion-check"> Compuscan
+                                Credit
+        
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+        
+                    </div>
+                  </div>
+        
+        
+                  <div class="xs-spacer"></div>
+                </div>
+          </div>
+      </div>
+      <div class="col-sm-12 col-xs-12">
+          <div class="card raised padding-md-spacer" data-close-panes>
+              <div class="applicant-info-header">
+                <h3 class="font18">Applicant/Candidate <span><i class="icon-Dots_Up-1 float-r"> </i></span></h3>
+              </div>
+          </div>
+      </div>
+      <div class="mobi-carousel-wrapper">
+        <span id="item-1"></span>
+        <span id="item-2"></span>
+        <span id="item-3"></span>
+        <div class="mobi-carousel-item item-1 col-xs-12 col-sm-12">
+          <div class="">
+            <div class="card raised card-backround-checks padding-md-spacer">
+              <div class="applicant-info-header">
+                <h3 class="font18">Applicant/Candidate</h3>
+                <p class="sub-heading">
+                  Please ensure that the correct and relevant information is included.
+                </p>
+              </div>
+              <hr style="width: 120%;margin-left: -60px;height: 0px;">
+
+              <form action="" name="applicant" class="applicant-form">
+                <div class="row">
+                  <div class="col-md-6 col-xs-12 col-sm-6">
+                    <div class="form-group label-floating">
+                      <label for="" class="">ID / Passport Number</label>
+                      <input type="text" class="form-control" id="" placeholder="Enter valid ID number" required>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 col-xs-12 col-sm-6"></div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6 col-xs-12 col-sm-6">
+                    <div class="form-group">
+                      <label for="" class="text-gray">First Name</label>
+                      <input type="text" class="form-control" id="" placeholder="Enter first name">
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-xs-12 col-sm-6">
+                    <div class="form-group">
+                      <label for="" class="text-gray">Surname</label>
+                      <input type="text" class="form-control" id="" placeholder="Enter surname name">
+                    </div>
+                  </div>
+                </div>
+                <a class="arrow arrow-next float-r" href="#item-2"> Next<i class="icon-Dots_Right-1"> </i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="mobi-carousel-item item-2 col-xs-12 col-sm-12">
+          <div class="">
+            <div class="card raised card-backround-checks padding-md-spacer">
+              <div class="applicant-info-header">
+                <h3 class="font18">Applicant/Candidate</h3>
+                <p class="sub-heading">
+                  Please ensure that the correct and relevant information is included.
+                </p>
+              </div>
+              <hr style="width: 120%;margin-left: -60px;height: 0px;">
+              <div class="applicant-form">
+                  <div class="row">
+                      <div class="col-md-6 col-xs-12 col-sm-6">
+                        <div class="form-group">
+                          <label for="" class="text-gray">Maiden Name</label>
+                          <input type="text" class="form-control" id="" placeholder="Enter maiden name">
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-xs-12 col-sm-6">
+                        <div class="form-group">
+                          <label class="text-gray" for="">Date of Birth</label>
+                          <input type="date" class="form-control" id="" placeholder="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6 col-xs-12 col-sm-6">
+                        <div class="form-group">
+                          <label class="text-gray" for="">Email Address</label>
+                          <input type="email" class="form-control" id="" placeholder="Enter ypur email address">
+                        </div>
+                      </div>
+                    </div>
+              </div>
+
+              <a class="arrow arrow-prev" href="#item-1">
+                  <i class="icon-Dots_Left-1"> </i> Prev</a> <a class="arrow arrow-next float-r" href="#item-3">Next <i class="icon-Dots_Right-1"> </i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="mobi-carousel-item item-3 col-xs-12 col-sm-12">
+          <div class="">
+            <div class="card raised card-backround-checks padding-md-spacer">
+              <div class="applicant-info-header">
+                <h3 class="font18">Applicant/Candidate</h3>
+                <p class="sub-heading">
+                  Please ensure that the correct and relevant information is included.
+                </p>
+              </div>
+              <hr style="width: 120%;margin-left: -60px;height: 0px;">
+              
+              <div class="applicant-form">
+                  <div class="row">
+                      <div class="col-md-6 col-xs-12 col-sm-6">
+                        <div class="form-group">
+                          <label class="text-gray" for="">Contact Number</label>
+                          <input type="number" class="form-control" id="" placeholder="Enter valid contact number">
+                        </div>
+                      </div>
+                      <div class="col-md-12 col-xs-12 col-sm-12">
+                        <p class="">
+                          <div class="checkbox consent text-center">
+                            <label class="text-black" class="consent-active" data-consent-label>
+                              <input type="checkbox" name="consent"> The candidate has read the consent form and has confirmed
+                              acceptance thereof
+                            </label>
+                          </div>
+                        </p>
+                      </div>
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+                        <span class="btn btn-primary btn-round btn-white btn-raised btn-consent-type" data-toggle="dropdown">
+                          Select type of consent
+                          <span><i class="icon-Dots_Down-1"> </i></span>
+                        </span>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                          <li>
+                            <a href="#pablo">Lorem</a>
+                          </li>
+                          <li>
+                            <a href="#pablo">Lorem</a>
+                          </li>
+                          <li>
+                            <a href="#pablo">Lorem</a>
+                          </li>
+                        </ul>
+                        <span class="text-black attachment-icon">
+                          <i class="icon-Dots_Attachment">
+      
+                          </i>
+                        </span>
+                      </div>
+                    </div>
+              </div>
+
+              <a class="arrow arrow-prev" href="#item-2">
+                  <i class="icon-Dots_Left-1"> </i>  Prev</a> <a class="arrow arrow-next float-r">Next <i class="icon-Dots_Right-1"> </i>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  <div id="logged-in-panel" class="card side-menu-card hidden">
+
+    <div class="side-menu-header">
+
+      <div class="row">
+        <div class="col-md-2">
+          <div class="active-users">
+            <div class="circlce-no-icon"><img src="dist/assets/img/random_users/54.jpg" alt=""></div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <h6>Philisande</h6>
+          <p>pila@dots.africa</p>
+        </div>
+
+        <div class="col-md-5">
+          <button class="btn btn-secondary btn-square text-black ">Logout<div class="ripple-container"></div></button>
+        </div>
+      </div>
+
+      <hr>
+      <div class="side-menu-list text-rubik-regular">
+        <ul class="text-gray">
+          <li>My Profile</li>
+          <li>My Company</li>
+          <li>Change Password</li>
+        </ul>
+      </div>
+      <hr>
+      <div class="side-menu-contacts">
+        <h6>Contacts</h6>
+        <ul class="text-rubik-regular text-gray">
+          <li>General feedback</li>
+          <li>About Dots 360</li>
+        </ul>
+      </div>
+      <hr>
+      <div class="side-menu-joinCommunity">
+        <h6>Join the community</h6>
+        <button class="btn btn-just-icon btn-twitter">
+          <i class="fa fa-twitter"></i>
+        </button>
+        <button class="btn btn-just-icon  btn-facebook">
+          <i class="fa fa-facebook"> </i>
+        </button>
+        <button class="btn btn-just-icon  btn-google">
+          <i class="fa fa-google"> </i>
+        </button>
+        <button class="btn btn-just-icon  btn-linkedin">
+          <i class="fa fa-linkedin"></i>
+        </button>
+      </div>
+      <hr>
+      <div class="side-menu-assist">
+        <ul class="text-rubik-regular text-gray">
+          <li>Settings</li>
+          <li>Help</li>
+        </ul>
+      </div>
+
+      <div class="btn-logIn-as">
+        <button class="btn btn-secondary btn-square text-black ">Log in as<div class="ripple-container"></div></button>
+      </div>
+
+      <div class="version">
+        <p>V2.0</p>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="checkList" tabindex="-1" role="dialog" aria-labelledby="checkListLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content thankYouModal">
+        <div class="modal-header">
+          <!-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+              <i class="material-icons">clear</i>
+            </button> -->
+            <div class="row">
+                <div class="col-md-6 col-xs-6 col-sm-6">
+                    <h6 class="modal-title">Are you sure?</h6>
+    
+                </div>
+    
+                <div class="col-md-6 col-xs-6 col-sm-6 ">
+                    <h6 class="text-weight-light visible-xs font18">
+                        Check Types(s) <span class="badge badge-magenta checkout btn-raised">5</span>
+                      </h6>
+                </div>
+            </div>
+
+        </div>
+        <hr style="height: 0px;"/>
+        <div class="modal-body">
+
+
+            <div class="row hidden-xs hidden-sm">
+                <div class="col-md-8 hidden-xs hidden-sm">
+                  <h6 class="text-weight-light font18">
+                    Check Types(s) <span class="badge badge-magenta checkout btn-raised">5</span>
+                  </h6>
+                </div>
+                <div class="col-md-4 hidden-xs hidden-sm">
+                  <h6 class="text-weight-light font18">
+                    Status
+                  </h6>
+                </div>
+              </div>
+    
+
+          <div class="row">
+            <div class="col-md-8">
+              <div class="checkbox">
+                <label class="text-black">
+                  <input type="checkbox" data-run-checkbox="academic-check" name="academic-check" checked> <span
+                    class="text-black">ID Verification</span>
+                </label>
+              </div>
+            </div>
+            <div class="col-md-4 checkout-list-progress hidden-sm hidden-xs">
+              <div class="progress-wrap progress-wrap--btn default no-bg--progress" data-candidate-progress="ofentse"
+                data-check-status="error">
+                <div class="progress progress-bar--in-btn progress-bar-track no-bg-height" id="ofentse">
+                  <div class="progress-bar progress-bar-striped progress-line-default  active" data-progress="ofentse"
+                    aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">0%</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="row">
+              <div class="col-md-8">
+                <div class="checkbox">
+                  <label class="text-black">
+                    <input type="checkbox" data-run-checkbox="academic-check" name="academic-check" checked> <span
+                      class="text-black">Driver's Licence </span>
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-4 checkout-list-progress hidden-sm hidden-xs">
+                <div class="progress-wrap progress-wrap--btn default no-bg--progress" data-candidate-progress="ofentse"
+                  data-check-status="error">
+                  <div class="progress progress-bar--in-btn progress-bar-track no-bg-height" id="ofentse">
+                    <div class="progress-bar progress-bar-striped progress-line-default  active" data-progress="ofentse"
+                      aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">0%</div>
+                  </div>
+                </div>
+              </div>
+  
+          </div>
+
+          <div class="row">
+                <div class="col-md-8">
+                  <div class="checkbox">
+                    <label class="text-black">
+                      <input type="checkbox" data-run-checkbox="academic-check" name="academic-check" checked> <span
+                        class="text-black">Citizenship Verification</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-4 checkout-list-progress hidden-sm hidden-xs">
+                  <div class="progress-wrap progress-wrap--btn default no-bg--progress" data-candidate-progress="ofentse"
+                    data-check-status="error">
+                    <div class="progress progress-bar--in-btn progress-bar-track no-bg-height" id="ofentse">
+                      <div class="progress-bar progress-bar-striped progress-line-default  active" data-progress="ofentse"
+                        aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">0%</div>
+                    </div>
+                  </div>
+                </div>
+    
+          </div>
+
+          <div class="row">
+              <div class="col-md-8">
+                <div class="checkbox">
+                  <label class="text-black">
+                    <input type="checkbox" data-run-checkbox="academic-check" name="academic-check" checked> <span
+                      class="text-black"> South African Qualification</span>
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-4 checkout-list-progress hidden-sm hidden-xs">
+                <div class="progress-wrap progress-wrap--btn default no-bg--progress" data-candidate-progress="ofentse"
+                  data-check-status="error">
+                  <div class="progress progress-bar--in-btn progress-bar-track no-bg-height" id="ofentse">
+                    <div class="progress-bar progress-bar-striped progress-line-default  active" data-progress="ofentse"
+                      aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">0%</div>
+                  </div>
+                </div>
+              </div>
+  
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                  <div class="checkbox">
+                    <label class="text-black">
+                      <input type="checkbox" data-run-checkbox="academic-check" name="academic-check" checked> <span
+                        class="text-black">Global Qualification</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-4 checkout-list-progress hidden-sm hidden-xs">
+                  <div class="progress-wrap progress-wrap--btn default no-bg--progress" data-candidate-progress="ofentse"
+                    data-check-status="error">
+                    <div class="progress progress-bar--in-btn progress-bar-track no-bg-height" id="ofentse">
+                      <div class="progress-bar progress-bar-striped progress-line-default  active" data-progress="ofentse"
+                        aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">0%</div>
+                    </div>
+                  </div>
+                </div>
+    
+              </div>  
+        </div>
+        <div class="modal-footer">
+          <div class="row">
+            <div class="col-md-8 col-xs-8 col-xs-8 text-align-left">
+              <a href="checkout-list.html"><button type="button"
+                  class="btn btn-default btn-primary btn-squared btn-magenta text-white">Process Check(s)</button></a>
+            </div>
+            <div class="col-md-4 col-xs-4 col-sm-4 text-align-right">
+              <p class="text-black text-weight-light checks-cancel" data-dismiss="modal">Cancel</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="spacer"></div>
+  <footer class="container-fluid hidden-sm hidden-xs">
+    <div class="footer animatedParent">
+      <div class="container text-center animated bounceIn delay-150">
+
+        <div class="col-md-6 col-lg-6 text-left col-xs-12 col-sm-12">
+          <div class="user-footer-links">
+            <span class="text-gray text-rubik-regular">
+              Dots Africa 2018 -2019 All rights reserved.
+            </span>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6 text-right hidden-xs hidden-sm">
+          <div class="user-footer-links">
+            <span class="text-gray text-rubik-regular">
+              <a href="#" class="text-gray terms-condition-text">Terms of Use</a> and <a href="#"
+                class="text-gray terms-condition-text">Privacy Policy</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <footer class="container-fluid visible-sm visible-xs background-white">
+      <div class="footer animatedParent">
+        <div class="container text-center">
+  
+          <div class="col-md-6 col-lg-6 text-left col-xs-6 col-sm-6">
+            <div class="user-footer-links">
+              <span class="text-gray text-rubik-regular">
+                <i class="icon-Dots_Camera font18 text-black"></i>
+              </span>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 text-right col-xs-6 col-sm-6">
+              <span class="btn text-left btn-primary btn-round btn-magenta btn-raised perform-check visible-xs col-xs-3" data-target="#checkList" data-toggle="modal" id="" style="margin: 10px -20px 0px 19px;float: right;    position: relative; z-index: 9;">
+                  Perform Check 
+               </span>
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+<!--   Core JS Files   -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCx0PjbVTxih2QgBX-ovhYSaU2uuArm5OE&libraries=places">
+</script>
+<script src="dist/assets/js/jquery.dot360.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $('.top-tabs').click(function(){
+   if(!$('.mobi-carousel-wrapper').hasClass('collab-isopen')) {
+    $('.mobi-carousel-wrapper').addClass('collab-isopen');
+   } 
+  })
+  $('[data-close-panes]').click(function(){
+    $('.tab-pane').removeClass('active');
+    // $('.tab-pane').removeClass('fade');
+    $('.tab-pane').removeClass('in');
+    $('.mobi-carousel-wrapper').removeClass('collab-isopen');
+  })
+</script>
+</html>

@@ -1,0 +1,919 @@
+<!doctype html>
+<html lang="en" class="background-light-grey">
+
+<head>
+  <!-- App Icons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="dist/assets/img/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="dist/assets/img/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="dist/assets/img/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="dist/assets/img/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="dist/assets/img/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="dist/assets/img/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="dist/assets/img/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="dist/assets/img/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="dist/assets/img/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="dist/assets/img/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="dist/assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="dist/assets/img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="dist/assets/img/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" href="favicon.ico">
+  <meta name="msapplication-TileColor" content="#f2f2f2">
+  <meta name="msapplication-TileImage" content="dist/assets/img/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#d4145a">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+  <title>dot360 - My Canditates</title>
+
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+
+  <!--     Fonts and icons     -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" /> -->
+
+  <!-- CSS Files -->
+  <link href="dist/assets/css/dot360.css" rel="stylesheet" />
+</head>
+
+<body class="background-light-grey">
+  <div id="loader-wrapper">
+    <!-- <div id="loader"></div> -->
+    <div class="loading-wrapper text-center">
+      <img src="dist/assets/img/loading-logo.svg" width="300px" height="46px" alt="">
+      <div class="dots-loading-logo">
+        <div id="percentage">
+          <span class="total"></span>
+        </div>
+      </div>
+      <div class="loading-slogan">
+        <p>Streamlined Offering, Improved Operations</p>
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-transparent border-bottom-solid logged--in-user navbar-fixed-top">
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse">
+            <a href="#" class="menu float-r">
+              <span class="sr-only">Toggle navigation</span>
+              <span style="width: 60%;margin-top: 10px;"></span>
+              <span style="width:40%"></span>
+            </a>
+          </button>
+          <a class="navbar-brand" href="home.html">
+            <img src="dist/assets/img/d.png" height="50px" width="50px" alt="">
+          </a>
+        </div>
+  
+        <div class="navbar-header navbar-right">
+            <button type="button" class="navbar-toggle" data-toggle="collapse">
+              <a href="#" class="menu float-r">
+                <span class="sr-only">Toggle navigation</span>
+                <span style="width: 60%;margin-top: 10px;"></span>
+                <span style="width:40%"></span>
+              </a>
+            </button>
+            <a class="navbar-brand" href="#">
+                <i class="fa fa-user-circle" width="35px" height="35px"></i>
+            </a>
+          </div> 
+  
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active">
+            <a href="#" class="active">Background Screening</a>
+          </li>
+          <li class="">
+              <a href="#" class="">Yimi</a>
+            </li>
+            <li class="">
+                <a href="#" class="">Trace</a>
+              </li>
+          <!-- <li class="visible-xs visible-sm">
+            <div class="text-right pos--rel z-index99">
+              <span class="btn btn-lg btn-rose btn-round perform-check">
+                <i class="fa fa-plus"></i> Perform Check
+              </span>
+            </div>
+          </li> -->
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="visible-xlgvisible-md">
+              <div class="text-center pos--rel z-index99" data-target="#checkList" data-toggle="modal">
+                  <span class="btn btn-primary btn-round btn-magenta btn-perform-check">
+                     Perform Check<i class="icon-Dots_Right-2"></i>
+                  </span>
+                </div>
+            </li>
+          <li class="user-header-controls">
+            <i class="icon-Dots_Notification"></i>
+            <span class="label label-rose notify-badge" data-toggle="dropdown">8</span>
+          </li>
+
+        </ul>
+  
+      </div>
+    </div>
+  </nav>
+  <nav class="navbar navbar-transparent border-bottom-solid logged--in-user navbar-fixed-top">
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse">
+            <a href="#" class="menu float-r">
+              <span class="sr-only">Toggle navigation</span>
+              <span style="width: 60%;margin-top: 10px;"></span>
+              <span style="width:40%"></span>
+            </a>
+          </button>
+          <a class="navbar-brand" href="home.html">
+            <img src="dist/assets/img/d.png" height="50px" width="50px" alt="">
+          </a>
+        </div>
+  
+        <div class="navbar-header navbar-right">
+            <button type="button" class="navbar-toggle" data-toggle="collapse">
+              <a href="#" class="menu float-r">
+                <span class="sr-only">Toggle navigation</span>
+                <span style="width: 60%;margin-top: 10px;"></span>
+                <span style="width:40%"></span>
+              </a>
+            </button>
+            <a class="navbar-brand" href="#">
+                <i class="fa fa-user-circle" width="35px" height="35px"></i>
+            </a>
+          </div> 
+  
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active">
+            <a href="#" class="active">Background Screening</a>
+          </li>
+          <li class="">
+              <a href="#" class="">Yimi</a>
+            </li>
+            <li class="">
+                <a href="#" class="">Trace</a>
+              </li>
+          <li class="visible-xs visible-sm">
+            <div class="text-right pos--rel z-index99">
+              <span class="btn btn-lg btn-rose btn-round perform-check">
+                <i class="fa fa-plus"></i> Perform Check
+              </span>
+            </div>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="visible-xlgvisible-md">
+            <!-- <div class="text-right pos--rel z-index99">
+              <span class="btn btn-primary btn-round btn-white btn-raised perform-check">
+                <i class="fa fa-plus"></i> Bulk Upload Sheet
+              </span>
+            </div> -->
+          </li>
+          <li class="visible-xlgvisible-md">
+              <div class="text-right pos--rel z-index99" data-target="#checkList" data-toggle="modal">
+                <span class="btn btn-primary btn-round btn-magenta perform-check">
+                   Perform Check 
+                </span>
+              </div>
+            </li>
+          <li class="user-header-controls">
+            <i class="icon-Dots_Notification"></i>
+          </li>
+          <!-- <li class="user-header-controls">
+            <i class="fa fa-user-circle"></i>
+          </li> -->
+        </ul>
+  
+      </div>
+    </div>
+  </nav>
+  <div class="xs-spacer"></div>
+  <div class="container dashboard-spacer analytics-dashboard--nav">
+      <div class="row">
+          <div class="col-md-2"></div>
+        <div class="col-md-7 col-md-push-0 col-xs-push-0">
+        
+          <span class="user-nav-links active">
+              My Company
+          </span>
+          <span class="user-nav-links">
+              Users
+            </span>
+            <span class="user-nav-links">
+                Groups
+            </span>
+            <span class="user-nav-links">
+                My Details
+            </span>
+            <span class="user-nav-links ">
+                Statements
+            </span>
+            <span class="user-nav-links ">
+                General Settings
+            </span>
+
+        </div>
+        <div class="col-md-3"></div>
+        <!-- <div class="col-md-4 hidden-xs hidden-sm text-align-right">
+          <span class="download"><i class="fa fa-download" aria-hidden="true"></i></span>
+          <span class="forward"><i class="fa fa-reply" aria-hidden="true"></i></span>
+        </div> -->
+      </div>
+    </div>
+  <div class="xs-spacer"></div>
+  <div class="container">
+      <div class="row">
+    
+                    <div class="col-md-4">
+                    <div class="card raised user-card">
+            
+                      <div class="row">
+                        <div class="col-md-7">
+                            <div class="upload-section">
+                                <span>
+                                    <i class="icon-Dots_Upload"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                                <div class="col-md-12 col-xs-12 hidden-xs hidden-sm btn-view-all btn-viewAll-interaction">
+                                        <span class="number-of-entries">
+                                            Edit
+                                        </span>
+                                 </div>
+                        </div>
+                      </div>
+                      <div class="spacer"></div>
+
+
+                      <div class="row">
+                        <div class="career-personnel-section ">
+                          <h6 class="text-black flush-m">Absolut Career Personnel</h6>
+                            
+                          <table class="transUnion-table">
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <p class="result-titles text-right">
+                                        Co. Reg. No:
+                                    </p>
+                                  </td>
+                                  <td>
+                                    <p class="results-info text-black text-left">
+                                        2012/044109/07
+                                    </p>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <p class="result-titles text-right">
+                                        Physical Address: 
+                                    </p>
+                                  </td>
+                                  <td>
+                                    <p class="results-info text-black text-left">
+                                        Randburg Ferndale, JHB
+                                    </p>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <p class="result-titles text-right">
+                                        Website:
+                                    </p>
+                                  </td>
+                                  <td>
+                                    <p class="results-info text-black text-left">
+                                      Ihttps://www.absolute1.co.za/
+                                    </p>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+
+                        </div>
+                      </div>
+                      <div class="row">
+                            <div class="contact-information-section">
+                                    <h6 class="text-black flush-m">Contact Information</h6>
+                                   
+                                    
+                                    <table class="transUnion-table">
+                                        <tbody>
+                                          <tr>
+                                            <td>
+                                              <p class="result-titles text-right">
+                                                  Contact Person:
+                                              </p>
+                                            </td>
+                                            <td>
+                                              <p class="results-info text-black text-left">
+                                                  Shelleigh Terlouw 
+                                              </p>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>
+                                              <p class="result-titles text-right">
+                                                  Contact Number: 
+                                              </p>
+                                            </td>
+                                            <td>
+                                              <p class="results-info text-black text-left">
+                                                  0129934114 
+                                              </p>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>
+                                              <p class="result-titles text-right">
+                                                  Email Address:
+                                              </p>
+                                            </td>
+                                            <td>
+                                              <p class="results-info text-black text-left">
+                                                  shell@absolute1.co.za
+                                              </p>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                  </div>
+                      </div>
+
+                      <hr>
+                      <div class="row">
+                            <div class="account-status-section ">
+                                    <h6 class="text-black flush-m">Account Status</h6>
+                      
+                                 
+
+                                    <table class="transUnion-table">
+                                        <tbody>
+                                          <tr>
+                                            <td>
+                                              <p class="result-titles text-right">
+                                                  Account Type: 
+                                              </p>
+                                            </td>
+                                            <td>
+                                              <p class="results-info text-black text-left">
+                                                  Enterprise 
+                                              </p>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>
+                                              <p class="result-titles text-right">
+                                                  Billing Method: :
+                                              </p>
+                                            </td>
+                                            <td>
+                                              <p class="results-info text-black text-left">
+                                                  Contract 
+                                              </p>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>
+                                              <p class="result-titles text-right">
+                                                  Active Users :
+                                              </p>
+                                            </td>
+                                            <td>
+                                              <p class="results-info text-black text-left">
+                                                  6
+                                              </p>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    <div class="bottom-card-content">
+                                            <span class="btn btn-notification btn-notification--confirmed btn-completed-checks btn-active">
+                                                    <i class="icon-Dots_Lock"> </i>  Active
+                                            </span>
+                                          </div>
+                                </div>
+                      </div>
+                      
+                      </div>
+
+                      <div class="card broadcast-card margin15">
+                        <div class="broadcast-header">
+                          <h6>Broadcast Company Message</h6>
+                        </div>
+                        <div class="broadcast-body">
+                          <textarea name="" id="" cols="33" rows="5" placeholder="Message"></textarea>
+                        </div>
+                        
+                        <div class="text-right pos--rel z-index99 ">
+                            <span class="btn btn-primary btn-round btn-white btn-raised btn-broadcast">
+                                Broadcast Message
+                            </span>
+                          </div>
+
+                      </div>
+
+                      <div class="card waive-card margin15">
+                        <div class="waive-subscription-section">
+                                <h6 class="text-black flush-m">Waive Subscription</h6>
+                  
+                                <p class="">
+                                        <div class="checkbox consent text-center">
+                                          <label class="text-black" class="consent-active" data-consent-label>
+                                            <input type="checkbox" name="consent"> Waive Subscription Fee
+                                          </label>
+                                        </div>
+                                      </p>
+
+                                      <div class="col-md-12 col-xs-12 hidden-xs hidden-sm btn-view-all btn-viewAll-interaction btn--save text-right">
+                                            <span class="number-of-entries">
+                                                    Save
+                                            </span>
+                                     </div>
+                              </div>
+                  </div>
+
+                  <div class="card set-budget-card margin15">
+                                  <div class="set-budget-header">
+                                          <h6>Set Budget</h6>
+                                          <p>Adjust Company Budget</p>
+                                      </div>
+                                      <div class="spacer"></div>
+                                      <div class="budget-inputs">
+                                              <div class="form-group label-floating">
+                                                      <label for="" class="">Report Date From</label>
+                                                      <input type="date" class="form-control" id="" placeholder="" required>
+                                              </div>
+                                              <div class="form-group label-floating">
+                                                          <label for="" class="">Report Date To</label>
+                                                          <input type="date" class="form-control" id="" placeholder="" required>
+                                              </div>
+                                                
+                                                  <div class="row">
+                                                          <div class="col-md-12">
+                                                                  <div class="pos--rel z-index99 text-left">
+                                                                          <span class="btn btn-primary btn-magenta btn-raised btn-set-budget ">
+                                                                              Set Budget
+                                                                          </span>
+                                                                        </div>
+                                                          </div>
+                                                  </div>
+
+                                                      </div>
+ 
+                  </div>
+
+<!-- 
+                      <div class="card dotnet-card margin15">
+                          <div class="dotnet-header">
+                              <div class="col-md-6">
+                                    <h6>Dotnet</h6>
+                                    <p>Admin Support</p>
+                              </div>
+                              <div class="col-md-2">
+                                    <span class="info-icon">
+                                            <i class="icon-Dots_Info info-dots--icon"></i>
+                                        </span>
+                              </div>
+                              <div class="col-md-2">
+                                <span>
+                                        <i class="icon-Dots_Add-User"></i>
+                                </span>
+                              </div>
+                              <div class="col-md-2">
+                                    <i class="icon-Dots_Settings"></i>
+                              </div>
+
+                          </div>
+
+                          <hr>
+
+                          <div class="dotnet-chat">
+
+                                <div class="media">
+                                        <a class="pull-left" href="#">
+                                          <div class="avatar">
+                                            <img class="media-object" src="dist/assets/img/user-icon.png" alt="GS">
+                                          </div>
+                                        </a>
+                                        <div class="media-body">
+                                          <h4 class="media-heading">PhilasandeZ.
+                                            <small class=""> 14:15 PM                                 
+                                            </small>
+                                          </h4>
+                                          <h6 class="text-muted"></h6>
+                                          <p>Hello there, I need your assistance with cloning and creating a collaborating team.</p>
+                                        </div>
+                                       
+                                        
+                                           
+                                              <a class="pull-left" href="#">
+                                                <div class="avatar">
+                                                  <img class="media-object" src="dist/assets/img/user-icon.png" alt="GS">
+                                                </div>
+                                              </a>
+                                              <div class="media-body">
+                                                <h4 class="media-heading">Gary Smith
+                                                  <small class=""> at 14:15 PM </small>
+                                                </h4>
+                                                <p class="text-magenta"> @Admin Support</p>
+                                                <h6 class="text-muted"></h6>
+                                                <p>No problem at all. Just one question…Where you sleeping when training was being done? LOL</p>
+                                              </div>
+
+                                              <a class="pull-left" href="#">
+                                                <div class="avatar">
+                                                  <img class="media-object" src="dist/assets/img/user-icon.png" alt="GS">
+                                                </div>
+                                              </a>
+                                              <div class="media-body">
+                                                <h4 class="media-heading">Gary Smith
+                                                </h4>
+                                                
+                                                <p>typing...</p>
+                                              </div>
+                                      </div>
+                                      <hr>
+                                      <div class="dotnet-text-area">
+                                        <div class="row">
+                                          <div class="col-md-10">
+                        
+                                            <div class="form-group is-empty"><textarea class="form-control comment-input" rows="1" placeholder="Type your message here…"></textarea><span class="material-input"></span></div>
+
+                                          </div>
+                                          <div class="col-md-2">
+                                            <span>
+                                                <i class="icon-Dots_Send"></i>
+                                            </span>
+                                           
+                                          </div>
+                        
+                                        </div>
+                        
+                                      </div>
+                          </div>
+                          
+                      </div> -->
+                      
+                    </div>
+
+                    <div class="col-md-8">
+                            <div class="row">
+                                    <div class="col-md-4">
+                                            <div class="card card-pricing raised">
+                                              <div class="myCompany-dashbord-card dashboard-card">
+                                                <div class="top-card-content">
+                                                    <div class="circlce-no-icon">
+                                                        <div class="box">
+                                                            <div class="graph">
+                                                              <div class="m blue-background"></div>
+                                                              <div class="tu blue-background"></div>
+                                                              <div class="w blue-background"></div>
+                                                              <div class="tr blue-background"></div>
+                                                              <div class="f blue-background"></div>
+                                    
+                                                            </div>
+                                                            </div>
+                                                    </div>
+                                                  <h4 class="text-black flush-m">R 26 908k</h4>
+                                                  <p class="sub-heading">
+                                                    Total amount this month
+                                                  </p>
+                                                </div>
+                                                <hr style="width:20%">
+                                    
+                                                <div class="bottom-card-content">
+                                                  <span class="notification-alerts good">
+                                                    <i class="icon-Dots_Down-1"></i>
+                                                    11.7%
+                                                  </span>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                    
+                                    <div class="col-md-4">
+                                                <div class="card card-pricing raised">
+                                                  <div class="myCompany-dashbord-card dashboard-card">
+                                                    <div class="top-card-content">
+                                                      <div class="circlce-no-icon">
+                                                          <div class="box">
+                                                              <div class="graph">
+                                                                <div class="m"></div>
+                                                                <div class="tu"></div>
+                                                                <div class="w"></div>
+                                                                <div class="tr"></div>
+                                                                <div class="f"></div>
+                                        
+                                                              </div>
+                                                              </div>
+                                                      </div>
+                                                      <h4 class="text-black flush-m">1,865</h4>
+                                                      <p class="sub-heading">
+                                                        Checks this month
+                                                      </p>
+                                                    </div>
+                                                    <hr style="width:20%">
+                                                    <div class="bottom-card-content">
+                                                      <span class="btn btn-notification btn-notification--confirmed btn-completed-checks text-white">
+                                                        Completed: 1,694
+                                                      </span>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                    
+                                    <div class="col-md-4">
+                                            <div class="card card-pricing raised">
+                                              <div class="myCompany-dashbord-card dashboard-card">
+                                                <div class="top-card-content">
+                                                  <div class="active-users">
+                                                      <div class="circlce-no-icon"><img src="dist/assets/img/random_users/54.jpg" alt=""></div>
+                                                      <div class="circlce-no-icon"><img src="dist/assets/img/random_users/55.jpg" alt=""></div>
+                                                      <div class="circlce-no-icon"><img src="dist/assets/img/random_users/83.jpg" alt=""></div>
+                                                  </div>
+                                                  <h4 class="text-black flush-m">128</h4>
+                                                  <p class="sub-heading text-rubik-medium">
+                                                    Active Users
+                                                  </p>
+                                                </div>
+                                                <hr style="width:20%">
+                                                <div class="bottom-card-content">
+                                                    <div class="clearfix bshadow0 pbs">
+                                                        
+                                                        <small class="mls text-rubik-medium">60 Users Online</small>
+                                                      </div>
+                                                </div>
+                                    
+                                              </div>
+                                            </div>
+                                          </div>
+                              </div>
+                
+                            <div class="row margin15">
+                                <div class="col-md-6">
+                                    <div class="card general-invoice-card">
+                                            <div class="generate-invoice-header">
+                                                    <h6>Generate Invoice</h6>
+                                                    <p>Paperless Documentation</p>
+                                                </div>
+                                                <div class="invoice-inputs">
+                                                        <div class="form-group label-floating">
+                                                                <label for="" class="">Invoice Date From</label>
+                                                                <input type="date" class="form-control" id="" placeholder="" required>
+                                                        </div>
+                                                        <div class="form-group label-floating">
+                                                                    <label for="" class="">Invoice Date To</label>
+                                                                    <input type="date" class="form-control" id="" placeholder="" required>
+                                                        </div>
+                                                        <div class="form-group label-floating">
+                                                                <label for="" class="">Invoice Due Date</label>
+                                                                <input type="date" class="form-control" id="" placeholder="" required>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                        <div class="col-md-2">
+                                                            <div class="col-md-12">
+                                                                    <i class="icon-Dots_Time time-pending"></i>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="col-md-2">
+                                                                <div class="col-md-12">
+                                                                        <i class="icon-Dots_Time time-error"> </i>
+                                                                </div>
+                                                        </div>
+                                                        <div class="col-md-8">
+                                                                <div class="text-right pos--rel z-index99">
+                                                                        <span class="btn btn-primary btn-round btn-white btn-raised perform-check">
+                                                                         Generate Invoice
+                                                                        </span>
+                                                                      </div>
+                                                        </div>
+                                                    </div>
+                                    </div>
+                
+                                </div>
+                                <div class="col-md-6">
+                                        <div class="card general-invoice-card">
+                                                <div class="generate-invoice-header">
+                                                        <h6>Usage Report</h6>
+                                                        <p>Paperless Documentation</p>
+                                                    </div>
+                                                    <div class="invoice-inputs">
+                                                            <div class="form-group label-floating">
+                                                                    <label for="" class="">Report Date From</label>
+                                                                    <input type="date" class="form-control" id="" placeholder="" required>
+                                                            </div>
+                                                            <div class="form-group label-floating">
+                                                                        <label for="" class="">Report Date To</label>
+                                                                        <input type="date" class="form-control" id="" placeholder="" required>
+                                                            </div>
+                                                            <div class="row">
+                                                                    <div class="col-md-2">
+                                                                        <div class="col-md-12">
+                                                                                <i class="icon-Dots_Time time-pending"></i>
+                                                                        </div>
+            
+                                                                    </div>
+                                                                    <div class="col-md-2">
+                                                                            <div class="col-md-12">
+                                                                                    <i class="icon-Dots_Time time-error"> </i>
+                                                                            </div>
+                                                                    </div>
+                                                                    <div class="col-md-8">
+                                                                           
+                                                                    </div>
+                                                                </div>
+                                                                <div class="spacer"></div>
+                                                              
+                                                                <div class="row">
+                                                                        <div class="col-md-12">
+                                                                                <div class="text-center pos--rel z-index99">
+                                                                                        <span class="btn btn-primary btn-round btn-white btn-raised btn-usage-report">
+                                                                                                Generate Usage Report
+                                                                                        </span>
+                                                                                      </div>
+                                                                        </div>
+                                                                </div>
+
+                                                                    </div>
+
+                                                    </div>
+                                </div>
+                            </div>
+
+                             <div class="row margin15">
+                                 <div class="col-md-12">
+                                     <div class="card about-us">
+                                         <div class="about-us-header">
+                                           <div class="col-md-8">
+                                              <h6>About Us</h6>
+                                              <p>Information about Company</p>
+                                           </div>
+                                           <div class="col-md-4">
+                                              <div class="col-md-12 col-xs-12 hidden-xs hidden-sm btn-view-all btn-viewAll-interaction text-right">
+                                                  <span class="number-of-entries">
+                                                      Edit
+                                                  </span>
+                                              </div>  
+                                        
+                                           </div>
+                                           </div>
+                                         
+                                      
+                                         <hr>
+                                         <div class="about-us-body">
+                                             <p>
+                                                    But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure? On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain.
+                                             </p>
+                                         </div>
+                                         <hr>
+                                         <div class="about-us-footer">
+                                              <div class="col-md-6">
+                                                  <span class="btn btn-notification btn-notification--confirmed btn-completed-checks btn-good">
+                                                      <i class="icon-Dots_Lock"> </i> This is good
+                                              </span>
+                                              </div>
+                                              <div class="col-md-6">
+                                                <p class="word-count text-align-right">512 words</p>
+                                              </div>
+
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>   
+     </div>      
+    
+    </div>
+              
+      </div>
+ 
+ 
+
+  </div>
+
+
+  </div>
+  <div id="logged-in-panel" class="card side-menu-card hidden">
+   
+    <div class="side-menu-header">
+
+      <div class="row">
+          <div class="col-md-2">
+            <div class="active-users">
+                <div class="circlce-no-icon"><img src="dist/assets/img/random_users/54.jpg" alt=""></div>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <h6>Philisande</h6>
+            <p>pila@dots.africa</p>
+          </div>
+    
+          <div class="col-md-5">
+              <button class="btn btn-secondary btn-square text-black ">Logout<div class="ripple-container"></div></button>
+          </div>
+      </div>
+       
+      <hr>
+      <div class="side-menu-list text-rubik-regular">
+        <ul class="text-gray">
+          <li>My Profile</li>
+          <li>My Company</li>
+          <li>Change Password</li>
+        </ul>
+      </div>
+      <hr>
+      <div class="side-menu-contacts">
+        <h6>Contacts</h6>
+        <ul class="text-rubik-regular text-gray">
+          <li>General feedback</li>
+          <li>About Dots 360</li>
+        </ul>
+      </div>
+      <hr>
+      <div class="side-menu-joinCommunity">
+        <h6>Join the community</h6>
+        <button class="btn btn-just-icon btn-twitter">
+            <i class="fa fa-twitter"></i>
+          </button>
+          <button class="btn btn-just-icon  btn-facebook">
+            <i class="fa fa-facebook"> </i>
+          </button>
+          <button class="btn btn-just-icon  btn-google">
+            <i class="fa fa-google"> </i>
+          </button>
+          <button class="btn btn-just-icon  btn-linkedin">
+            <i class="fa fa-linkedin"></i>
+          </button>
+      </div>
+      <hr>
+      <div class="side-menu-assist">
+        <ul class="text-rubik-regular text-gray">
+          <li>Settings</li>
+          <li>Help</li>
+        </ul>
+      </div>
+
+      <div class="btn-logIn-as">
+          <button class="btn btn-secondary btn-square text-black ">Log in as<div class="ripple-container"></div></button>
+      </div>
+
+      <div class="version">
+        <p>V2.0</p>
+      </div>
+    </div>
+  </div>
+  <div class="spacer"></div>
+  <footer class="container-fluid ">
+      <div class="footer animatedParent">
+        <div class="container text-center animated bounceIn delay-150">
+          <div class="col-md-3 col-xs-4 hidden-xs hidden-sm">
+            <div class="dropup table-dropdown">
+              <button href="#pablo" class="dropdown-toggle btn btn-rose btn-round btn-block text-gray text-rubik-regular"  data-toggle="dropdown">More Dots Recruit
+                <b class="caret"></b>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-right">
+                <li>
+                  <a href="#pablo">Lorem</a>
+                </li>
+                <li>
+                  <a href="#pablo">Lorem</a>
+                </li>
+                <li>
+                  <a href="#pablo">Lorem</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 text-align-left col-xs-12 col-sm-12">
+            <div class="user-footer-links text-center">
+              <span class="text-gray text-rubik-regular">
+                Dots Africa 2018 -2019 All rights reserved.
+              </span>
+            </div>
+          </div>
+          <div class="col-md-3 hidden-xs hidden-sm">
+            <div class="user-footer-links">
+              <span class="text-gray text-rubik-regular">
+                <a href="#" class="text-gray terms-condition-text">Terms of Use</a> and <a href="#" class="text-gray terms-condition-text">Privacy Policy</a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+</body>
+<!--   Core JS Files   -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCx0PjbVTxih2QgBX-ovhYSaU2uuArm5OE&libraries=places"></script>
+<script src="dist/assets/js/jquery.dot360.min.js" type="text/javascript"></script>
+<script src="dist/assets/js/modules/custom-charts.js" type="text/javascript"></script>
+
+</html>
